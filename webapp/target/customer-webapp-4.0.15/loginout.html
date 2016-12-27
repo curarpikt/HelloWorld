@@ -1,0 +1,15 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>客户管家</title>
+    <script>
+        CONTEXT_PATH="/chanjet/customer";
+        CSP_AUTH_CODE=0;
+        LOGIN_URL="http://www.chanjet.com/chanjet/customer";
+        toLoginOut=function(a){window.location.href=a.code?"http://cia.chanapp.chanjet.com/view/logout?redirectUri\x3d" +encodeURIComponent(LOGIN_URL):LOGIN_URL}
+    </script>
+    <script src="http://cia.chanapp.chanjet.com/internal_api/authorizeByJsonp?callback=toLoginOut&client_id=newapp&state=xxsss"></script>
+</head>
+<body class="default"></body>
+</html>

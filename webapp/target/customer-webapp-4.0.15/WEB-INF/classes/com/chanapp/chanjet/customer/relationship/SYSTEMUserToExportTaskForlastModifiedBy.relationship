@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:Relationship xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/relationship" applicationId="com.chanapp.chanjet.customer" cardinality="One-to-Many" id="com.chanapp.chanjet.customer.relationship.SYSTEMUserToExportTaskForlastModifiedBy" masterdetail="false" name="SYSTEMUserToExportTaskForlastModifiedBy">
+<ns3:Specification>
+<ns3:Source entityId="com.chanjet.system.systemapp.entity.User" entityName="User" fieldName="userId"/>
+<ns3:Target entityId="com.chanapp.chanjet.customer.entity.ExportTask" entityName="ExportTask" fieldName="lastModifiedBy"/>
+</ns3:Specification>
+<ns3:Visibility accessorFromTarget="lastModifiedBy"/>
+</ns3:Relationship>

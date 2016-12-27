@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<!-- 根据用户ID查询用户信息 -->
+<query id="customerFollow_findByCustomerIdandUserId" boName="">
+	<jsonQuerySpec>
+			{
+				"Criteria" : {
+					"Operator" : "and",
+					"Values" : [
+					
+							{
+							"FieldName" : "customerId",
+							"Operator" : "eq",
+							"Values" : ["?(customerId)"]
+							}
+							,{
+							"FieldName" : "userId",
+							"Operator" : "eq",
+							"Values" : [?(userId)]
+							}
+						]
+					}
+			}
+	</jsonQuerySpec>
+</query>
+
+<!-- 
+<query id="customerFollow_findFollowCustomers" boName="">
+	<jsonQuerySpec>
+
+		{
+			"Criteria" : {
+				"Operator" : "and",
+				"Values" : [{
+						"FieldName" : "period",
+						"Operator" : "eq",
+						"Values" : ["201507"]
+					}
+				]
+			},
+			"ChildBOCriteria" : [{
+					"Name" : "VoucherRecord",
+					"Criteria" : {
+						"Operator" : "and",
+						"Values" : [{
+								"FieldName" : "subject",
+								"Operator" : "eq",
+								"Values" : [100001]
+							}
+						]
+					}
+				}
+			],
+			"Fields" : ["voucherNo"],
+			"SortBy" : [{
+					"FieldName" : "voucherNo",
+					"Order" : "Descending"
+				}
+			],
+			"FirstResult" : ?(FirstResult),
+			"MaxResult" : ?(MaxResult)
+		}
+	</jsonQuerySpec>
+</query>
+ -->
+
+
+</root>

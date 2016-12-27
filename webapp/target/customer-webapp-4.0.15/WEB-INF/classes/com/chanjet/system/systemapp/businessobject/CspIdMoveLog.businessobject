@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:BusinessObject xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/businessObject" xmlns:ns4="http://www.chanjet.com/metadata/base/baseField" xmlns:ns5="http://www.chanjet.com/metadata/BOField" applicationId="com.chanjet.system.systemapp" enableExtensionCodeGen="true" id="com.chanjet.system.systemapp.businessobject.CspIdMoveLog" includeAllEOFields="true" includeCustomFields="false" label="IdMoveLog" name="CspIdMoveLog" primary="true" readonly="false" registerForCrossAppEvent="false">
+<ns3:EntityUsages>
+<ns3:PrimaryEO name="CspIdMoveLog"/>
+</ns3:EntityUsages>
+<ns3:Fields>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="createdBy" refEntityFieldName="createdBy" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="createdByEntityId" refEntityFieldName="createdByEntityId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="createdDate" refEntityFieldName="createdDate" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="entityId" refEntityFieldName="entityId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="fromId" refEntityFieldName="fromId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="fromSeedId" refEntityFieldName="fromSeedId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="id" refEntityFieldName="id" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isDeleted" refEntityFieldName="isDeleted" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isSeedData" refEntityFieldName="isSeedData" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="lastModifiedBy" refEntityFieldName="lastModifiedBy" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="lastModifiedDate" refEntityFieldName="lastModifiedDate" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mobileLocalId" refEntityFieldName="mobileLocalId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="owner" refEntityFieldName="owner" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="ownerDepartment" refEntityFieldName="ownerDepartment" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="permanentKey" refEntityFieldName="permanentKey" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="PermanentKey" xsi:type="ns5:PermanentKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="seeddataKey" refEntityFieldName="seeddataKey" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="toId" refEntityFieldName="toId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="toSeedId" refEntityFieldName="toSeedId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="version" refEntityFieldName="version" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="virtualSchemaId" refEntityFieldName="virtualSchemaId" refEntityUsageName="CspIdMoveLog" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+</ns3:Fields>
+<ns3:ChildBOReferences/>
+</ns3:BusinessObject>

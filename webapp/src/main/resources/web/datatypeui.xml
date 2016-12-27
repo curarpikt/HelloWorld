@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Types xmlns:tns="http://www.chanapp.com/ui/datatypeui"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.chanapp.com/ui/datatypeui http://www.chanjet.com/xsd/ui/DataTypeUI.xsd ">
+  <Type name="Text" align="left" displayType="ViewText" imeMethod="default" inputType="EditText" isWordwrap="true"/>
+  <Type name="Phone" align="left" displayType="ViewText" imeMethod="default" inputType="EditText" isWordwrap="false"/>
+  <Type name="MobilePhone" align="left" displayType="ViewText" imeMethod="default" inputType="EditText" isWordwrap="false"></Type>
+  <Type name="Email" align="left" displayType="LinkText" imeMethod="default" inputType="EditText" isWordwrap="false"/>
+  <Type name="URI" align="left" displayType="LinkText" imeMethod="default" inputType="EditText" isWordwrap="false"/>
+  <Type name="Decimal" align="left" displayType="ViewText" imeMethod="number" inputType="EditText" isWordwrap="false"/>
+  <Type name="Integer" align="left" displayType="ViewText" imeMethod="number" inputType="EditText" isWordwrap="false"/>
+  <Type name="Percentage" align="left" displayType="ViewText" imeMethod="number" inputType="EditText" isWordwrap="false"/>
+  <Type name="Boolean" align="left" displayType="CheckBox" imeMethod="default" inputType="CheckBox" isWordwrap="false"/>
+  <Type name="Enum" align="left" displayType="ViewText" imeMethod="default" inputType="ComboBox" isWordwrap="false"/>
+  <Type name="MultiEnum" align="left" displayType="ViewText" imeMethod="default" inputType="ComboBox" isWordwrap="false"/>
+  <Type name="Anniversary" align="left" displayType="ViewText" imeMethod="number" inputType="AnniversaryPicker" isWordwrap="false"/>
+  <Type name="Date" align="left" displayType="ViewText" imeMethod="number" inputType="DatePicker" isWordwrap="false"/>
+  <Type name="Timestamp" align="left" displayType="ViewText" imeMethod="number" inputType="DatetimePicker" isWordwrap="false"/>
+  <Type name="ForeignKey" align="left" displayType="ViewText" imeMethod="default" inputType="Lookup" isWordwrap="true"/>
+  <Type name="Image" align="center" displayType="Image" imeMethod="default" inputType="ImagePicker" isWordwrap="false"/>
+  <Type name="GeoPoint" align="left" displayType="Map" imeMethod="default" inputType="Map" isWordwrap="false"/>
+ </tns:Types>

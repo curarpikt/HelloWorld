@@ -1,0 +1,194 @@
+{
+	"Init" : {
+		"newUrl" : "restlet/v2/rest/Init",
+		"origUrl" : "business/v2/rest/init"
+	},
+	"init.mobile.Test" : {
+		"newUrl" : "restlet/v2/rest/init/mobile/Test",
+		"origUrl" : "business/v2/rest/init/mobile/test"
+	},
+	"dynattr.metadata.Layout" : {
+		"newUrl" : "restlet/v2/rest/dynattr/metadata/Layout",
+		"origUrl" : "business/v2/rest/dynattr/metadata/layout"
+	},
+	"contactremindset.GetDefaultSetValue" : {
+		"newUrl" : "restlet/v2/rest/contactremindset/GetDefaultSetValue",
+		"origUrl" : "services/1.0/appext/VContactRemindSet/getDefaultSetValue"
+	},
+	"contactremindset.Save" : {
+		"newUrl" : "restlet/v2/rest/contactremindset/Save",
+		"origUrl" : "services/1.0/appext/VContactRemindSet/save"
+	},
+	"contactremindset.Query" : {
+		"newUrl" : "restlet/v2/rest/contactremindset/Query",
+		"origUrl" : "services/1.0/appext/VContactRemindSet/query"
+	},
+	"Contact" : {
+		"newUrl" : "restlet/v2/rest/Contact",
+		"origUrl" : "business/v2/rest/contact"
+	},
+	"contact.GetContactsByMobileAndPhone" : {
+		"newUrl" : "restlet/v2/rest/contact/GetContactsByMobileAndPhone",
+		"origUrl" : "business/v2/rest/contact/getContactsByMobileAndPhone"
+	},
+	"contact.HeadPicture" : {
+		"newUrl" : "restlet/v2/rest/contact/HeadPicture",
+		"origUrl" : "business/v2/rest/contact/headPicture"
+	},
+	"user.AtUser" : {
+		"newUrl" : "restlet/v2/rest/user/AtUser",
+		"origUrl" : "business/v2/rest/user/atUser"
+	},
+	"user.GetBindingMobile" : {
+		"newUrl" : "restlet/v2/rest/user/GetBindingMobile",
+		"origUrl" : "business/v2/rest/user/getBindingMobile"
+	},
+	"user.BindingMobileExists" : {
+		"newUrl" : "restlet/v2/rest/user/BindingMobileExists",
+		"origUrl" : "business/v2/rest/user/bindingMobileExists"
+	},
+	"user.HeadPicture" : {
+		"newUrl" : "restlet/v2/rest/user/HeadPicture",
+		"origUrl" : "business/v2/rest/user/headPicture"
+	},
+	"user.BindingOrgPartner" : {
+		"newUrl" : "restlet/v2/rest/user/BindingOrgPartner",
+		"origUrl" : "business/v2/rest/user/bindingOrgPartner"
+	},
+	"user.SendBindingMobileMsg" : {
+		"newUrl" : "restlet/v2/rest/user/SendBindingMobileMsg",
+		"origUrl" : "business/v2/rest/user/sendBindingMobileMsg"
+	},
+	"user.UserInfo" : {
+		"newUrl" : "restlet/v2/rest/user/UserInfo",
+		"origUrl" : "business/v2/rest/user/userinfo"
+	},
+	"user.BindingMobile" : {
+		"newUrl" : "restlet/v2/rest/user/BindingMobile",
+		"origUrl" : "business/v2/rest/user/bindingMobile"
+	},
+	"user.GetPartnerInfoById" : {
+		"newUrl" : "restlet/v2/rest/user/GetPartnerInfoById",
+		"origUrl" : "business/v2/rest/user/getPartnerInfoById"
+	},
+	"notify.Records" : {
+		"newUrl" : "restlet/v2/rest/notify/Records",
+		"origUrl" : "business/v2/rest/notify/records"
+	},
+	"notify.RestCount" : {
+		"newUrl" : "restlet/v2/rest/notify/RestCount",
+		"origUrl" : "business/v2/rest/notify/restCount"
+	},
+	"notify.UnReadCount" : {
+		"newUrl" : "restlet/v2/rest/notify/UnReadCount",
+		"origUrl" : "business/v2/rest/notify/unreadCount"
+	},
+	"customer.UnShare" : {
+		"newUrl" : "restlet/v2/rest/customer/UnShare",
+		"origUrl" : "business/v2/rest/customer/unShare"
+	},
+	"customer.UnShareList" : {
+		"newUrl" : "restlet/v2/rest/customer/UnShareList",
+		"origUrl" : "business/v2/rest/customer/unshareList"
+	},
+	"customer.GetCustomersByName" : {
+		"newUrl" : "restlet/v2/rest/customer/GetCustomersByName",
+		"origUrl" : "business/v2/rest/customer/getCustomersByName"
+	},
+	"customer.Share" : {
+		"newUrl" : "restlet/v2/rest/customer/Share",
+		"origUrl" : "business/v2/rest/customer/share"
+	},
+	"sysreluser.Disable" : {
+		"newUrl" : "restlet/v2/rest/sysreluser/Disable",
+		"origUrl" : "business/v2/rest/sysreluser/disable"
+	},
+	"sysreluser.Alltranusers" : {
+		"newUrl" : "restlet/v2/rest/sysreluser/Alltranusers",
+		"origUrl" : "business/v2/rest/sysreluser/alltranusers"
+	},
+	"sysreluser.Allusers" : {
+		"newUrl" : "restlet/v2/rest/sysreluser/Allusers",
+		"origUrl" : "business/v2/rest/sysreluser/allusers"
+	},
+	"usersetting.WorkingHours" : {
+		"newUrl" : "restlet/v2/rest/usersetting/WorkingHours",
+		"origUrl" : "business/v2/rest/userSetting/workingHours"
+	},
+	"invite.Records" : {
+		"newUrl" : "restlet/v2/rest/invite/Records",
+		"origUrl" : "business/v2/rest/invite/records"
+	},
+	"invite.InviteShort" : {
+		"newUrl" : "restlet/v2/rest/invite/InviteShort",
+		"origUrl" : "business/v2/rest/invite/inviteShort"
+	},
+	"sync.LoadCSV" : {
+		"newUrl" : "restlet/v2/rest/sync/LoadCSV",
+		"origUrl" : "business/v2/rest/sync/loadcsv"
+	},
+	"sync.SyncSave" : {
+		"newUrl" : "restlet/v2/rest/sync/SyncSave",
+		"origUrl" : "business/v2/rest/sync/syncSave"
+	},
+	"sync.load.AllUsers" : {
+		"newUrl" : "restlet/v2/rest/sync/load/AllUsers",
+		"origUrl" : "business/v2/rest/sync/load/allUsers"
+	},
+	"todotips.Sort" : {
+		"newUrl" : "restlet/v2/rest/todotips/Sort",
+		"origUrl" : "business/v2/rest/todoTips/sort"
+	},
+	"todotips.Update" : {
+		"newUrl" : "restlet/v2/rest/todotips/Update",
+		"origUrl" : "business/v2/rest/todoTips/update"
+	},
+	"todotips.Save" : {
+		"newUrl" : "restlet/v2/rest/todotips/Save",
+		"origUrl" : "business/v2/rest/todoTips/save"
+	},
+	"todotips.Query" : {
+		"newUrl" : "restlet/v2/rest/todotips/Query",
+		"origUrl" : "business/v2/rest/todoTips/list"
+	},
+	"todotips.Delete" : {
+		"newUrl" : "restlet/v2/rest/todotips/Delete",
+		"origUrl" : "business/v2/rest/todoTips/delete"
+	},
+	"privilege.InitPrivi" : {
+		"newUrl" : "restlet/v2/rest/privilege/InitPrivi",
+		"origUrl" : "business/v2/rest/privilege/initprivi"
+	},
+	"WorkRecord" : {
+		"newUrl" : "restlet/v2/rest/Workrecord",
+		"origUrl" : "business/v2/rest/workrecord"
+	},
+	"workrecord.AttamentUpload" : {
+		"newUrl" : "restlet/v2/rest/workrecord/AttamentUpload",
+		"origUrl" : "business/v2/rest/workrecord/attamentUpload"
+	},
+	"newdynattr.metadata.Layout" : {
+		"newUrl" : "restlet/v2/rest/dynattr/metadata/Layout",
+		"origUrl" : "business/v2/rest/dynattr/metadata"
+	},
+	"newnotify.Records" : {
+		"newUrl" : "restlet/v2/rest/notify/records",
+		"origUrl" : "business/v2/rest/notify/records"
+	},
+	"newsync.LoadCSV" : {
+		"newUrl" : "restlet/v2/rest/sync/LoadCSV",
+		"origUrl" : "business/v2/rest/sync/LoadCSV"
+	},
+	"newprivilege.InitPrivi" : {
+		"newUrl" : "restlet/v2/rest/privilege/initprivi",
+		"origUrl" : "business/v2/rest/privilege/initprivi"
+	},
+	"newinit.mobile.Test" : {
+		"newUrl" : "restlet/v2/rest/init/mobile/test",
+		"origUrl" : "business/v2/rest/init/mobile/test"
+	},
+	"newsysreluser.Disable" : {
+		"newUrl" : "restlet/v2/rest/sysreluser/disable",
+		"origUrl" : "business/v2/rest/sysreluser/disable"
+	}
+}

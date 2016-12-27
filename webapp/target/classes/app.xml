@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	<app defaultView="" defaultTheme="">
+		<themes>
+		</themes>
+		<views>
+		</views>
+		<propertys>
+		</propertys>
+	</app>
+	-+                                                                                                                                            
+ -->
+<app name="customer" defaultView="index_view" cssPath="">
+	<view viewName="index_view" 					tmplPath="customer/IndexView"></view>
+	<view viewName="customer_list_view" 			tmplPath="customer/CustomerListView"></view>
+	<view viewName="contact_list_view" 				tmplPath="customer/ContactListView"></view>
+	<view viewName="customer_authorize_view" 		tmplPath="customer/CustomerAuthorizeView"></view>
+	<view viewName="field_view" 					tmplPath="customer/FieldView"></view>
+	<view viewName="field_library_view" 			tmplPath="customer/FieldLibraryView"></view>
+	<view viewName="customer_view" 					tmplPath="customer/CustomerView"></view>
+	<view viewName="contact_view" 					tmplPath="customer/ContactView"></view>
+	<view viewName="import_view" 					tmplPath="customer/ImportView"></view>
+	<view viewName="life_cycle_view" 				tmplPath="customer/LifeCycleView"></view>
+	<view viewName="component_analysis_view" 		tmplPath="customer/ComponentAnalysisView"></view>
+	<view viewName="customer_analysis_view" 		tmplPath="customer/CustomerAnalysisView"></view>	
+	<view viewName="addcustomer_analysis_view" 		tmplPath="customer/AddCustomerAnalysisView"></view>		
+	<view viewName="workrecord_list_view" 			tmplPath="customer/WorkRecordListView"></view>
+	
+	<!--  新增工作记录  -->
+	<view viewName="workrecord_detail_view"       tmplPath="customer/WorkRecordDetailView"></view>
+	
+	<view viewName="invite_view" 			tmplPath="customer/InviteView"></view>
+	<view viewName="invite_employees_view" 			tmplPath="customer/InviteEmployeesView"></view>
+	
+<!--<view viewName="customer_list_view" 			tmplPath="customer/ListView"></view>
+	<view viewName="new_view" 						tmplPath="customer/NewView"></view>
+	<view viewName="edit_view" 						tmplPath="customer/EditView"></view>
+	<view viewName="details_view" 					tmplPath="customer/DetailView"></view>
+	<view viewName="contact_list_view" 				tmplPath="customer/ContactList"></view>
+	<view viewName="email_archive_list_view" 		tmplPath="customer/EmailArchiveLogView"></view>
+	<view viewName="arrange_view" 					tmplPath="customer/ArrangeView"></view>
+	<view viewName="email_config_list_view" 	  	tmplPath="customer/EmailConfigView"></view>
+	<view viewName="customer_list_for_alloc_view" 	tmplPath="customer/ListForAllocView"></view>
+	<view viewName="customer_map_view" 				tmplPath="customer/CustomerMapView"></view>
+	<view viewName="customer_authorize_view" 		tmplPath="customer/CustomerAuthorizeView"></view>
+	<view viewName="component_analysis_view" 		tmplPath="customer/ComponentAnalysisView"></view>
+	<view viewName="edit_list_view" 				tmplPath="customer/EditListView"></view>
+	<view viewName="field_view" 					tmplPath="customer/FieldView"></view>
+	
+	<view viewName="layout_config_view" 			tmplPath="customer/LayoutConfigView"></view>
+	<view viewName="form_layout_view" 				tmplPath="customer/widget/FormLayout"></view>
+	<view viewName="list_layout_view" 				tmplPath="customer/widget/EditListLayout"></view> -->
+</app>

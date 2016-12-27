@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:PriorSettings xmlns:tns="http://www.chanjet.com/ui/PriorSetting" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<tns:Setting key="MyItem" value="MyValue"/>
+	<tns:Setting key="MyItem2" value="MyValue2"/>
+</tns:PriorSettings>

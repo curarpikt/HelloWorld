@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns4:Entity xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/field" xmlns:ns4="http://www.chanjet.com/metadata/entity" xmlns:ns5="http://www.chanjet.com/metadata/base/baseEntity" active="true" applicationId="com.chanapp.chanjet.customer" authMode="None" dynamicUpdate="false" id="com.chanapp.chanjet.customer.entity.ExportTask" label="ExportTask" name="ExportTask" searchable="false" shadowTarget="true" systemEntity="false" table="exporttask">
+<ns4:Fields>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="backupcount0" deferredUniqueCheck="false" deleted="false" index="false" label="备份统计json字符串" name="backupCount" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="1024"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="backupfileurl0" deferredUniqueCheck="false" deleted="false" index="false" label="备份文件路径" name="backupFileUrl" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="1024"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="backuptimecost0" deferredUniqueCheck="false" deleted="false" index="false" label="备份全耗时（创建到结束）" name="backupTimeCost" segmentation="true" systemField="false" type="Integer" unique="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="createdby" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Created By" name="createdBy" relationshipName="SYSTEMUserToExportTaskForcreatedBy" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="false" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="createdbyentityid" deferredUniqueCheck="false" deleted="false" index="true" label="CreatedByEntityId" name="createdByEntityId" searchable="true" segmentation="true" systemField="true" type="Text" unique="false" updateable="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="createdbyshadowfk0" deferredUniqueCheck="false" deleted="false" name="createdByShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Created Date" name="createdDate" searchable="true" segmentation="true" systemField="true" type="Timestamp" unique="false" updateable="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="cretime0" deferredUniqueCheck="false" deleted="false" index="false" label="任务创建时间" name="creTime" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="enddate0" deferredUniqueCheck="false" deleted="false" index="false" label="统计结束时间" name="endDate" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="errormessage0" deferredUniqueCheck="false" deleted="false" index="false" label="异常信息" name="errorMessage" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="1024"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="filesize0" deferredUniqueCheck="false" deleted="false" index="false" label="文件大小" name="fileSize" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="128"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="finishtime0" deferredUniqueCheck="false" deleted="false" index="false" label="任务结束时间" name="finishTime" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Id" name="id" searchable="false" segmentation="true" systemField="true" type="PrimaryKey" unique="false" updateable="false" xsi:type="ns3:PrimaryKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Deleted" name="isDeleted" searchable="false" segmentation="true" systemField="true" type="Boolean" unique="false" updateable="false" xsi:type="ns3:BooleanField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="SeedData" name="isSeedData" searchable="false" segmentation="true" systemField="true" type="Boolean" unique="false" updateable="false" xsi:type="ns3:BooleanField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="lastmodifiedby" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Last Modified By" name="lastModifiedBy" relationshipName="SYSTEMUserToExportTaskForlastModifiedBy" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="false" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="lastmodifiedbyshadowfk0" deferredUniqueCheck="false" deleted="false" name="lastModifiedByShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Last Modified Date" name="lastModifiedDate" searchable="true" segmentation="true" systemField="true" type="Timestamp" unique="false" updateable="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="mobilelocalid" deferredUniqueCheck="false" deleted="false" index="true" label="MobileLocalId" name="mobileLocalId" searchable="true" segmentation="true" systemField="true" type="Integer" unique="false" updateable="true" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="note0" deferredUniqueCheck="false" deleted="false" index="false" label="备注" name="note" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="1024"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="owner" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Owner" name="owner" relationshipName="SYSTEMUserToExportTaskForowner" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="true" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="ownerdepartment" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Owner Department" name="ownerDepartment" relationshipName="SYSTEMDepartmentToExportTaskForownerDepartment" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="true" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="ownerdepartmentshadowfk0" deferredUniqueCheck="false" deleted="false" name="ownerDepartmentShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="ownershadowfk0" deferredUniqueCheck="false" deleted="false" name="ownerShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Permanent Key" name="permanentKey" searchable="false" segmentation="true" systemField="true" type="PermanentKey" unique="false" updateable="true" xsi:type="ns3:PermanentKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="runtime0" deferredUniqueCheck="false" deleted="false" index="false" label="任务开始时间" name="runTime" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="seeddatakey" deferredUniqueCheck="false" deleted="false" index="true" label="SeeddataKey" name="seeddataKey" searchable="true" segmentation="true" systemField="true" type="Text" unique="false" updateable="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="startdate0" deferredUniqueCheck="false" deleted="false" index="false" label="统计开始时间" name="startDate" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="taskname0" deferredUniqueCheck="false" deleted="false" index="false" label="任务名称" name="taskName" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="64"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="taskstatus0" deferredUniqueCheck="false" deleted="false" index="false" label="任务状态 0-可建 1-新建 2-执行中 3-成功完成 9-异常完成" name="taskStatus" segmentation="true" systemField="false" type="Integer" unique="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="tasktimecost0" deferredUniqueCheck="false" deleted="false" index="false" label="执行任务耗时" name="taskTimeCost" segmentation="true" systemField="false" type="Integer" unique="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="userid0" deferredUniqueCheck="false" deleted="false" index="false" label="用户" name="userId" segmentation="true" systemField="false" type="Integer" unique="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Version" name="version" searchable="true" segmentation="true" systemField="true" type="Integer" unique="false" updateable="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="virtualschemaid" deferredUniqueCheck="false" deleted="false" index="true" label="VirtualSchemaId" name="virtualSchemaId" searchable="true" segmentation="true" systemField="true" type="Integer" unique="false" updateable="false" xsi:type="ns3:IntegerField"/>
+</ns4:Fields>
+</ns4:Entity>

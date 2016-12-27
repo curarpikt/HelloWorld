@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	id="WebApp_ID" version="3.0">
+	<display-name>${applicationName} for ${enterpriseId}</display-name>
+		
+	<welcome-file-list>
+		<!--  welcome-file>index.jsp</welcome-file-->
+	</welcome-file-list>
+	
+    <!-- Security Role & Constrains definition -->
+
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name><![CDATA[
+                Protected services
+            ]]></web-resource-name>
+            <url-pattern>*.jsp</url-pattern>
+            <url-pattern>/services/*</url-pattern>
+        </web-resource-collection>
+
+        <auth-constraint>
+            <role-name>CSPAppPlatformAccessRole</role-name>
+        </auth-constraint>
+
+        <user-data-constraint>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+
+    </security-constraint>
+
+    <security-role>
+        <role-name>CSPAppPlatformAccessRole</role-name>
+    </security-role>
+
+    <login-config>
+        <auth-method>GENERIC</auth-method>
+        <realm-name>CSPSecurityRealm</realm-name>
+    </login-config>
+
+    <!-- Security Role & Constrains definition end -->
+</web-app>

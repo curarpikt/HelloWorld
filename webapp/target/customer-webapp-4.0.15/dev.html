@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <link href="favicon.ico" type="image/x-icon" rel="icon">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="renderer" content="webkit|ie-stand">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script>
+        CONTEXT_PATH="http://customer.com:8080",dev=true;
+        CSP_AUTH_CODE=0;
+        LOGIN_URL="http://www.chanapp.com/login?app\x3dcustomer\x26logout\x3d1";
+        LOGINOUT_URL=encodeURIComponent("http://www.chanapp.com/login?app\x3dcustomer\x26logout\x3d1");
+        toIndex=function(a){a.code?(CSP_AUTH_CODE=a.code,window.location.href=CONTEXT_PATH+"?code\x3d"+a.code):window.location.href=LOGIN_URL};
+        toLogin=function(a){a.auth_code?window.location.href=LOGIN_URL:CSP_AUTH_CODE=a.code};
+        toLoginOut=function(a){window.location.href=a.code?"http://cia.chanapp.chanjet.com/view/logout?redirectUri\x3d"+LOGINOUT_URL:LOGIN_URL};
+        var _hmt = _hmt || [];
+        less = {env: "development"};
+    </script>
+    <script src="http://cia.chanapp.chanjet.com/internal_api/authorizeByJsonp?callback=toLogin&client_id=newapp&state=xxsss"></script>
+    <title>客户</title>
+    <link rel="stylesheet" href="http://customer.com:8080/src/app/resource/themes/default/css/third_lib.css">
+    <link type="text/css" rel="stylesheet/less" href="http://customer.com:8080/src/app/resource/app.less"/>
+
+    <script src="http://customer.com:8080/src/app/util/less-1.7.4.js" type="text/javascript"></script>
+    <script type="text/javascript"  data-dojo-config="async: 1, tlmSiblingOfDojo: 0, isDebug: 1"   src="http://customer.com:8080/src/third-lib/Dojo/dojo/dojo.js"></script>
+
+</head>
+<body class="default">
+<!--头部-->
+<div id="appHeader" class="kh-h-box"></div>
+<!-- 导航区 -->
+<div id="appLeftSide" style="display: none;"></div>
+<!-- 窄屏幕时弹出导航菜单  -->
+<div id="smallScreenMenu" class="hide"></div>
+<!--内容区-->
+<div id="appContainer" class="hide w1280"></div>
+<!--底部-->
+<div id="appFooter" ></div>
+<!-- 互此悬浮框，与布局无关 -->
+<div id="tips"></div>
+
+<script src="http://customer.com:8080/src/app/run.js"></script>
+<div style="position: fixed;bottom: 1px;z-index: 1000;left:-26px;background-color:#FEF2C1;padding: 5px 32px;transform:rotate(28deg)">开发环境</div>
+</body>
+</html>

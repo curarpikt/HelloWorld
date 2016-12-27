@@ -1,0 +1,20 @@
+{
+  items: Customer(jsonQuerySpec: {FirstResult: 0, MaxResult: 25, 
+    CriteriaStr: " ( (( isDeleted = 'false' ) or ( isDeleted = null )) and  (id > 50000)  )", 
+    ChildBOCriteria: [{ChildName: "grants", CriteriaStr: " CSPGrant.userId = 60003751034 "}], 
+    SortBy: [{FieldName: "lastModifiedDate", Order: "Descending"}]}) {
+    id
+    name
+    phone
+    address
+    status
+    childBORowSets {
+      contacts: ContactBO_customer(jsonQuerySpec: {SortBy: [{FieldName: "createdDate", Order: "Ascending"}, {FieldName: "id", Order: "Ascending"}]}) {
+        id
+        name
+        email
+        mobile
+      }
+    }
+  }
+}

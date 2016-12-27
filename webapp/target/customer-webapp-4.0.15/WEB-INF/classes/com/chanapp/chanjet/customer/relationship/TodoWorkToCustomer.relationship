@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:Relationship xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/relationship" applicationId="com.chanapp.chanjet.customer" cardinality="One-to-Many" id="com.chanapp.chanjet.customer.relationship.TodoWorkToCustomer" masterdetail="false" name="TodoWorkToCustomer">
+<ns3:Specification>
+<ns3:Source entityName="Customer" fieldName="id"/>
+<ns3:Target entityName="TodoWork" fieldName="customer"/>
+</ns3:Specification>
+<ns3:Visibility accessorFromTarget="customer"/>
+</ns3:Relationship>

@@ -1,0 +1,24 @@
+{
+    "fieldName": "Field1458782605574",
+    "fieldLabel": "enumField2",
+    "entityName": "Customer",
+    "fieldType": "Enum",
+    "enumName": "Enum1458782605937",
+     "enumValues" : [ {
+        "enumValue" : "EnumValue14587826059450",
+        "enumLabel" : "A",
+        "isActive" : true
+      }, {
+        "enumValue" : "EnumValue14587826059461",
+        "enumLabel" : "B",
+        "isActive" : true
+      }, {
+        "enumValue" : "EnumValue14587826059462",
+        "enumLabel" : "C",
+        "isActive" : true
+      }, {
+        "enumValue" : "EnumValue14587826059473",
+        "enumLabel" : "D",
+        "isActive" : true
+      } ]
+}

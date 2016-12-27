@@ -1,0 +1,11 @@
+{"entityType":"Customer",
+"items":
+[
+{"fieldName":"area","defaultValue":"{\"fieldValue\":\"area\",\"fieldName\":\"地区\",\"list\":[{\"id\":\"dongbei\",\"name\":\"东北\"}]}"},
+{"fieldName":"level","defaultValue":"{\"fieldValue\":\"level\",\"fieldName\":\"客户级别\",\"list\":[{\"id\":\"Normal\",\"name\":\"一般客户\"}]}"},
+{"fieldName":"type","defaultValue":"{\"fieldValue\":\"type\",\"fieldName\":\"客户分类\",\"list\":[{\"id\":\"customer\",\"name\":\"潜在客户\"}]}"},
+{"fieldName":"followed","defaultValue":"{\"fieldValue\":\"followed\",\"fieldName\":\"关注状态\",\"list\":[{\"id\":\"unfollow\",\"name\":\"未关注的\"}]}"},
+{"fieldName":"industry","defaultValue":"{\"fieldValue\":\"industry\",\"fieldName\":\"行业\",\"list\":[{\"id\":\"IT\",\"name\":\"IT\"}]}"},
+{"fieldName":"derive","defaultValue":"{\"fieldValue\":\"derive\",\"fieldName\":\"客户来源\",\"list\":[{\"id\":\"activelySeek\",\"name\":\"主动获取\"}]}"}
+]
+}

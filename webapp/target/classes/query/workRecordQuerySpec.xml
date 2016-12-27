@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<query id="workRecord_countLatestWorkRecordNum" boName="">
+	<jsonQuerySpec>
+		{ 
+			"Criteria" : 
+			{
+				"Operator" : "and",
+				"Values" : 
+				[
+					{
+						"Operator" : "or",
+						"Values":
+						[
+							{
+								"FieldName" : "isDeleted",
+								"Operator" : "empty",
+								"Values" : []
+							},
+							{
+								"FieldName" : "isDeleted",
+								"Operator" : "eq",
+								"Values" : ["false"]
+							}
+						]
+					},
+					{
+						"FieldName" : "createdDate",
+						"Operator" : "gt",
+						"Values" : [?(createdDate)]
+					}
+					,
+					{
+						"FieldName" : "createdBy",
+						"Operator" : "ne",
+						"Values" : [?(createdBy)]
+					},
+					{
+						"FieldName" : "owner",
+						"Operator" : "in",
+						"Values" : ?(owner)
+					}
+				]
+			}
+		}
+		</jsonQuerySpec>
+	</query>
+</root>

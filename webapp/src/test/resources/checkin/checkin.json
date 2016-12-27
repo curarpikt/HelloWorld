@@ -1,0 +1,11 @@
+{
+		"customerId":100016,
+        "coordinate": {
+            "longitude": 116.236256,
+            "latitude": 40.067462
+        },
+        "remark": "testcheckin",
+        "coordinateNote": "用友软件园中区9D",
+        "attachments": [
+        ]
+    }

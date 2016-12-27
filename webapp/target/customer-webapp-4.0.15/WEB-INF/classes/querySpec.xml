@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <import src="./query/customerQuerySpec.xml" />
+    <import src="./query/userQuerySpec.xml" />
+    <import src="./query/sysRelUserQuerySpec.xml" />
+    <import src="./query/userSetting.xml" />
+    <import src="./query/customerFollow.xml" />
+    <import src="./query/contactQuerySpec.xml" />
+    <import src="./query/workRecordQuerySpec.xml" />
+    <import src="./query/comment.xml" />
+</root>

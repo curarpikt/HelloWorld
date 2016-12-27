@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.chanjet.csp:csp-app-test-base:4.1.58">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanjet/csp/csp-app-test-base/4.1.58/csp-app-test-base-4.1.58.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanjet/csp/csp-app-test-base/4.1.58/csp-app-test-base-4.1.58-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanjet/csp/csp-app-test-base/4.1.58/csp-app-test-base-4.1.58-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

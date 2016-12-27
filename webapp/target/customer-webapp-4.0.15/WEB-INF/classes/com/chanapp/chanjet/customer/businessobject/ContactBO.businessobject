@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:BusinessObject xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/businessObject" xmlns:ns4="http://www.chanjet.com/metadata/base/baseField" xmlns:ns5="http://www.chanjet.com/metadata/BOField" applicationId="com.chanapp.chanjet.customer" enableExtensionCodeGen="false" id="com.chanapp.chanjet.customer.businessobject.ContactBO" includeAllEOFields="true" includeCustomFields="true" label="Contact" name="ContactBO" primary="true" readonly="false" registerForCrossAppEvent="false">
+<ns3:EntityUsages>
+<ns3:PrimaryEO name="Contact"/>
+</ns3:EntityUsages>
+<ns3:Fields>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="address" refEntityFieldName="address" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="appellation" refEntityFieldName="appellation" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="createdBy" refEntityFieldName="createdBy" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="createdByEntityId" refEntityFieldName="createdByEntityId" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="createdDate" refEntityFieldName="createdDate" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="customer" refEntityFieldName="customer" refEntityUsageName="Contact" searchByPinYin="false" type="ForeignKey" xsi:type="ns5:ForeignKeyField">
+<ns2:Properties>
+<ns2:Property name="canDisable" value="false"/>
+</ns2:Properties>
+</ns3:Field>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="customerCopy" refEntityFieldName="customerCopy" refEntityUsageName="Contact" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="department" refEntityFieldName="department" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="effectiveMobile" refEntityFieldName="effectiveMobile" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="effectivePhone" refEntityFieldName="effectivePhone" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="email" refEntityFieldName="email" refEntityUsageName="Contact" searchByPinYin="false" type="Email" xsi:type="ns5:EmailField">
+<ns2:Properties>
+<ns2:Property name="canDisable" value="false"/>
+<ns2:Property name="canEditValue" value="false"/>
+</ns2:Properties>
+</ns3:Field>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="fax" refEntityFieldName="fax" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Phone" xsi:type="ns5:PhoneField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="fullSpell" refEntityFieldName="fullSpell" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="gender" refEntityFieldName="gender" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="id" refEntityFieldName="id" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isDeleted" refEntityFieldName="isDeleted" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isSeedData" refEntityFieldName="isSeedData" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="lastModifiedBy" refEntityFieldName="lastModifiedBy" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="lastModifiedDate" refEntityFieldName="lastModifiedDate" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="lastRecordTime" refEntityFieldName="lastRecordTime" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="localId" refEntityFieldName="localId" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="logo" refEntityFieldName="logo" refEntityUsageName="Contact" searchByPinYin="false" type="Text" xsi:type="ns5:TextField">
+<ns2:Properties>
+<ns2:Property name="canDisable" value="false"/>
+</ns2:Properties>
+</ns3:Field>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="maritalStatus" refEntityFieldName="maritalStatus" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mobile" refEntityFieldName="mobile" refEntityUsageName="Contact" searchByPinYin="false" type="MobilePhone" xsi:type="ns5:MobilePhoneField">
+<ns2:Properties>
+<ns2:Property name="canDisable" value="false"/>
+<ns2:Property name="canEditValue" value="false"/>
+</ns2:Properties>
+</ns3:Field>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mobileLocalId" refEntityFieldName="mobileLocalId" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="modifiedTime" refEntityFieldName="modifiedTime" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="name" refEntityFieldName="name" refEntityUsageName="Contact" searchByPinYin="false" type="Text" xsi:type="ns5:TextField">
+<ns2:Properties>
+<ns2:Property name="allowBlank" value="false"/>
+<ns2:Property name="canDisable" value="false"/>
+</ns2:Properties>
+</ns3:Field>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="owner" refEntityFieldName="owner" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="ownerDepartment" refEntityFieldName="ownerDepartment" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="permanentKey" refEntityFieldName="permanentKey" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="PermanentKey" xsi:type="ns5:PermanentKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="phone" refEntityFieldName="phone" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Phone" xsi:type="ns5:PhoneField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="position" refEntityFieldName="position" refEntityUsageName="Contact" searchByPinYin="false" type="Text" xsi:type="ns5:TextField">
+<ns2:Properties>
+<ns2:Property name="canDisable" value="false"/>
+<ns2:Property name="canEditValue" value="false"/>
+</ns2:Properties>
+</ns3:Field>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="qq" refEntityFieldName="qq" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="remark" refEntityFieldName="remark" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="seeddataKey" refEntityFieldName="seeddataKey" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="simpleSpell" refEntityFieldName="simpleSpell" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="version" refEntityFieldName="version" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="virtualSchemaId" refEntityFieldName="virtualSchemaId" refEntityUsageName="Contact" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="weibo" refEntityFieldName="weibo" refEntityUsageName="Contact" searchByPinYin="false" searchable="false" type="Text" xsi:type="ns5:TextField"/>
+</ns3:Fields>
+<ns3:ChildBOReferences/>
+</ns3:BusinessObject>

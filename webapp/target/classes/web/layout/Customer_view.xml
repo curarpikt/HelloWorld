@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Layout xmlns:tns="http://www.chanapp.com/ui/layout"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.chanapp.com/ui/layout http://www.chanapp.com/xsd/ui/Layout.xsd "
+	method="flat" customFieldSheet="1">
+  <Sheet title="客户主要信息" layout="table" showTitle="false" collapsable="false" labelAlign="right" showLabelColon="true">
+    <Columns>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="250"/>
+    </Columns>
+    <Cells>
+      <Cell isLabel="true" name="phone"/>
+      <Cell isLabel="false" name="phone"/>
+      <Cell isLabel="true" name="fax"/>
+      <Cell isLabel="false" name="fax"/>
+      <Cell isLabel="true" name=""/>
+      <Cell isLabel="true" name=""/>
+      <Cell isLabel="true" name="url"/>
+      <Cell isLabel="false" name="url"/>
+      <Cell isLabel="true" name="address"/>
+      <Cell isLabel="false" name="address" colspan="3"/>
+      <Cell isLabel="true" name=""/>
+    </Cells>
+  </Sheet>
+  <Sheet title="详情1" layout="table" collapsable="true" collapsed="true" showTitle="false" labelAlign="right" showLabelColon="true">
+    <Columns>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="250"/>
+    </Columns>
+    <Cells>
+      <Cell isLabel="true" name="type"/>
+      <Cell isLabel="false" name="type"/>
+      <Cell isLabel="true" name="derive"/>
+      <Cell isLabel="false" name="derive"/>
+      <Cell isLabel="true" name="level"/>
+      <Cell isLabel="false" name="level"/>
+      <Cell isLabel="true" name="area"/>
+      <Cell isLabel="false" name="area"/>
+       <Cell isLabel="true" name="industry"/>
+      <Cell isLabel="false" name="industry"/>
+    </Cells>
+  </Sheet>
+  <Sheet title="详情2" layout="table" collapsable="true" collapsed="true" showTitle="false" labelAlign="right" showLabelColon="true">
+    <Columns>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="570"/>
+    </Columns>
+    <Cells>
+      <Cell isLabel="true" name="owner" label="业务员"/>
+      <Cell isLabel="false" name="owner"/>
+      <Cell isLabel="true" name="modifiedTime"/>
+      <Cell isLabel="false" name="modifiedTime"/>
+      <Cell isLabel="true" name="remark"/>
+      <Cell isLabel="false" name="remark" colspan="3"/>
+    </Cells>
+  </Sheet>
+</tns:Layout>

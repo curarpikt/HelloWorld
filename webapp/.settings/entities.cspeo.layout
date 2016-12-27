@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram-geometry>
+    <node>
+        <id>entities#User#0</id>
+        <bounds x="742" y="650"/>
+    </node>
+    <node>
+        <id>entities#Attachment#1</id>
+        <bounds x="1518" y="2542"/>
+    </node>
+    <node>
+        <id>entities#Checkin#2</id>
+        <bounds x="36" y="36"/>
+    </node>
+    <node>
+        <id>entities#Client#3</id>
+        <bounds x="1828" y="2630"/>
+    </node>
+    <node>
+        <id>entities#Comment#4</id>
+        <bounds x="372" y="321"/>
+    </node>
+    <node>
+        <id>entities#Contact#5</id>
+        <bounds x="742" y="1555"/>
+    </node>
+    <node>
+        <id>entities#ContactRemindSet#6</id>
+        <bounds x="2108" y="2663"/>
+    </node>
+    <node>
+        <id>entities#Customer#7</id>
+        <bounds x="1130" y="1259"/>
+    </node>
+    <node>
+        <id>entities#CustomerFollow#8</id>
+        <bounds x="2471" y="2652"/>
+    </node>
+    <node>
+        <id>entities#ExportTask#9</id>
+        <bounds x="2773" y="2509"/>
+    </node>
+    <node>
+        <id>entities#FieldData#10</id>
+        <bounds x="3320" y="2608"/>
+    </node>
+    <node>
+        <id>entities#ImportRecord#11</id>
+        <bounds x="3593" y="2575"/>
+    </node>
+    <node>
+        <id>entities#ImportRecordNew#12</id>
+        <bounds x="3965" y="2476"/>
+    </node>
+    <node>
+        <id>entities#ImportRecordRelation#13</id>
+        <bounds x="4429" y="2641"/>
+    </node>
+    <node>
+        <id>entities#ImportRecordRelationNew#14</id>
+        <bounds x="4775" y="2630"/>
+    </node>
+    <node>
+        <id>entities#Message#15</id>
+        <bounds x="5154" y="2630"/>
+    </node>
+    <node>
+        <id>entities#MessageItem#16</id>
+        <bounds x="5413" y="2608"/>
+    </node>
+    <node>
+        <id>entities#OperationLog#17</id>
+        <bounds x="5718" y="2597"/>
+    </node>
+    <node>
+        <id>entities#Recycle#18</id>
+        <bounds x="372" y="584"/>
+    </node>
+    <node>
+        <id>entities#RecycleRelation#19</id>
+        <bounds x="36" y="606"/>
+    </node>
+    <node>
+        <id>entities#SearchCondition#20</id>
+        <bounds x="6042" y="2575"/>
+    </node>
+    <node>
+        <id>entities#SysRelUser#21</id>
+        <bounds x="6346" y="2619"/>
+    </node>
+    <node>
+        <id>entities#Teamer#22</id>
+        <bounds x="372" y="847"/>
+    </node>
+    <node>
+        <id>entities#TodoTips#23</id>
+        <bounds x="6664" y="2630"/>
+    </node>
+    <node>
+        <id>entities#TodoWork#24</id>
+        <bounds x="36" y="1074"/>
+    </node>
+    <node>
+        <id>entities#UserRelation#25</id>
+        <bounds x="6938" y="2641"/>
+    </node>
+    <node>
+        <id>entities#UserSetting#26</id>
+        <bounds x="7214" y="2608"/>
+    </node>
+    <node>
+        <id>entities#WorkRecord#27</id>
+        <bounds x="372" y="1281"/>
+        <connection>
+            <id>EnumRelation&amp;4</id>
+            <bendpoint x="742" y="1212"/>
+            <bendpoint x="1058" y="1212"/>
+            <bendpoint x="1130" y="1212"/>
+            <bendpoint x="1446" y="1212"/>
+        </connection>
+    </node>
+    <node>
+        <id>entities#WorkRecordHis#28</id>
+        <bounds x="7489" y="2652"/>
+    </node>
+    <node>
+        <id>cspenums#CustomerArea#0</id>
+        <bounds x="1518" y="1138"/>
+    </node>
+    <node>
+        <id>cspenums#CustomerIndustry#1</id>
+        <bounds x="1518" y="1423"/>
+    </node>
+    <node>
+        <id>cspenums#CustomerLevel#2</id>
+        <bounds x="1518" y="1686"/>
+    </node>
+    <node>
+        <id>cspenums#CustomerType#3</id>
+        <bounds x="1518" y="1861"/>
+    </node>
+    <node>
+        <id>cspenums#CustomerDerive#4</id>
+        <bounds x="1518" y="2014"/>
+    </node>
+    <node>
+        <id>cspenums#ContactGender#5</id>
+        <bounds x="1130" y="1830"/>
+    </node>
+    <node>
+        <id>cspenums#ContactMaritalStatus#6</id>
+        <bounds x="1130" y="1983"/>
+    </node>
+    <node>
+        <id>cspenums#EmailBoxtype#7</id>
+        <bounds x="36" y="2652"/>
+    </node>
+    <node>
+        <id>cspenums#EmailType#8</id>
+        <bounds x="372" y="2641"/>
+    </node>
+    <node>
+        <id>cspenums#statusEnum#9</id>
+        <bounds x="1518" y="919"/>
+    </node>
+    <node>
+        <id>cspenums#followTypeEnum#10</id>
+        <bounds x="742" y="2192"/>
+    </node>
+    <node>
+        <id>cspenums#userRoleEnum#11</id>
+        <bounds x="742" y="2630"/>
+    </node>
+    <node>
+        <id>cspenums#timeTypeEnum#12</id>
+        <bounds x="1130" y="2597"/>
+    </node>
+    <node>
+        <id>cspenums#todoStatus#13</id>
+        <bounds x="372" y="1064"/>
+    </node>
+    <node>
+        <id>cspenums#CheckinTagEnum#14</id>
+        <bounds x="372" y="124"/>
+    </node>
+    <node>
+        <id>cspenums#workRecordType#15</id>
+        <bounds x="742" y="2389"/>
+    </node>
+    <connection>
+        <id>Relationship&amp;2</id>
+        <bendpoint x="1058" y="1508"/>
+        <bendpoint x="742" y="1508"/>
+    </connection>
+    <connection>
+        <id>Relationship&amp;6</id>
+        <bendpoint x="372" y="1191"/>
+        <bendpoint x="670" y="1191"/>
+        <bendpoint x="742" y="1191"/>
+        <bendpoint x="1058" y="1191"/>
+    </connection>
+    <connection>
+        <id>Relationship&amp;9</id>
+        <bendpoint x="742" y="1487"/>
+        <bendpoint x="1058" y="1487"/>
+    </connection>
+</diagram-geometry>

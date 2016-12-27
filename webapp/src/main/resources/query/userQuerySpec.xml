@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<!-- 根据用户ID查询用户信息 -->
+<query id="user_getUserInfoByUserId" boName="">
+	<jsonQuerySpec>
+	{
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+		            "FieldName" : "userId",
+		            "Operator" : "eq",
+		            "Values" : [?(userId)]
+		        }
+		},
+		"Fields" : [
+			"superuser"
+		]
+	}
+	</jsonQuerySpec>
+</query>
+
+<query id="user_getSuperUser" boName="">
+	<jsonQuerySpec>
+	{
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+		            "FieldName" : "superUser",
+		            "Operator" : "eq",
+		            "Values" : [true]
+		        },
+		        {
+		            "FieldName" : "id",
+		            "Operator" : "ne",
+		            "Values" : [1]
+		        }
+		]
+		},
+		"Fields" : [
+			"superuser"
+		]
+	}
+	</jsonQuerySpec>
+</query>
+
+
+<query id="user_queryByUserIds" boName="">
+	<jsonQuerySpec>
+	{
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+		            "FieldName" : "userId",
+		            "Operator" : "in",
+		            "Values" : ?(userIds)
+		        }]
+		        
+		}
+	}
+	</jsonQuerySpec>
+</query>
+</root>

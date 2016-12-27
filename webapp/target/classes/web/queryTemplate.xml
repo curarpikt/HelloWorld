@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<queryRoot>
+	<querylist>
+		<businessCode>customer_query</businessCode>
+		
+		<paraList>
+			<queryType>followed</queryType>
+			<queryName>followed</queryName>
+			<querySQL> c.id in(select customerId from CustomerFollow where userId = :followed)</querySQL>
+			<valueType>userid</valueType>
+		</paraList>
+		
+		<paraList>
+			<queryType>unfollow</queryType>
+			<queryName>unfollow</queryName>
+			<querySQL> c.id not in(select customerId from CustomerFollow where userId
+				= :unfollow)</querySQL>
+			<valueType>userid</valueType>
+		</paraList>
+		
+		<paraList>
+			<queryType>unfollowed</queryType>
+			<queryName>unfollowedId</queryName>
+			<querySQL> c.id not in(select customerId from CustomerFollow where userId
+				= :unfollowed)</querySQL>
+			<valueType>userid</valueType>
+		</paraList>		
+		<paraList>
+			<queryType>noFollowTime</queryType>
+			<queryName>noFollowTime</queryName>
+			<!-- TODO 20150831 createdDate to contactTime -->
+			<querySQL>coalesce(workT.contactTime,c.createdDate) &lt; :noFollowTime</querySQL>
+		</paraList>
+		<paraList>
+			<queryType>monthNew</queryType>
+			<queryName>monthNew</queryName>
+			<querySQL> c.createdDate> :monthNew</querySQL>
+			<valueType>monthfirst</valueType>
+		</paraList>
+		<paraList>
+			<queryType>followStart</queryType>
+			<queryName>followStart</queryName>
+			<!-- TODO 20150831 createdDate to contactTime -->
+			<querySQL> workT.contactTime >:followStart</querySQL>
+		</paraList>
+		<paraList>
+			<queryType>followPeriod</queryType>
+			<queryName>followStart,followEnd</queryName>
+			<!-- TODO 20150831 createdDate to contactTime -->
+			<querySQL> workT.contactTime between :followStart and :followEnd</querySQL>
+		</paraList>
+		<paraList>
+			<queryType>searchValue</queryType>
+			<queryName>searchValue</queryName>
+			<querySQL> (lower(c.address) like :searchValue ESCAPE '!' or lower(c.name) like :searchValue ESCAPE '!' or lower(c.phone) like :searchValue  ESCAPE '!' or lower(c.fullSpell) like :searchValue  ESCAPE '!' or lower(c.simpleSpell) like :searchValue  ESCAPE '!' or c.id in (select customer from Contact where lower(name) like :searchValue  ESCAPE '!' or lower(fullSpell) like :searchValue  ESCAPE '!' or lower(simpleSpell) like :searchValue  ESCAPE '!' or lower(email) like :searchValue  ESCAPE '!' or lower(mobile) like :searchValue  ESCAPE '!' or lower(position) like :searchValue  ESCAPE '!'))</querySQL>
+		</paraList>
+		<paraList>
+			<queryType>owner</queryType>
+			<queryName>owner</queryName>
+			<querySQL> c.owner.userId in :owner</querySQL>
+			<mutiselect>true</mutiselect>
+			<valueType>LongType</valueType>
+		</paraList>
+		<paraList>
+		<queryType>customerIds</queryType>
+			<queryName>customerIds</queryName>
+			<querySQL> c.id in :customerIds</querySQL>
+			<mutiselect>true</mutiselect>
+			<valueType>LongType</valueType>
+		</paraList>
+		<paraList>
+			<queryType>timetype</queryType>
+			<queryName>startDate,endDate</queryName>
+			<querySQL>c.createdDate between :startDate and :endDate</querySQL>
+			<valueType>Timestamp</valueType>			
+		</paraList>
+		
+		<paraList>
+			<queryType>reportCustomEnum</queryType>
+			<queryName>enumName,enumValue</queryName>
+			<querySQL> trim(csp_getdynenum_value(csp_usedynattrdynenum(c, 'Customer', '$enumName$'))) in:enumValue </querySQL>	
+			<mutiselect>true</mutiselect>
+			<operate>is null</operate>					
+		</paraList>		
+		<paraList>
+			<queryType>reportCustomDate</queryType>
+			<queryName>dateField,customStart,customEnd</queryName>
+			<querySQL>csp_usedynattrdate(c, 'Customer', '$dateField$') between :customStart and :customEnd </querySQL>	
+			<mutiselect>false</mutiselect>				
+		</paraList>	
+		<paraList>
+			<queryType>customInteger</queryType>
+			<queryName>integerField,integrStart,integerEnd</queryName>
+			<querySQL>csp_usedynattrlong(c, 'Customer', '$integerField$') between :integrStart and :integerEnd </querySQL>	
+			<mutiselect>false</mutiselect>			
+			<valueType>LongType</valueType>	
+		</paraList>	
+		<paraList>
+			<queryType>reportNoCustomEnum</queryType>
+			<queryName>NoCustomeName,NoCustomeValue</queryName>
+			<querySQL>csp_getdynenum_value(c.$NoCustomeName$) in :NoCustomeValue</querySQL>	
+			<mutiselect>true</mutiselect>
+			<operate>is null</operate>		
+		</paraList>		
+		<paraList>
+			<queryType>isDeleted</queryType>
+			<queryName>isDeleted</queryName>
+			<querySQL> (c.isDeleted is null or c.isDeleted = :isDeleted) </querySQL>
+			<valueType>isBoolean</valueType>
+		</paraList>				
+		<paraList>
+			<queryType>customerType</queryType>
+			<queryName>customerType</queryName>
+		</paraList>	
+		<orderSQL> c.lastModifiedDate desc,c.id </orderSQL>
+		<countHQL>select count(c.id) from Customer  c left join c.lastRecord workT </countHQL>
+		<queryHQL>select c from Customer as c left join fetch c.owner left join fetch
+			c.createdBy left join fetch c.lastModifiedBy
+			 left join c.lastRecord workT </queryHQL>
+	</querylist>
+	
+	<querylist>
+		<businessCode>workrecord_query</businessCode>
+		<paraList>
+			<queryType>owner</queryType>
+			<queryName>ownerId</queryName>
+			<querySQL> c.owner.userId = :ownerId</querySQL>
+			<valueType>LongType</valueType>
+		</paraList>
+		<paraList>
+			<queryType>ownerList</queryType>
+			<queryName>ownerIds</queryName>
+			<querySQL> c.owner.userId in :ownerIds</querySQL>
+			<mutiselect>true</mutiselect>
+			<valueType>LongType</valueType>
+		</paraList>
+		<paraList>
+			<queryType>status</queryType>
+			<queryName>statusEnum</queryName>
+			<querySQL>c.status = :statusEnum</querySQL>
+			<valueType>EnumType</valueType>
+			<operate>is null</operate>	
+		</paraList>
+		<paraList>
+			<queryType>queryName</queryType>
+			<queryName>searchValue</queryName>
+			<querySQL> lower(c.content || '_||_' || coalesce(customerT.name,'')) like :searchValue ESCAPE '!' </querySQL>
+		</paraList>	
+		<paraList>
+			<queryType>isDeleted</queryType>
+			<queryName>isDeleted</queryName>			
+			<querySQL>(c.isDeleted is null or c.isDeleted = :isDeleted) </querySQL>
+			<valueType>isBoolean</valueType>
+		</paraList>	
+		<paraList>
+			<queryType>enableUser</queryType>
+			<queryName>status</queryName>
+			<querySQL> c.owner.userId in(select userId from SysRelUser where status=:status) </querySQL>
+		</paraList>	
+		<paraList>
+			<queryType>timeZone</queryType>
+			<queryName>startDate,endDate</queryName>
+			<querySQL>c.contactTime between :startDate and :endDate</querySQL>	
+			<valueType>Timestamp</valueType>
+		</paraList>		
+		<paraList>
+		<queryType>customerIds</queryType>
+			<queryName>customerIds</queryName>
+			<querySQL> (customerT.id not in :customerIds or customerT.id is null)</querySQL>
+			<mutiselect>true</mutiselect>
+			<valueType>LongType</valueType>
+		</paraList>
+		<orderSQL> c.contactTime desc </orderSQL>
+		<countHQL>select count(c.id) from WorkRecord c</countHQL>
+		<queryHQL>select c  from WorkRecord c left join fetch c.createdBy left join fetch c.owner  
+		left join fetch c.lastModifiedBy 
+		left join c.customer customerT
+		left join fetch c.contact </queryHQL>
+	</querylist>
+</queryRoot>

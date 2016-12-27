@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop>
+	<aop:global>
+		<!--
+		<aop:globalInterceptor
+			interceptor="com.chanapp.chanjet.web.aop.ServiceLogInterceptorImpl" />
+	 ADD GLOBAL INTERCEPTOR HERE -->
+
+	</aop:global>
+	<aop:service>
+		<!--<aop:serviceInterceptor service="com.chanapp.chanjet.customer.service.customer.CustomerServiceItf" 
+			interceptor="com.chanapp.chanjet.web.aop.CustomerServiceInterceptorImpl" 
+			/> -->
+		<!-- ADD SERVICE INTERCEPTOR HERE -->
+
+	</aop:service>
+</aop>

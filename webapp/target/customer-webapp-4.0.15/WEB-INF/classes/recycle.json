@@ -1,0 +1,70 @@
+{
+	"Customer": [
+		{
+			"SourceBo": "Attachment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "Contact",
+			"SourceField": "customer"
+		},
+		{
+			"SourceBo": "Checkin",
+			"SourceField": "customerId"
+		},
+		{
+			"SourceBo": "Comment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "TodoWork",
+			"SourceField": "customer"
+		},
+		{
+			"SourceBo": "WorkRecord",
+			"SourceField": "customer"
+		}
+	],
+	"Contact": [
+		{
+			"SourceBo": "Attachment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "Comment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "WorkRecord",
+			"SourceField": "contact"
+		}
+	],
+	"WorkRecord": [
+		{
+			"SourceBo": "Attachment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "Comment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "Customer",
+			"SourceField": "lastRecord"
+		},
+		{
+			"SourceBo": "TodoWork",
+			"SourceField": "workRecord"
+		}
+	],
+	"Comment": [
+		{
+			"SourceBo": "Attachment",
+			"SourceField": "relateToID"
+		},
+		{
+			"SourceBo": "Comment",
+			"SourceField": "replyId"
+		}
+	]
+}

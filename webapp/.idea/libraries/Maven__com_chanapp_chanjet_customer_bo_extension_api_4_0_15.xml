@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.chanapp.chanjet:customer-bo-extension:api:4.0.15">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanapp/chanjet/Customer-bo-extension/4.0.15/customer-bo-extension-4.0.15-api.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanapp/chanjet/Customer-bo-extension/4.0.15/customer-bo-extension-4.0.15-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanapp/chanjet/Customer-bo-extension/4.0.15/customer-bo-extension-4.0.15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

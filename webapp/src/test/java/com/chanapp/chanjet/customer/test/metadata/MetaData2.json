@@ -1,0 +1,51 @@
+{
+    "fieldName": "industry",
+    "fieldLabel": "行业A",
+    "entityName": "Customer",
+    "fieldType": "Enum",
+    "enumName": "CustomerIndustry",
+    "enumValues": [
+        {
+            "enumValue": "IT",
+            "enumLabel": "IT1",
+            "isActive": true,
+            "index": 0
+        },
+        {
+            "enumValue": "Machine",
+            "enumLabel": "机械制造",
+            "isActive": true,
+            "index": 1
+        },
+        {
+            "enumValue": "Petrochemical",
+            "enumLabel": "石油石化",
+            "isActive": true,
+            "index": 2
+        },
+        {
+            "enumValue": "Entertainment",
+            "enumLabel": "文化娱乐",
+            "isActive": true,
+            "index": 3
+        },
+        {
+            "enumValue": "Communication",
+            "enumLabel": "通讯",
+            "isActive": true,
+            "index": 4
+        },
+        {
+            "enumValue": "Healthcare",
+            "enumLabel": "医疗",
+            "isActive": true,
+            "index": 5
+        },
+        {
+            "enumValue": "Other",
+            "enumLabel": "其他",
+            "isActive": true,
+            "index": 6
+        }
+    ]
+}

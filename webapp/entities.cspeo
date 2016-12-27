@@ -1,0 +1,3052 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<schema xmlns="http://www.chanjet.com/metadata/base" xmlns:entity="http://www.chanjet.com/metadata/entity" xmlns:enum="http://www.chanjet.com/metadata/appCSPEnums" xmlns:field="http://www.chanjet.com/metadata/field" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" appId="com.chanapp.chanjet.customer">
+	<entity:Entities>
+		<entity:Entity authMode="None" dynamicUpdate="false" label="User" name="User" shadowTarget="true" systemflag="true">
+			<entity:Fields>
+				<entity:Field active="true" index="false" label="用户ID" name="userId" type="Integer" unique="false">
+				</entity:Field>
+			</entity:Fields>
+		</entity:Entity>
+	<entity:Entity authMode="None" name="Attachment" searchable="false" shadowTarget="true" label="Attachment">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="附件名称" name="fileName" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="附件路径" name="fileDir" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="附件大小" name="size" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="图片长宽" name="imgSize" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="附件类型" name="fileType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="关联对象Id" name="relateToID" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="关联对象类型" name="relateToType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="扩展字段" name="extend" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件大类" name="category" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="缩略图路径" name="thumbUri" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="真实路径" name="realUri" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="是否是图片" name="isImg" type="Boolean" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="Normal" name="Checkin" searchable="true" shadowTarget="true" label="Checkin">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="签到时间" name="checkinTime" type="Timestamp" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="坐标" name="coordinate" type="GeoPoint" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="坐标说明" name="coordinateNote" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="CheckinTagEnum" index="false" label="签到标签" name="checkinTag" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="客户ID" name="customerId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="客户名称" name="customerName" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备注" name="remark" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="图片" name="img" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="签到状态" name="status" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="异常签到时间" name="abnormalTime" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="移动端离线ID" name="localId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="权限" name="privilege" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" label="枚举" name="Client" searchable="false" shadowTarget="true">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="在线" name="isOnline" type="Boolean" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="认证类型" name="certType" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="客户端ID" name="clientId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="客户端类型" name="clientType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="Comment" searchable="false" shadowTarget="true" label="Comment">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="评论时间" name="commentTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="内容" name="content" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="评论对象Id" name="relateToID" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="评论对象类型" name="relateToType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="500"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" index="false" label="评论者" name="commenter" relationshipName="CommentToUser" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="移动端离线ID" name="localId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="回复ID" name="replyId" type="Integer" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="Normal" name="Contact" searchable="true" shadowTarget="true" label="Contact">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="姓名" name="name" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="头像" name="logo" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="手机" name="mobile" type="MobilePhone" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="邮箱" name="email" type="Email" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" index="true" label="所属公司" name="customer" relationshipName="ContactToCustomer" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="所属部门" name="department" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="职务" name="position" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="称谓" name="appellation" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="电话" name="phone" type="Phone" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="传真" name="fax" type="Phone" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="QQ" name="qq" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="微博" name="weibo" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="地址" name="address" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="生日" name="birthday" type="Anniversary" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="ContactGender" index="false" label="性别" name="gender" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="修改时间" name="modifiedTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备注" name="remark" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="ContactMaritalStatus" index="false" label="婚姻状况" name="maritalStatus" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="简拼" name="simpleSpell" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="全拼" name="fullSpell" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="最后工作记录时间" name="lastRecordTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="移动端离线ID" name="localId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" deleted="true" label="有效电话" name="effectivePhone" type="Text">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" deleted="true" label="有效手机" name="effectiveMobile" type="Text">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" label="(联络提醒设置)" name="ContactRemindSet" searchable="false" shadowTarget="true">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="设置" name="sets" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+		</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="Normal" name="Customer" searchable="true" shadowTarget="true" label="Customer">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="客户名称" name="name" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="地址" name="address" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="电话" name="phone" type="Phone" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="传真" name="fax" type="Phone" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="网址" name="url" type="URI" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="CustomerDerive" index="false" label="客户来源" name="derive" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="CustomerType" index="false" label="客户分类" name="type" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="CustomerLevel" index="false" label="客户级别" name="level" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="CustomerArea" index="false" label="地区" name="area" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="CustomerIndustry" index="false" label="行业" name="industry" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="statusEnum" index="false" label="跟进进度" name="status" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="修改时间" name="modifiedTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备注" name="remark" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" index="true" label="最后跟进记录" name="lastRecord" relationshipName="CustomerToWorkRecord" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="坐标" name="coordinate" type="GeoPoint" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="简拼" name="simpleSpell" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="全拼" name="fullSpell" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="最后工作记录时间" name="lastRecordTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="移动端离线ID" name="localId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="坐标说明" name="coordinateNote" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+<entity:Field active="true" deleted="true" index="true" label="真实电话" name="effectivePhone" type="Text">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="CustomerFollow" searchable="false" shadowTarget="true" label="CustomerFollow">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="关注客户" name="customerId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="ExportTask" searchable="false" shadowTarget="true" label="ExportTask">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="任务名称" name="taskName" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="任务创建时间" name="creTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="任务开始时间" name="runTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="任务结束时间" name="finishTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="执行任务耗时" name="taskTimeCost" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备份全耗时（创建到结束）" name="backupTimeCost" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备份文件路径" name="backupFileUrl" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件大小" name="fileSize" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="128"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备份统计json字符串" name="backupCount" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="任务状态 0-可建 1-新建 2-执行中 3-成功完成 9-异常完成" name="taskStatus" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="异常信息" name="errorMessage" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备注" name="note" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="统计开始时间" name="startDate" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="统计结束时间" name="endDate" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="FieldData" searchable="false" label="FieldData">
+<entity:Fields>
+				<entity:Field active="true" label="实体表名" name="entityTable" type="Text">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="实体字段" name="entityField" type="Text">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="字段顺序" name="index" type="Integer">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="字段状态" name="status" type="Integer">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="字段类型" name="type" type="Integer">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="扩展字段" name="extend" type="Text">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="ImportRecord" searchable="false" shadowTarget="true" label="ImportRecord">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="共导入多少条" name="total" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="错误条数" name="errorCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="删除导入记录数" name="removeErrorCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="表头" name="head" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="状态" name="status" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件名称" name="fileName" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="100"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件URL" name="fileURL" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="120"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件大小" name="fileSize" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="ImportRecordNew" searchable="false" shadowTarget="true" label="ImportRecordNew">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="共导入多少条" name="total" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="共导入多少条客户" name="totalCustomer" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="共导入多少条联系人" name="totalContact" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="共导入多少条工作记录" name="totalWorkRecord" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="错误条数" name="errorCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="错误条数客户" name="errorCustomerCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="错误条数联系人" name="errorContactCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="错误条数工作记录" name="errorWorkRecordCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="删除导入记录数" name="removeCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="删除导入记录数客户" name="removeCustomerCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="删除导入记录数联系人" name="removeContactCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="删除导入记录数工作记录" name="removeWorkRecordCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="表头" name="head" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="状态" name="status" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件名称" name="fileName" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="100"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件URL" name="fileURL" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="120"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="文件大小" name="fileSize" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="ImportRecordRelation" searchable="false" shadowTarget="true" label="ImportRecordRelation">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="导入记录ID" name="parentId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="导入结果错误JSON记录" name="cont" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="ImportRecordRelationNew" searchable="false" shadowTarget="true" label="ImportRecordRelationNew">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="导入记录ID" name="parentId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="导入结果错误JSON记录" name="cont" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="导入sheet分类" name="sheetType" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="Message" searchable="true" shadowTarget="false" label="Message">
+<entity:Fields>
+        <entity:Field active="true" index="true" label="操作任务ID" name="taskId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="true" label="消息分类" name="type" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="false" label="消息标题" name="title" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="false" label="消息内容" name="content" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="4000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+              
+    </entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="MessageItem" searchable="true" shadowTarget="false" label="MessageItem">
+<entity:Fields>
+		<entity:Field active="true" index="true" label="操作消息ID" name="msgId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="true" label="操作任务ID" name="taskId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="true" label="消息分类" name="type" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+       
+        <entity:Field active="true" index="true" label="接收人" name="receiver" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="false" label="读取时间" name="readTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="false" label="读取状态" name="readStatus" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+       
+    </entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="OperationLog" searchable="false" shadowTarget="true" label="OperationLog">
+<entity:Fields>
+				<entity:Field active="true" index="true" label="关联对象Id" name="entityID" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="关联对象类型" name="entityType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="操作类型" name="operateType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作时间" name="operateTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作详细信息" name="content" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="500"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作人" name="operator" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作任务标志" name="operTag" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="Recycle" searchable="false" shadowTarget="true" label="Recycle">
+<entity:Fields>
+				<entity:Field active="true" end="Target" index="true" label="操作用户" name="operUser" relationshipName="RecycleToUser" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="操作时间" name="operTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作类型" name="operType" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作对象" name="entityName" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="操作原因" name="reason" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<!--  0:清除 1:新增 2：还原 -->
+				<entity:Field active="true" index="false" label="状态" name="status" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			<entity:Field end="Source" label="recyclerelations" name="recyclerelations" relationshipName="RecycleRelationToRecycle" type="Accessor">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="RecycleRelation" searchable="false" shadowTarget="true" label="RecycleRelation">
+<entity:Fields>
+				<entity:Field active="true" end="Target" index="true" label="回收站" name="recycle" relationshipName="RecycleRelationToRecycle" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<!-- 预留后续需求可能关联对象都记录 -->
+				<entity:Field active="true" index="false" label="操作对象" name="entityName" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="操作对象Id" name="entityId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<!--  contactCount:联系人数量 workRecordCount:工作记录数量-->
+				<entity:Field active="true" index="false" label="状态" name="content" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<!--  0:清除 1:新增 2:还原 -->
+				<entity:Field active="true" index="false" label="状态" name="status" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="SearchCondition" searchable="false" shadowTarget="true" label="SearchCondition">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="字段名称" name="fieldName" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="字段类型" name="fieldType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="默认值" name="defaultValue" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="2000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="显示序号" name="ordinal" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="用户ID" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="对象类型" name="entityType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="类型" name="type" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="版本" name="versionId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="是否显示" name="visible" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="SysRelUser" searchable="false" shadowTarget="true" label="SysRelUser">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="User表主键" name="userSerialNo" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="用户Id" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="用户状态" name="status" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="用户角色" name="userRole" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="用户级别" name="userLevel" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="Teamer" searchable="false" shadowTarget="true" label="Teamer">
+<entity:Fields>
+				<entity:Field active="true" end="Target" index="false" label="团队成员" name="teamer" relationshipName="TeamerToUser" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="关联对象Id" name="relateToID" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="关联对象类型" name="relateToType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="TodoTips" searchable="true" label="TodoTips">
+<entity:Fields>
+				<entity:Field active="true" label="待办提示语" name="todoTips" type="Text">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="用户ID" name="userId" type="Integer">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="显示顺序" name="sortBy" type="Integer">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="移动端离线ID" name="localId" type="Text">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="Normal" name="TodoWork" searchable="true" shadowTarget="true" label="TodoWork">
+<entity:Fields>
+				<entity:Field active="true" label="待办事项" name="workContent" type="Text">
+<field:Properties>
+<field:Property name="length" value="1000"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="办理时间" name="planTime" type="Timestamp">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="提醒时间" name="remindTime" type="Timestamp">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="提醒类型" name="remindType" type="Integer">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="todoStatus" label="状态" name="status" type="Enum">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" label="客户" name="customer" relationshipName="TodoWorkToCustomer" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" label="工作记录" name="workRecord" relationshipName="TodoWorkToWorkRecord" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" label="移动端离线ID" name="localId" type="Text" unique="true">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" deleted="true" label="完成时间" name="finishTime" type="Timestamp">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="UserRelation" searchable="false" shadowTarget="true" label="UserRelation">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="设置项类型" name="type" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="32"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="设置项值" name="status" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="32"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="用户ID" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="UserSetting" searchable="false" shadowTarget="true" label="UserSetting">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="设置项名称" name="key" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="设置项值" name="value" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="用户" name="userId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="设备类型" name="deviceType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="备注" name="remark" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="状态" name="status" type="Boolean" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="Normal" name="WorkRecord" searchable="true" shadowTarget="true" label="WorkRecord">
+<entity:Fields>
+				<entity:Field active="true" index="false" label="沟通内容" name="content" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="1024"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="沟通时间" name="contactTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="提醒时间" name="remindTime" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="工作记录类型" name="recordType" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="50"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="statusEnum" index="false" label="状态标签" name="status" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" cspEnumName="followTypeEnum" index="false" label="跟进类型" name="followType" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" index="true" label="客户" name="customer" relationshipName="WorkRecordToCustomer" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" end="Target" index="true" label="联系人" name="contact" relationshipName="WorkRecordToContact" type="ForeignKey" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="移动端离线ID" name="localId" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="64"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="地址" name="address" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="true" label="坐标" name="coordinate" type="GeoPoint" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="评论数" name="commentCount" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+				<entity:Field active="true" index="false" label="历史角色" name="historyCustomerRole" type="Text" unique="false">
+<field:Properties>
+<field:Property name="length" value="255"/>
+</field:Properties>
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+
+<entity:Field active="true" index="false" label="拜访开始时间" name="visitStart" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+
+<entity:Field active="true" index="false" label="拜访结束时间" name="visitEnd" type="Timestamp" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+
+<entity:Field active="true" index="false" label="报价金额" name="offerPrice" type="Decimal" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+
+<entity:Field active="true" index="false" label="成交金额" name="dealPrice" type="Decimal" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+
+<entity:Field active="true" index="false" label="收款金额" name="receivePrice" type="Decimal" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+<entity:Field active="true" cspEnumName="workRecordType" index="false" label="工作类别" name="workRecordType" type="Enum" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+			</entity:Fields>
+</entity:Entity>
+<entity:Entity authMode="None" name="WorkRecordHis" searchable="true" shadowTarget="false" label="WorkRecordHis">
+<entity:Fields>
+        <entity:Field active="true" index="true" label="工作记录ID" name="workRecordId" type="Integer" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+        <entity:Field active="true" index="false" label="工作记录历史字段json" name="cont" type="Text" unique="false">
+<field:UiHints>
+<field:UiHint name="showOnList"/>
+<field:UiHint name="showOnView"/>
+<field:UiHint name="showOnEdit"/>
+<field:UiHint name="asQuery"/>
+<field:UiHint name="asDimension"/>
+<field:UiHint name="asMeasure"/>
+<field:UiHint name="editable"/>
+</field:UiHints>
+</entity:Field>
+    </entity:Fields>
+</entity:Entity>
+</entity:Entities>
+<enum:AppCSPEnums>
+<enum:CSPEnum extensible="true" name="CustomerArea">
+			<enum:EnumValues>
+				<enum:EnumValue label="东北" name="dongbei" ordinal="0"/>
+				<enum:EnumValue label="华南" name="huanan" ordinal="1"/>
+				<enum:EnumValue label="华北" name="huabei" ordinal="2"/>
+				<enum:EnumValue label="华中" name="huazhong" ordinal="3"/>
+				<enum:EnumValue label="华东" name="huadong" ordinal="4"/>
+				<enum:EnumValue label="西南" name="xinan" ordinal="5"/>
+				<enum:EnumValue label="西北" name="xibei" ordinal="6"/>
+				<enum:EnumValue label="港澳台" name="gangaotai" ordinal="7"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="CustomerIndustry">
+			<enum:EnumValues>
+				<enum:EnumValue label="IT" name="IT" ordinal="0"/>
+				<enum:EnumValue label="机械制造" name="Machine" ordinal="1"/>
+				<enum:EnumValue label="石油石化" name="Petrochemical" ordinal="2"/>
+				<enum:EnumValue label="文化娱乐" name="Entertainment" ordinal="3"/>
+				<enum:EnumValue label="通讯" name="Communication" ordinal="4"/>
+				<enum:EnumValue label="医疗" name="Healthcare" ordinal="5"/>
+				<enum:EnumValue label="其他" name="Other" ordinal="6"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="CustomerLevel">
+			<enum:EnumValues>
+				<enum:EnumValue label="一般客户" name="Normal" ordinal="0"/>
+				<enum:EnumValue label="大客户" name="Big" ordinal="1"/>
+				<enum:EnumValue label="VIP客户" name="Vip" ordinal="2"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="CustomerType">
+			<enum:EnumValues>
+				<enum:EnumValue label="潜在客户" name="customer" ordinal="0"/>
+				<enum:EnumValue label="现有客户" name="partners" ordinal="1"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="CustomerDerive">
+			<enum:EnumValues>
+				<enum:EnumValue label="主动获取" name="activelySeek" ordinal="0"/>
+				<enum:EnumValue label="网络搜索" name="InternetSearch" ordinal="1"/>
+				<enum:EnumValue label="报刊广告" name="PressAdvertising" ordinal="2"/>
+				<enum:EnumValue label="展会" name="exhibition" ordinal="3"/>
+				<enum:EnumValue label="客户介绍" name="clientIntroduce" ordinal="4"/>
+				<enum:EnumValue label="其他" name="others" ordinal="5"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="ContactGender">
+			<enum:EnumValues>
+				<enum:EnumValue label="男" name="male" ordinal="0"/>
+				<enum:EnumValue label="女" name="female" ordinal="1"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="ContactMaritalStatus">
+			<enum:EnumValues>
+				<enum:EnumValue label="已婚" name="married" ordinal="0"/>
+				<enum:EnumValue label="未婚" name="unmarried" ordinal="1"/>
+				<enum:EnumValue label="离婚" name="divorce" ordinal="2"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="EmailBoxtype">
+			<enum:EnumValues>
+				<enum:EnumValue label="发件箱" name="outbox" ordinal="0"/>
+				<enum:EnumValue label="收件箱" name="inbox" ordinal="1"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="EmailType">
+			<enum:EnumValues>
+				<enum:EnumValue label="163" name="mail163" ordinal="0"/>
+				<enum:EnumValue label="126" name="mail126" ordinal="1"/>
+				<enum:EnumValue label="sina" name="sina" ordinal="2"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="statusEnum">
+			<enum:EnumValues>
+				<enum:EnumValue label="初访" name="visit" ordinal="0"/>
+				<enum:EnumValue label="意向" name="intention" ordinal="1"/>
+				<enum:EnumValue label="报价" name="quoted" ordinal="2"/>
+				<enum:EnumValue label="成交" name="signed" ordinal="3"/>
+				<enum:EnumValue label="暂时搁置" name="pay" ordinal="4"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="followTypeEnum">
+			<enum:EnumValues>
+				<enum:EnumValue label="电话" name="call" ordinal="0"/>
+				<enum:EnumValue label="拜访" name="visit" ordinal="1"/>
+				<enum:EnumValue label="邮件" name="mail" ordinal="2"/>
+				<enum:EnumValue label="其他" name="other" ordinal="3"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="userRoleEnum">
+			<enum:EnumValues>
+				<enum:EnumValue label="老板" name="boss" ordinal="0"/>
+				<enum:EnumValue label="管理员" name="manager" ordinal="1"/>
+				<enum:EnumValue label="主管" name="supervisor" ordinal="2"/>
+				<enum:EnumValue label="业务员" name="salesman" ordinal="3"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="timeTypeEnum">
+			<enum:EnumValues>
+				<enum:EnumValue label="上周" name="LASTWEEK" ordinal="0"/>
+				<enum:EnumValue label="本周" name="WEEK" ordinal="1"/>
+				<enum:EnumValue label="上月" name="LASTMONTH" ordinal="2"/>
+				<enum:EnumValue label="本月" name="MONTH" ordinal="3"/>
+				<enum:EnumValue label="本季度" name="QUARTER" ordinal="4"/>
+				<enum:EnumValue label="本年" name="YEAR" ordinal="5"/>
+				<enum:EnumValue label="自定义" name="CUSTOM" ordinal="6"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="todoStatus">
+			<enum:EnumValues>
+				<enum:EnumValue label="待办" name="TODO" ordinal="0"/>
+				<enum:EnumValue label="已完成" name="DONE" ordinal="1"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="CheckinTagEnum">
+			<enum:EnumValues>
+				<enum:EnumValue label="上班打卡" name="ONDUTY" ordinal="0"/>
+				<enum:EnumValue label="拜访客户" name="VISIT" ordinal="1"/>
+				<enum:EnumValue label="外出办公" name="EGRESS" ordinal="2"/>
+				<enum:EnumValue label="下班打卡" name="OFFDUTY" ordinal="3"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+<enum:CSPEnum extensible="true" name="workRecordType">
+			<enum:EnumValues>
+				<enum:EnumValue label="送样品" name="SENDSAMPLE" ordinal="0"/>
+				<enum:EnumValue label="培训代理商" name="VISTAGNET" ordinal="1"/>
+				<enum:EnumValue label="送货" name="SENDPRODUCT" ordinal="2"/>
+				<enum:EnumValue label="索要回款" name="ASKPAYMENT" ordinal="3"/>
+				<enum:EnumValue label="电话联系" name="PHONECONTACT" ordinal="4"/>
+				<enum:EnumValue label="其他" name="OTHER" ordinal="5"/>
+			</enum:EnumValues>
+		</enum:CSPEnum>
+</enum:AppCSPEnums>
+<Relationships>
+<Relationship SourceEntity="User" TargetEntity="Comment" cardinality="One-to-Many" masterdetail="false" name="CommentToUser">
+<FieldAssociation SourceField="id" TargetField="commenter"/>
+</Relationship>
+<Relationship SourceEntity="Customer" TargetEntity="Contact" cardinality="One-to-Many" masterdetail="false" name="ContactToCustomer">
+<FieldAssociation SourceField="id" TargetField="customer"/>
+</Relationship>
+<Relationship SourceEntity="WorkRecord" TargetEntity="Customer" cardinality="One-to-Many" masterdetail="false" name="CustomerToWorkRecord">
+<FieldAssociation SourceField="id" TargetField="lastRecord"/>
+</Relationship>
+<Relationship SourceEntity="Recycle" TargetEntity="RecycleRelation" accessorFromSource="recyclerelations" cardinality="One-to-Many" masterdetail="true" name="RecycleRelationToRecycle">
+<FieldAssociation SourceField="id" TargetField="recycle"/>
+</Relationship>
+<Relationship SourceEntity="User" TargetEntity="Recycle" cardinality="One-to-Many" masterdetail="false" name="RecycleToUser">
+<FieldAssociation SourceField="id" TargetField="operUser"/>
+</Relationship>
+<Relationship SourceEntity="User" TargetEntity="Teamer" cardinality="One-to-Many" masterdetail="false" name="TeamerToUser">
+<FieldAssociation SourceField="id" TargetField="teamer"/>
+</Relationship>
+<Relationship SourceEntity="Customer" TargetEntity="TodoWork" cardinality="One-to-Many" masterdetail="false" name="TodoWorkToCustomer">
+<FieldAssociation SourceField="id" TargetField="customer"/>
+</Relationship>
+<Relationship SourceEntity="WorkRecord" TargetEntity="TodoWork" cardinality="One-to-Many" masterdetail="false" name="TodoWorkToWorkRecord">
+<FieldAssociation SourceField="id" TargetField="workRecord"/>
+</Relationship>
+<Relationship SourceEntity="Contact" TargetEntity="WorkRecord" cardinality="One-to-Many" masterdetail="false" name="WorkRecordToContact">
+<FieldAssociation SourceField="id" TargetField="contact"/>
+</Relationship>
+<Relationship SourceEntity="Customer" TargetEntity="WorkRecord" cardinality="One-to-Many" masterdetail="false" name="WorkRecordToCustomer">
+<FieldAssociation SourceField="id" TargetField="customer"/>
+</Relationship>
+</Relationships>
+    <sapphirelayout>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0tZ2VvbWV0cnk+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNVc2VyIzA8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9Ijc0MiIgeT0iNjUwIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjQXR0YWNobWVudCMxPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNTE4IiB5PSIyNTQyIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjQ2hlY2tpbiMyPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNiIgeT0iMzYiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNDbGllbnQjMzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMTgyOCIgeT0iMjYzMCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI0NvbW1lbnQjNDwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMzcyIiB5PSIzMjEiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNDb250YWN0IzU8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9Ijc0MiIgeT0iMTU1NSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI0NvbnRhY3RSZW1pbmRTZXQjNjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMjEwOCIgeT0iMjY2MyIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI0N1c3RvbWVyIzc8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjExMzAiIHk9IjEyNTkiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNDdXN0b21lckZvbGxvdyM4PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIyNDcxIiB5PSIyNjUyIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjRXhwb3J0VGFzayM5PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIyNzczIiB5PSIyNTA5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjRmllbGREYXRhIzEwPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzMzIwIiB5PSIyNjA4Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjSW1wb3J0UmVjb3JkIzExPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNTkzIiB5PSIyNTc1Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjSW1wb3J0UmVjb3JkTmV3IzEyPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzOTY1IiB5PSIyNDc2Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjSW1wb3J0UmVjb3JkUmVsYXRpb24jMTM8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjQ0MjkiIHk9IjI2NDEiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNJbXBvcnRSZWNvcmRSZWxhdGlvbk5ldyMxNDwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNDc3NSIgeT0iMjYzMCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI01lc3NhZ2UjMTU8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjUxNTQiIHk9IjI2MzAiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNNZXNzYWdlSXRlbSMxNjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNTQxMyIgeT0iMjYwOCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI09wZXJhdGlvbkxvZyMxNzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNTcxOCIgeT0iMjU5NyIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI1JlY3ljbGUjMTg8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjM3MiIgeT0iNTg0Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjUmVjeWNsZVJlbGF0aW9uIzE5PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNiIgeT0iNjA2Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjU2VhcmNoQ29uZGl0aW9uIzIwPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI2MDQyIiB5PSIyNTc1Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjU3lzUmVsVXNlciMyMTwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNjM0NiIgeT0iMjYxOSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI1RlYW1lciMyMjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMzcyIiB5PSI4NDciLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5lbnRpdGllcyNUb2RvVGlwcyMyMzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNjY2NCIgeT0iMjYzMCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI1RvZG9Xb3JrIzI0PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNiIgeT0iMTA3NCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI1VzZXJSZWxhdGlvbiMyNTwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNjkzOCIgeT0iMjY0MSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmVudGl0aWVzI1VzZXJTZXR0aW5nIzI2PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI3MjE0IiB5PSIyNjA4Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjV29ya1JlY29yZCMyNzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMzcyIiB5PSIxMjgxIi8+DQogICAgICAgIDxjb25uZWN0aW9uPg0KICAgICAgICAgICAgPGlkPkVudW1SZWxhdGlvbiZhbXA7NDwvaWQ+DQogICAgICAgICAgICA8YmVuZHBvaW50IHg9Ijc0MiIgeT0iMTIxMiIvPg0KICAgICAgICAgICAgPGJlbmRwb2ludCB4PSIxMDU4IiB5PSIxMjEyIi8+DQogICAgICAgICAgICA8YmVuZHBvaW50IHg9IjExMzAiIHk9IjEyMTIiLz4NCiAgICAgICAgICAgIDxiZW5kcG9pbnQgeD0iMTQ0NiIgeT0iMTIxMiIvPg0KICAgICAgICA8L2Nvbm5lY3Rpb24+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+ZW50aXRpZXMjV29ya1JlY29yZEhpcyMyODwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNzQ4OSIgeT0iMjY1MiIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI0N1c3RvbWVyQXJlYSMwPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNTE4IiB5PSIxMTM4Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+Y3NwZW51bXMjQ3VzdG9tZXJJbmR1c3RyeSMxPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNTE4IiB5PSIxNDIzIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+Y3NwZW51bXMjQ3VzdG9tZXJMZXZlbCMyPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNTE4IiB5PSIxNjg2Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+Y3NwZW51bXMjQ3VzdG9tZXJUeXBlIzM8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjE1MTgiIHk9IjE4NjEiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5jc3BlbnVtcyNDdXN0b21lckRlcml2ZSM0PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNTE4IiB5PSIyMDE0Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+Y3NwZW51bXMjQ29udGFjdEdlbmRlciM1PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxMTMwIiB5PSIxODMwIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+Y3NwZW51bXMjQ29udGFjdE1hcml0YWxTdGF0dXMjNjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMTEzMCIgeT0iMTk4MyIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI0VtYWlsQm94dHlwZSM3PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNiIgeT0iMjY1MiIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI0VtYWlsVHlwZSM4PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNzIiIHk9IjI2NDEiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5jc3BlbnVtcyNzdGF0dXNFbnVtIzk8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjE1MTgiIHk9IjkxOSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI2ZvbGxvd1R5cGVFbnVtIzEwPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI3NDIiIHk9IjIxOTIiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5jc3BlbnVtcyN1c2VyUm9sZUVudW0jMTE8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9Ijc0MiIgeT0iMjYzMCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI3RpbWVUeXBlRW51bSMxMjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMTEzMCIgeT0iMjU5NyIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI3RvZG9TdGF0dXMjMTM8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjM3MiIgeT0iMTA2NCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI0NoZWNraW5UYWdFbnVtIzE0PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNzIiIHk9IjEyNCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPmNzcGVudW1zI3dvcmtSZWNvcmRUeXBlIzE1PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI3NDIiIHk9IjIzODkiLz4NCiAgICA8L25vZGU+DQogICAgPGNvbm5lY3Rpb24+DQogICAgICAgIDxpZD5SZWxhdGlvbnNoaXAmYW1wOzI8L2lkPg0KICAgICAgICA8YmVuZHBvaW50IHg9IjEwNTgiIHk9IjE1MDgiLz4NCiAgICAgICAgPGJlbmRwb2ludCB4PSI3NDIiIHk9IjE1MDgiLz4NCiAgICA8L2Nvbm5lY3Rpb24+DQogICAgPGNvbm5lY3Rpb24+DQogICAgICAgIDxpZD5SZWxhdGlvbnNoaXAmYW1wOzY8L2lkPg0KICAgICAgICA8YmVuZHBvaW50IHg9IjM3MiIgeT0iMTE5MSIvPg0KICAgICAgICA8YmVuZHBvaW50IHg9IjY3MCIgeT0iMTE5MSIvPg0KICAgICAgICA8YmVuZHBvaW50IHg9Ijc0MiIgeT0iMTE5MSIvPg0KICAgICAgICA8YmVuZHBvaW50IHg9IjEwNTgiIHk9IjExOTEiLz4NCiAgICA8L2Nvbm5lY3Rpb24+DQogICAgPGNvbm5lY3Rpb24+DQogICAgICAgIDxpZD5SZWxhdGlvbnNoaXAmYW1wOzk8L2lkPg0KICAgICAgICA8YmVuZHBvaW50IHg9Ijc0MiIgeT0iMTQ4NyIvPg0KICAgICAgICA8YmVuZHBvaW50IHg9IjEwNTgiIHk9IjE0ODciLz4NCiAgICA8L2Nvbm5lY3Rpb24+DQo8L2RpYWdyYW0tZ2VvbWV0cnk+</sapphirelayout>
+</schema>

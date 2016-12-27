@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Layout xmlns:tns="http://www.chanapp.com/ui/layout"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.chanapp.com/ui/layout http://www.chanapp.com/xsd/ui/Layout.xsd "
+	method="flat" customFieldSheet="1">
+  <Sheet title="联系人主要信息" layout="table" showTitle="false" collapsable="false" labelAlign="right" showLabelColon="true">
+    <Columns>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="250"/>
+    </Columns>
+    <Cells>
+      <Cell isLabel="false" name="logo" rowspan="2" colspan="2" editboxWidth="50" editboxHeight="50" align="center" valign="middle"/>
+      <Cell isLabel="true" name="mobile"/>
+      <Cell isLabel="false" name="mobile"/>
+      <Cell isLabel="true" name=""/>
+      <Cell isLabel="true" name=""/>
+      <Cell isLabel="true" name="email"/>
+      <Cell isLabel="false" name="email"/>
+      <Cell isLabel="true" name=""/>
+      <Cell isLabel="true" name=""/>
+    </Cells>
+  </Sheet>
+  <Sheet title="详情1" layout="table" collapsable="true" collapsed="true" showTitle="false" labelAlign="right" showLabelColon="true">
+    <Columns>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="250"/>
+    </Columns>
+    <Cells>
+      <Cell isLabel="true" name="customer"/>
+      <Cell isLabel="false" name="customer"/>
+      <Cell isLabel="true" name="department"/>
+      <Cell isLabel="false" name="department"/>
+      <Cell isLabel="true" name="position"/>
+      <Cell isLabel="false" name="position"/>
+      <Cell isLabel="true" name="appellation"/>
+      <Cell isLabel="false" name="appellation"/>
+      <Cell isLabel="true" name="gender"/>
+      <Cell isLabel="false" name="gender"/>
+      <Cell isLabel="true" name="phone"/>
+      <Cell isLabel="false" name="phone"/>
+      <Cell isLabel="true" name="fax"/>
+      <Cell isLabel="false" name="fax"/>
+      <Cell isLabel="true" name="qq"/>
+      <Cell isLabel="false" name="qq"/>
+      <!-- 
+  	  <Cell isLabel="true" name="birthday"/>
+      <Cell isLabel="false" name="birthday"/> 
+       -->
+      <Cell isLabel="true" name="weibo"/>
+      <Cell isLabel="false" name="weibo"/>
+      <Cell isLabel="true" name="address"/>
+      <Cell isLabel="false" name="address" colspan="5"/>
+    </Cells>
+  </Sheet>
+  <Sheet title="详情2" layout="table" collapsable="true" collapsed="true" showTitle="false" labelAlign="right" showLabelColon="true">
+    <Columns>
+    	<Column width="80"/>
+    	<Column width="240"/>
+    	<Column width="80"/>
+    	<Column width="570"/>
+    </Columns>
+    <Cells>
+      <Cell isLabel="true" name="owner" label="业务员"/>
+      <Cell isLabel="false" name="owner"/>
+      <Cell isLabel="true" name="modifiedTime"/>
+      <Cell isLabel="false" name="modifiedTime"/>
+      <Cell isLabel="true" name="remark"/>
+      <Cell isLabel="false" name="remark" colspan="3"/>
+    </Cells>
+  </Sheet>
+</tns:Layout>

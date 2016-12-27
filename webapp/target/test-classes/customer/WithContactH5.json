@@ -1,0 +1,30 @@
+{
+    "Customer": {
+        "name": "客户测试6626666",
+        "phone": "13166666666",
+        "fax": "123321",
+        "url": "www.chanjet.com",
+        "address": "北京海淀111",
+        "type": "customer",
+        "derive": "activelySeek",
+        "level": "Normal",
+        "area": "dongbei",
+        "industry": "IT",
+        "remark": "重要客户"
+    },
+    "Contact": {
+        "name": "ABC",
+        "mobile": "13121366687",
+        "email": "wangry@chanjet.com",
+        "department": "一本",
+        "position": "经理er",
+        "appellation": "王总",
+        "gender": "male",
+        "phone": "03118657227",
+        "fax": "456654",
+        "qq": "4567876",
+        "weibo": "wangz678",
+        "address": "天津",
+        "remark": "喜欢运动er354"
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:BusinessObject xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/businessObject" xmlns:ns4="http://www.chanjet.com/metadata/base/baseField" xmlns:ns5="http://www.chanjet.com/metadata/BOField" applicationId="com.chanapp.chanjet.customer" enableExtensionCodeGen="true" id="com.chanapp.chanjet.customer.businessobject.Comment" includeAllEOFields="true" includeCustomFields="true" label="评论" name="Comment" primary="true" readonly="false" registerForCrossAppEvent="true">
+<ns3:EntityUsages>
+<ns3:PrimaryEO name="Comment"/>
+</ns3:EntityUsages>
+<ns3:Fields>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" label="评论者" name="commenter" refEntityFieldName="commenter" refEntityUsageName="Comment" searchByPinYin="false" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="commentTime" refEntityFieldName="commentTime" refEntityUsageName="Comment" searchByPinYin="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="content" refEntityFieldName="content" refEntityUsageName="Comment" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="createdBy" refEntityFieldName="createdBy" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="createdByEntityId" refEntityFieldName="createdByEntityId" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="createdDate" refEntityFieldName="createdDate" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="id" refEntityFieldName="id" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isDeleted" refEntityFieldName="isDeleted" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isSeedData" refEntityFieldName="isSeedData" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="lastModifiedBy" refEntityFieldName="lastModifiedBy" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="lastModifiedDate" refEntityFieldName="lastModifiedDate" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="localId" refEntityFieldName="localId" refEntityUsageName="Comment" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mobileLocalId" refEntityFieldName="mobileLocalId" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="owner" refEntityFieldName="owner" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="ownerDepartment" refEntityFieldName="ownerDepartment" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="permanentKey" refEntityFieldName="permanentKey" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="PermanentKey" xsi:type="ns5:PermanentKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="relateToID" refEntityFieldName="relateToID" refEntityUsageName="Comment" searchByPinYin="false" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="relateToType" refEntityFieldName="relateToType" refEntityUsageName="Comment" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="replyId" refEntityFieldName="replyId" refEntityUsageName="Comment" searchByPinYin="false" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="seeddataKey" refEntityFieldName="seeddataKey" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="version" refEntityFieldName="version" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="virtualSchemaId" refEntityFieldName="virtualSchemaId" refEntityUsageName="Comment" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+</ns3:Fields>
+<ns3:ChildBOReferences/>
+</ns3:BusinessObject>

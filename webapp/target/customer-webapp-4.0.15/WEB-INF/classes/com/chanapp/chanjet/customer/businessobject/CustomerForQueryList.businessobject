@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:BusinessObject xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/businessObject" xmlns:ns4="http://www.chanjet.com/metadata/base/baseField" xmlns:ns5="http://www.chanjet.com/metadata/BOField" applicationId="com.chanapp.chanjet.customer" enableExtensionCodeGen="true" id="com.chanapp.chanjet.customer.businessobject.CustomerForQueryList" includeAllEOFields="true" includeCustomFields="true" label="客户列表" name="CustomerForQueryList" primary="true" readonly="false" registerForCrossAppEvent="false">
+<ns3:EntityUsages>
+<ns3:PrimaryEO name="Customer"/>
+<ns3:JoinedEO joinType="LeftOuterJoin" name="WorkRecordEO" refEntityName="WorkRecord" viaRelationships="CustomerToWorkRecord"/>
+<ns3:JoinedEO joinType="LeftOuterJoin" name="UserEO" refEntityName="User" viaRelationships="CustomerToWorkRecord,SYSTEMUserToWorkRecordForowner"/>
+</ns3:EntityUsages>
+<ns3:Fields>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="address" refEntityFieldName="address" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="area" refEntityFieldName="area" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="coordinate" refEntityFieldName="coordinate" refEntityUsageName="Customer" searchByPinYin="false" type="GeoPoint" xsi:type="ns5:GeoPointField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="coordinateNote" refEntityFieldName="coordinateNote" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="createdBy" refEntityFieldName="createdBy" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="createdByEntityId" refEntityFieldName="createdByEntityId" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="createdDate" refEntityFieldName="createdDate" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="derive" refEntityFieldName="derive" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="effectivePhone" refEntityFieldName="effectivePhone" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="fax" refEntityFieldName="fax" refEntityUsageName="Customer" searchByPinYin="false" type="Phone" xsi:type="ns5:PhoneField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="fullSpell" refEntityFieldName="fullSpell" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="id" refEntityFieldName="id" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="industry" refEntityFieldName="industry" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isDeleted" refEntityFieldName="isDeleted" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="isSeedData" refEntityFieldName="isSeedData" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Boolean" xsi:type="ns5:BooleanField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="lastModifiedBy" refEntityFieldName="lastModifiedBy" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="lastModifiedDate" refEntityFieldName="lastModifiedDate" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayFields="content,contactTime" joinType="LeftOuterJoin" label="最后跟进记录" name="lastRecord" refEntityFieldName="lastRecord" refEntityUsageName="Customer" searchByPinYin="false" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" label="沟通时间" name="lastRecordContactTime" refEntityFieldName="contactTime" refEntityUsageName="WorkRecordEO" searchByPinYin="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" label="最新工作记录创建时间" name="lastRecordCreatedDate" refEntityFieldName="createdDate" refEntityUsageName="WorkRecordEO" searchByPinYin="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" label="最新工作记录ID" name="lastRecordID" refEntityFieldName="id" refEntityUsageName="WorkRecordEO" searchByPinYin="false" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="lastRecordTime" refEntityFieldName="lastRecordTime" refEntityUsageName="Customer" searchByPinYin="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="level" refEntityFieldName="level" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="localId" refEntityFieldName="localId" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="mobileLocalId" refEntityFieldName="mobileLocalId" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" displayType="DateTime" name="modifiedTime" refEntityFieldName="modifiedTime" refEntityUsageName="Customer" searchByPinYin="false" type="Timestamp" xsi:type="ns5:TimeStampField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="name" refEntityFieldName="name" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="owner" refEntityFieldName="owner" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" joinType="LeftOuterJoin" name="ownerDepartment" refEntityFieldName="ownerDepartment" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="ForeignKey" xsi:type="ns5:ForeignKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="permanentKey" refEntityFieldName="permanentKey" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="PermanentKey" xsi:type="ns5:PermanentKeyField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="phone" refEntityFieldName="phone" refEntityUsageName="Customer" searchByPinYin="false" type="Phone" xsi:type="ns5:PhoneField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="remark" refEntityFieldName="remark" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="seeddataKey" refEntityFieldName="seeddataKey" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="simpleSpell" refEntityFieldName="simpleSpell" refEntityUsageName="Customer" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="status" refEntityFieldName="status" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="transactionStatus" refEntityFieldName="transactionStatus" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="type" refEntityFieldName="type" refEntityUsageName="Customer" searchByPinYin="false" type="Enum" xsi:type="ns5:CSPEnumField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="url" refEntityFieldName="url" refEntityUsageName="Customer" searchByPinYin="false" type="URI" xsi:type="ns5:URIField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" label="姓名" name="userName" refEntityFieldName="name" refEntityUsageName="UserEO" searchByPinYin="false" type="Text" xsi:type="ns5:TextField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" label="用户ID" name="userUserId" refEntityFieldName="userId" refEntityUsageName="UserEO" searchByPinYin="false" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="version" refEntityFieldName="version" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+<ns3:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="virtualSchemaId" refEntityFieldName="virtualSchemaId" refEntityUsageName="Customer" searchByPinYin="false" systemField="true" type="Integer" xsi:type="ns5:IntegerField"/>
+</ns3:Fields>
+<ns3:ChildBOReferences/>
+</ns3:BusinessObject>

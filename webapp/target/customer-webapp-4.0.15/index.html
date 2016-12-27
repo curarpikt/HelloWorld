@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="renderer" content="webkit|ie-stand">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="favicon.ico" type="image/x-icon" rel="icon">
+    <link href="favicon.ico" type="image/x-icon" rel="shortcut icon">
+    <title>客户</title>
+    <script>
+        CDN_PATH='http://crm.static.chanjet.com/customer/4.0.0/';
+        CONTEXT_PATH="/chanjet/customer";
+        CSP_AUTH_CODE=0;LOGIN_URL="http://www.chanjet.com/login?app\x3dcustomer\x26logout\x3d1";
+        LOGINOUT_URL=encodeURIComponent("http://www.chanjet.com/login?app\x3dcustomer\x26logout\x3d1");
+        toIndex=function(a){
+        	a.code?(CSP_AUTH_CODE=a.code,window.location.href=CONTEXT_PATH+"?code\x3d"+a.code):window.location.href=LOGIN_URL
+        };
+        toLogin=function(a){
+        	a.auth_code?window.location.href=LOGIN_URL:CSP_AUTH_CODE=a.code
+        };
+        toLoginOut=function(a){
+        	window.location.href=a.code?"http://cia.chanapp.chanjet.com/view/logout?redirectUri\x3d"+LOGINOUT_URL:LOGIN_URL
+        };
+    </script>
+    <script src="http://cia.chanapp.chanjet.com/internal_api/authorizeByJsonp?callback=toLogin&client_id=newapp&state=xxsss"></script>
+    <script type="text/javascript"  src="http://crm.static.chanjet.com/customer/4.0.0/release/dojo/dojo.js"></script>
+    <script type="text/javascript">document.write(unescape("%3Cscript src='http://crm.static.chanjet.com/customer/4.0.0/release/ApplicationLoader.js?_t="+(new Date().getTime())+"' type='text/javascript'%3E%3C/script%3E"));</script>
+</head>
+<body class="default">
+	<!--头部-->
+    <div id="appHeader" class="kh-h-box"></div>
+    <!-- 导航区 -->
+    <div id="appLeftSide"></div>
+    <!-- 窄屏幕时弹出导航菜单  -->
+    <div id="smallScreenMenu" class="hide"></div>
+    <!--内容区-->
+    <div id="appContainer" class="hide w1280"></div>
+    <!--底部-->
+    <div id="appFooter" ></div>
+    <!-- 互此悬浮框，与布局无关 -->
+    <div id="tips"></div>
+</body>
+</html>

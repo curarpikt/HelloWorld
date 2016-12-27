@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bo xmlns="http://www.chanjet.com/metadata/base" xmlns:baseField="http://www.chanjet.com/metadata/base/baseField" xmlns:bm="http://www.chanjet.com/metadata/businessModel" xmlns:bo="http://www.chanjet.com/metadata/businessObject" xmlns:field="http://www.chanjet.com/metadata/BOField" xmlns:picker="http://www.chanjet.com/metadata/picker" xmlns:query="http://www.chanjet.com/metadata/query" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" appId="com.chanapp.chanjet.customer">
+	<bo:BusinessObjects>
+		<bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="Customer" name="Customer" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Customer" refEntityName="Customer">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="最后跟进记录" name="lastRecord" refEntityFieldName="lastRecord" refEntityUsageName="Customer" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+		<bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="UserSetting" name="UserSetting" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="UserSetting" refEntityName="UserSetting">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+		<bo:BusinessObject enableExtensionCodeGen="false" includeAllEOFields="true" includeCustomFields="false" label="Customer" name="CustomerBO" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Customer" refEntityName="Customer">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="最后跟进记录" name="lastRecord" refEntityFieldName="lastRecord" refEntityUsageName="Customer" type="ForeignKey">
+                    <field:Properties>
+                        <field:Property name="test" value="test"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户名称" name="name" refEntityFieldName="name" refEntityUsageName="Customer" type="Text">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="跟进进度" name="status" refEntityFieldName="status" refEntityUsageName="Customer" type="Enum">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="所有者" name="owner" refEntityFieldName="owner" refEntityUsageName="Customer" type="ForeignKey">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="address" label="地址" refEntityUsageName="Customer" refEntityFieldName="address" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="phone" label="电话" refEntityUsageName="Customer" refEntityFieldName="phone" type="Phone">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="fax" label="传真" refEntityUsageName="Customer" refEntityFieldName="fax" type="Phone">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="url" label="网址" refEntityUsageName="Customer" refEntityFieldName="url" type="URI">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="derive" label="客户来源" refEntityUsageName="Customer" refEntityFieldName="derive" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="type" label="客户分类" refEntityUsageName="Customer" refEntityFieldName="type" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="level" label="客户级别" refEntityUsageName="Customer" refEntityFieldName="level" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="area" label="地区" refEntityUsageName="Customer" refEntityFieldName="area" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="industry" label="行业" refEntityUsageName="Customer" refEntityFieldName="industry" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="modifiedTime" label="修改时间" refEntityUsageName="Customer" refEntityFieldName="modifiedTime" type="Timestamp">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="remark" label="备注" refEntityUsageName="Customer" refEntityFieldName="remark" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="coordinate" label="坐标" refEntityUsageName="Customer" refEntityFieldName="coordinate" type="GeoPoint">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="simpleSpell" label="简拼" refEntityUsageName="Customer" refEntityFieldName="simpleSpell" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="fullSpell" label="全拼" refEntityUsageName="Customer" refEntityFieldName="fullSpell" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="lastRecordTime" label="最后工作记录时间" refEntityUsageName="Customer" refEntityFieldName="lastRecordTime" type="Timestamp">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="localId" label="移动端离线ID" refEntityUsageName="Customer" refEntityFieldName="localId" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="coordinateNote" label="坐标说明" refEntityUsageName="Customer" refEntityFieldName="coordinateNote" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="effectivePhone" label="真实电话" refEntityUsageName="Customer" refEntityFieldName="effectivePhone" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+		<bo:BusinessObject enableExtensionCodeGen="false" includeAllEOFields="true" includeCustomFields="false" label="Contact" name="ContactBO" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Contact" refEntityName="Contact"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="所属公司" name="customer" refEntityFieldName="customer" refEntityUsageName="Contact" type="ForeignKey">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="姓名" name="name" refEntityFieldName="name" refEntityUsageName="Contact" type="Text">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="头像" name="logo" refEntityFieldName="logo" refEntityUsageName="Contact" type="Text">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="邮箱" name="email" refEntityFieldName="email" refEntityUsageName="Contact" type="Email">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                        <field:Property name="canEditValue" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="手机" name="mobile" refEntityFieldName="mobile" refEntityUsageName="Contact" type="MobilePhone">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                        <field:Property name="canEditValue" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="职务" name="position" refEntityFieldName="position" refEntityUsageName="Contact" type="Text">
+                    <field:Properties>
+                        <field:Property name="canDisable" value="false"/>
+                        <field:Property name="canEditValue" value="false"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="department" label="所属部门" refEntityUsageName="Contact" refEntityFieldName="department" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="appellation" label="称谓" refEntityUsageName="Contact" refEntityFieldName="appellation" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="phone" label="电话" refEntityUsageName="Contact" refEntityFieldName="phone" type="Phone">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="fax" label="传真" refEntityUsageName="Contact" refEntityFieldName="fax" type="Phone">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="qq" label="QQ" refEntityUsageName="Contact" refEntityFieldName="qq" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="weibo" label="微博" refEntityUsageName="Contact" refEntityFieldName="weibo" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="address" label="地址" refEntityUsageName="Contact" refEntityFieldName="address" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="birthday" label="生日" refEntityUsageName="Contact" refEntityFieldName="birthday" type="Anniversary">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="gender" label="性别" refEntityUsageName="Contact" refEntityFieldName="gender" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="modifiedTime" label="修改时间" refEntityUsageName="Contact" refEntityFieldName="modifiedTime" type="Timestamp">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="remark" label="备注" refEntityUsageName="Contact" refEntityFieldName="remark" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="maritalStatus" label="婚姻状况" refEntityUsageName="Contact" refEntityFieldName="maritalStatus" type="Enum">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="simpleSpell" label="简拼" refEntityUsageName="Contact" refEntityFieldName="simpleSpell" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="fullSpell" label="全拼" refEntityUsageName="Contact" refEntityFieldName="fullSpell" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="lastRecordTime" label="最后工作记录时间" refEntityUsageName="Contact" refEntityFieldName="lastRecordTime" type="Timestamp">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="localId" label="移动端离线ID" refEntityUsageName="Contact" refEntityFieldName="localId" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="effectivePhone" label="有效电话" refEntityUsageName="Contact" refEntityFieldName="effectivePhone" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="effectiveMobile" label="有效手机" refEntityUsageName="Contact" refEntityFieldName="effectiveMobile" type="Text">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="false" includeAllEOFields="true" includeCustomFields="false" label="WorkRecord" name="WorkRecordBO" primary="true" registerForCrossAppEvent="false">
+            <bo:EntityUsages>
+                <bo:PrimaryEO name="WorkRecord" refEntityName="WorkRecord"/>
+            </bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="客户" name="customer" refEntityFieldName="customer" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="联系人" name="contact" refEntityFieldName="contact" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="拜访开始时间" name="visitStart" refEntityFieldName="visitStart" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="Timestamp">
+                    <field:Properties>
+                        <field:Property name="disabled" value="true"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="拜访结束时间" name="visitEnd" refEntityFieldName="visitEnd" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="Timestamp">
+                    <field:Properties>
+                        <field:Property name="disabled" value="true"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="报价金额" name="offerPrice" refEntityFieldName="offerPrice" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="Decimal">
+                    <field:Properties>
+                        <field:Property name="disabled" value="true"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="成交金额" name="dealPrice" refEntityFieldName="dealPrice" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="Decimal">
+                    <field:Properties>
+                        <field:Property name="disabled" value="true"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="收款金额" name="receivePrice" refEntityFieldName="receivePrice" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="Decimal">
+                    <field:Properties>
+                        <field:Property name="disabled" value="true"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="工作类别" name="workRecordType" refEntityFieldName="workRecordType" refEntityUsageName="WorkRecord" searchByPinYin="false" searchable="false" type="Enum">
+                    <field:Properties>
+                        <field:Property name="disabled" value="true"/>
+                    </field:Properties>
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+	<bo:BusinessObject enableExtensionCodeGen="false" includeAllEOFields="true" includeCustomFields="false" label="工作记录" name="WorkRecordForList" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="WorkRecord" refEntityName="WorkRecord"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="CustomerEO" refEntityName="Customer" viaRelationships="WorkRecordToCustomer"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="UserEO" refEntityName="User" viaRelationships="SYSTEMUserToWorkRecordForowner"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="UserEO1" refEntityName="User" viaRelationships="SYSTEMUserToWorkRecordForcreatedBy"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="UserEO2" refEntityName="User" viaRelationships="SYSTEMUserToWorkRecordForlastModifiedBy"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="ContactEO" refEntityName="Contact" viaRelationships="WorkRecordToContact"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field displayFields="name" label="客户" name="customer" refEntityFieldName="customer" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="联系人" name="contact" refEntityFieldName="contact" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户名称" name="customerName" refEntityFieldName="name" refEntityUsageName="CustomerEO" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="用户ID" name="ownerUserId" refEntityFieldName="userId" refEntityUsageName="UserEO" type="Integer">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="owner" label="所有者" type="ForeignKey" refEntityUsageName="WorkRecord" refEntityFieldName="owner" displayFields="userId,name,headPicture">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="lastModifiedBy" label="修改人" type="System">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field searchable="false" searchByPinYin="false" name="createdBy" label="创建人" type="System">
+                    <field:UiHints>
+                        <field:UiHint name="showOnList"></field:UiHint>
+                        <field:UiHint name="showOnView"></field:UiHint>
+                        <field:UiHint name="showOnEdit"></field:UiHint>
+                        <field:UiHint name="asQuery"></field:UiHint>
+                        <field:UiHint name="asDimension"></field:UiHint>
+                        <field:UiHint name="asMeasure"></field:UiHint>
+                        <field:UiHint name="editable"></field:UiHint>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+    <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="附件" name="Attachment" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Attachment" refEntityName="Attachment"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="Checkin" name="Checkin" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Checkin" refEntityName="Checkin"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="评论" name="Comment" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Comment" refEntityName="Comment"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="评论者" name="commenter" refEntityFieldName="commenter" refEntityUsageName="Comment" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="Contact" name="Contact" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Contact" refEntityName="Contact"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="所属公司" name="customer" refEntityFieldName="customer" refEntityUsageName="Contact" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="(联络提醒设置)" name="ContactRemindSet" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="ContactRemindSet" refEntityName="ContactRemindSet"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="含客户" name="ContactWithCustomer" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Contact" refEntityName="Contact"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="CustomerEO" refEntityName="Customer" viaRelationships="ContactToCustomer"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="所属公司" name="customer" refEntityFieldName="customer" refEntityUsageName="Contact" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户名称" name="customerName" refEntityFieldName="name" refEntityUsageName="CustomerEO" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="所有者" name="customerOwner" refEntityFieldName="owner" refEntityUsageName="CustomerEO" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户删除标志" name="customerIsDeleted" refEntityFieldName="isDeleted" refEntityUsageName="CustomerEO" type="Boolean">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="用户关注" name="CustomerFollow" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="CustomerFollow" refEntityName="CustomerFollow">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="客户列表" name="CustomerForQueryList" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Customer" refEntityName="Customer">
+				</bo:PrimaryEO>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="WorkRecordEO" refEntityName="WorkRecord" viaRelationships="CustomerToWorkRecord">
+				</bo:JoinedEO>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="UserEO" refEntityName="User" viaRelationships="CustomerToWorkRecord,SYSTEMUserToWorkRecordForowner">
+				</bo:JoinedEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field displayFields="content,contactTime" label="最后跟进记录" name="lastRecord" refEntityFieldName="lastRecord" refEntityUsageName="Customer" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="创建时间" name="createdDate" type="System">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="最新工作记录创建时间" name="lastRecordCreatedDate" refEntityFieldName="createdDate" refEntityUsageName="WorkRecordEO" type="Timestamp">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="最新工作记录ID" name="lastRecordID" refEntityFieldName="id" refEntityUsageName="WorkRecordEO" type="Integer">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="沟通时间" name="lastRecordContactTime" refEntityFieldName="contactTime" refEntityUsageName="WorkRecordEO" type="Timestamp">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="姓名" name="userName" refEntityFieldName="name" refEntityUsageName="UserEO" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="用户ID" name="userUserId" refEntityFieldName="userId" refEntityUsageName="UserEO" type="Integer">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="无业务逻辑客户" name="CustomerWithOutBusiness" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Customer" refEntityName="Customer">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="最后跟进记录" name="lastRecord" refEntityFieldName="lastRecord" refEntityUsageName="Customer" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="数据备份" name="ExportTask" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="ExportTask" refEntityName="ExportTask"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="FieldData" name="FieldData" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="FieldData" refEntityName="FieldData"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="文件上传新版本" name="ImportRecordNew" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="ImportRecordNew" refEntityName="ImportRecordNew"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="文件上传新版本" name="ImportRecordRelationNew" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="ImportRecordRelationNew" refEntityName="ImportRecordRelationNew"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="Message" name="Message" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Message" refEntityName="Message"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="MessageItem" name="MessageItem" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="MessageItem" refEntityName="MessageItem"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="OperationLog" name="OperationLog" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="OperationLog" refEntityName="OperationLog">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="回收站" name="Recycle" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="Recycle" refEntityName="Recycle"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field displayFields="userId,username,email,mobile,name,nickName" label="操作用户" name="operUser" refEntityFieldName="operUser" refEntityUsageName="Recycle" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field defaultValue="DELETE" label="操作类型" name="operType" refEntityFieldName="operType" refEntityUsageName="Recycle" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="回收站子表" name="RecycleRelation" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="RecycleRelation" refEntityName="RecycleRelation">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="回收站" name="recycle" refEntityFieldName="recycle" refEntityUsageName="RecycleRelation" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="SearchCondition" name="SearchCondition" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="SearchCondition" refEntityName="SearchCondition"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="SysRelUser" name="SysRelUser" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="SysRelUser" refEntityName="SysRelUser"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="代办提示语" name="TodoTips" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="TodoTips" refEntityName="TodoTips"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="代办事项" name="TodoWork" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="TodoWork" refEntityName="TodoWork">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="客户" name="customer" refEntityFieldName="customer" refEntityUsageName="TodoWork" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="工作记录" name="workRecord" refEntityFieldName="workRecord" refEntityUsageName="TodoWork" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="true" label="工作记录" name="WorkRecord" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="WorkRecord" refEntityName="WorkRecord">
+				</bo:PrimaryEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field displayFields="name" label="客户" name="customer" refEntityFieldName="customer" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="联系人" name="contact" refEntityFieldName="contact" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="false" includeAllEOFields="true" includeCustomFields="false" label="工作记录" name="WorkRecordForExport" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="WorkRecord" refEntityName="WorkRecord"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="CustomerEO" refEntityName="Customer" viaRelationships="WorkRecordToCustomer"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="UserEO" refEntityName="User" viaRelationships="SYSTEMUserToWorkRecordForowner"/>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="UserEO1" refEntityName="User" viaRelationships="SYSTEMUserToWorkRecordForcreatedBy"/>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field label="客户" name="customer" refEntityFieldName="customer" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="联系人" name="contact" refEntityFieldName="contact" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户删除标志" name="customerIsDeleted" refEntityFieldName="isDeleted" refEntityUsageName="CustomerEO" type="Boolean">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户名称" name="customerName" refEntityFieldName="name" refEntityUsageName="CustomerEO" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="姓名" name="ownerName" refEntityFieldName="name" refEntityUsageName="UserEO" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="姓名" name="createdByName" refEntityFieldName="name" refEntityUsageName="UserEO1" type="Text">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="false" includeAllEOFields="true" includeCustomFields="false" label="工作记录1" name="WorkRecordForQuery" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="WorkRecord" refEntityName="WorkRecord">
+				</bo:PrimaryEO>
+				<bo:JoinedEO joinType="LeftOuterJoin" name="CustomerEO" refEntityName="Customer" viaRelationships="WorkRecordToCustomer">
+				</bo:JoinedEO>
+			</bo:EntityUsages>
+<bo:Fields>
+                <bo:Field displayFields="name" label="客户" name="customer" refEntityFieldName="customer" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="联系人" name="contact" refEntityFieldName="contact" refEntityUsageName="WorkRecord" type="ForeignKey">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+                <bo:Field label="客户删除标志" name="customerIsDeleted" refEntityFieldName="isDeleted" refEntityUsageName="CustomerEO" type="Boolean">
+        <field:UiHints>
+                        <field:UiHint name="showOnList"/>
+                        <field:UiHint name="showOnView"/>
+                        <field:UiHint name="showOnEdit"/>
+                        <field:UiHint name="asQuery"/>
+                        <field:UiHint name="asDimension"/>
+                        <field:UiHint name="asMeasure"/>
+                        <field:UiHint name="editable"/>
+                    </field:UiHints>
+                </bo:Field>
+            </bo:Fields>
+        </bo:BusinessObject>
+        <bo:BusinessObject enableExtensionCodeGen="true" includeAllEOFields="true" includeCustomFields="false" label="工作记录历史" name="WorkRecordHis" primary="true">
+            <bo:EntityUsages>
+				<bo:PrimaryEO name="WorkRecordHis" refEntityName="WorkRecordHis"/>
+			</bo:EntityUsages>
+        </bo:BusinessObject>
+    </bo:BusinessObjects>
+	<sapphirelayout>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPGRpYWdyYW0tZ2VvbWV0cnk+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNDdXN0b21lciMwPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzNiIgeT0iMjA1Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjVXNlclNldHRpbmcjMTwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMzcwIiB5PSIyMTkiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNDdXN0b21lckJPIzI8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjYzMCIgeT0iMTUwIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjQ29udGFjdEJPIzM8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjEwMDciIHk9IjE1MCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I1dvcmtSZWNvcmRCTyM0PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNDEwIiB5PSIxMjAiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNXb3JrUmVjb3JkRm9yTGlzdCM1PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIxNjQwIiB5PSIxMTciLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNBdHRhY2htZW50IzY8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjIwNTUiIHk9IjIxOSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I0NoZWNraW4jNzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMjI5NyIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjQ29tbWVudCM4PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIyNTM3IiB5PSIyMDUiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNDb250YWN0Izk8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjI4MzkiIHk9IjIwNSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I0NvbnRhY3RSZW1pbmRTZXQjMTA8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjMxNDEiIHk9IjIxOSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I0NvbnRhY3RXaXRoQ3VzdG9tZXIjMTE8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjM1MDQiIHk9IjE2MSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I0N1c3RvbWVyRm9sbG93IzEyPC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSIzODY4IiB5PSIyMTkiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNDdXN0b21lckZvclF1ZXJ5TGlzdCMxMzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNDE3MyIgeT0iMTE3Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjQ3VzdG9tZXJXaXRoT3V0QnVzaW5lc3MjMTQ8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjQ2ODUiIHk9IjIwNSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I0V4cG9ydFRhc2sjMTU8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjUxMDkiIHk9IjIxOSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I0ZpZWxkRGF0YSMxNjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNTM3NSIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjSW1wb3J0UmVjb3JkTmV3IzE3PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI1NjM3IiB5PSIyMTkiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNJbXBvcnRSZWNvcmRSZWxhdGlvbk5ldyMxODwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNjAwNCIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjTWVzc2FnZSMxOTwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNjQzMSIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjTWVzc2FnZUl0ZW0jMjA8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjY2ODciIHk9IjIxOSIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I09wZXJhdGlvbkxvZyMyMTwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNzAwOSIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjUmVjeWNsZSMyMjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMzcwIiB5PSIzNiIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I1JlY3ljbGVSZWxhdGlvbiMyMzwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iMzYiIHk9IjQ3Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjU2VhcmNoQ29uZGl0aW9uIzI0PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI3MzM5IiB5PSIyMTkiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNTeXNSZWxVc2VyIzI1PC9pZD4NCiAgICAgICAgPGJvdW5kcyB4PSI3NzA3IiB5PSIyMTkiLz4NCiAgICA8L25vZGU+DQogICAgPG5vZGU+DQogICAgICAgIDxpZD5CdXNpbmVzc09iamVjdCNUb2RvVGlwcyMyNjwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iNzk5MyIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjVG9kb1dvcmsjMjc8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9IjgyNjMiIHk9IjE5NCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I1dvcmtSZWNvcmQjMjg8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9Ijg1ODIiIHk9IjE5NCIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I1dvcmtSZWNvcmRGb3JFeHBvcnQjMjk8L2lkPg0KICAgICAgICA8Ym91bmRzIHg9Ijg4NjAiIHk9IjExNyIvPg0KICAgIDwvbm9kZT4NCiAgICA8bm9kZT4NCiAgICAgICAgPGlkPkJ1c2luZXNzT2JqZWN0I1dvcmtSZWNvcmRGb3JRdWVyeSMzMDwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iOTI0NiIgeT0iMTcyIi8+DQogICAgPC9ub2RlPg0KICAgIDxub2RlPg0KICAgICAgICA8aWQ+QnVzaW5lc3NPYmplY3QjV29ya1JlY29yZEhpcyMzMTwvaWQ+DQogICAgICAgIDxib3VuZHMgeD0iOTYxMCIgeT0iMjE5Ii8+DQogICAgPC9ub2RlPg0KPC9kaWFncmFtLWdlb21ldHJ5Pg==</sapphirelayout>
+<bo:ChildBOReferences>
+        <bo:ChildBO MasterBO="Recycle" label="RecycleRelationToRecycle" name="RecycleRelation" relationshipName="RecycleRelationToRecycle">
+		</bo:ChildBO>
+    </bo:ChildBOReferences>
+</bo>

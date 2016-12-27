@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<diagram-geometry>
+    <node>
+        <id>BusinessObject#Customer#0</id>
+        <bounds x="36" y="205"/>
+    </node>
+    <node>
+        <id>BusinessObject#UserSetting#1</id>
+        <bounds x="370" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#CustomerBO#2</id>
+        <bounds x="630" y="150"/>
+    </node>
+    <node>
+        <id>BusinessObject#ContactBO#3</id>
+        <bounds x="1007" y="150"/>
+    </node>
+    <node>
+        <id>BusinessObject#WorkRecordBO#4</id>
+        <bounds x="1410" y="120"/>
+    </node>
+    <node>
+        <id>BusinessObject#WorkRecordForList#5</id>
+        <bounds x="1640" y="117"/>
+    </node>
+    <node>
+        <id>BusinessObject#Attachment#6</id>
+        <bounds x="2055" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#Checkin#7</id>
+        <bounds x="2297" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#Comment#8</id>
+        <bounds x="2537" y="205"/>
+    </node>
+    <node>
+        <id>BusinessObject#Contact#9</id>
+        <bounds x="2839" y="205"/>
+    </node>
+    <node>
+        <id>BusinessObject#ContactRemindSet#10</id>
+        <bounds x="3141" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#ContactWithCustomer#11</id>
+        <bounds x="3504" y="161"/>
+    </node>
+    <node>
+        <id>BusinessObject#CustomerFollow#12</id>
+        <bounds x="3868" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#CustomerForQueryList#13</id>
+        <bounds x="4173" y="117"/>
+    </node>
+    <node>
+        <id>BusinessObject#CustomerWithOutBusiness#14</id>
+        <bounds x="4685" y="205"/>
+    </node>
+    <node>
+        <id>BusinessObject#ExportTask#15</id>
+        <bounds x="5109" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#FieldData#16</id>
+        <bounds x="5375" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#ImportRecordNew#17</id>
+        <bounds x="5637" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#ImportRecordRelationNew#18</id>
+        <bounds x="6004" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#Message#19</id>
+        <bounds x="6431" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#MessageItem#20</id>
+        <bounds x="6687" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#OperationLog#21</id>
+        <bounds x="7009" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#Recycle#22</id>
+        <bounds x="370" y="36"/>
+    </node>
+    <node>
+        <id>BusinessObject#RecycleRelation#23</id>
+        <bounds x="36" y="47"/>
+    </node>
+    <node>
+        <id>BusinessObject#SearchCondition#24</id>
+        <bounds x="7339" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#SysRelUser#25</id>
+        <bounds x="7707" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#TodoTips#26</id>
+        <bounds x="7993" y="219"/>
+    </node>
+    <node>
+        <id>BusinessObject#TodoWork#27</id>
+        <bounds x="8263" y="194"/>
+    </node>
+    <node>
+        <id>BusinessObject#WorkRecord#28</id>
+        <bounds x="8582" y="194"/>
+    </node>
+    <node>
+        <id>BusinessObject#WorkRecordForExport#29</id>
+        <bounds x="8860" y="117"/>
+    </node>
+    <node>
+        <id>BusinessObject#WorkRecordForQuery#30</id>
+        <bounds x="9246" y="172"/>
+    </node>
+    <node>
+        <id>BusinessObject#WorkRecordHis#31</id>
+        <bounds x="9610" y="219"/>
+    </node>
+</diagram-geometry>

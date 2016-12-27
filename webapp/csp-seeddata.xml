@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csp-seeddata>
+    <system-seeddata>
+        <entities>
+            <entity name="AssignmentEO">
+                <fields-template>
+                    <field name="id"></field>
+                    <field name="entityName"></field>
+                    <field name="enable"></field>
+                    <field name="roleId"></field>
+                    <field name="privilege"></field>
+                    <field name="hqlCondition"></field>
+                </fields-template>
+                <itmes>
+                    <item>
+                        <field name="id">10001</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Customer</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10002</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10003</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10004</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Attachment</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10005</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10006</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Checkin</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10007</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Customer</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10008</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10009</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10010</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Attachment</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10011</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10012</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Checkin</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10013</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Customer</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10014</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10015</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10016</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Attachment</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10017</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10018</field>
+                        <field name="privilege">INSERT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Checkin</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10019</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Customer</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10020</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10021</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10022</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Attachment</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10023</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10024</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Checkin</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10025</field>
+                        <field name="privilege">SELECT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10026</field>
+                        <field name="privilege">SELECT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10027</field>
+                        <field name="privilege">SELECT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and workRecord = select_dataauth()</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10028</field>
+                        <field name="privilege">UPDATE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10029</field>
+                        <field name="privilege">UPDATE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10030</field>
+                        <field name="privilege">UPDATE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and workRecord = select_dataauth()</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10031</field>
+                        <field name="privilege">DELETE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10032</field>
+                        <field name="privilege">DELETE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10033</field>
+                        <field name="privilege">DELETE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and workRecord = select_dataauth()</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10010</field>
+                    </item>
+                    <item>
+                        <field name="id">10034</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0</field>
+                        <field name="entityName">Customer</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10035</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10036</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10037</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0</field>
+                        <field name="entityName">Attachment</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10038</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10039</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0</field>
+                        <field name="entityName">Checkin</field>
+                        <field name="roleId">10011</field>
+                    </item>
+                    <item>
+                        <field name="id">10049</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Customer</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10050</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10051</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10052</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Attachment</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10053</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10054</field>
+                        <field name="privilege">ALL_PRIVILEGE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and owner = $$USER</field>
+                        <field name="entityName">Checkin</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10055</field>
+                        <field name="privilege">SELECT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10056</field>
+                        <field name="privilege">SELECT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10057</field>
+                        <field name="privilege">SELECT</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and workRecord = select_dataauth()</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10058</field>
+                        <field name="privilege">UPDATE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10059</field>
+                        <field name="privilege">UPDATE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10060</field>
+                        <field name="privilege">UPDATE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and workRecord = select_dataauth()</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10061</field>
+                        <field name="privilege">DELETE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">Contact</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10062</field>
+                        <field name="privilege">DELETE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and customer = select_dataauth()</field>
+                        <field name="entityName">WorkRecord</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                    <item>
+                        <field name="id">10063</field>
+                        <field name="privilege">DELETE</field>
+                        <field name="enable">TRUE</field>
+                        <field name="hqlCondition">id&gt;0 and workRecord = select_dataauth()</field>
+                        <field name="entityName">TodoWork</field>
+                        <field name="roleId">10012</field>
+                    </item>
+                </itmes>
+            </entity>
+            <entity name="Role">
+                <fields-template>
+                    <field name="id"></field>
+                    <field name="name"></field>
+                </fields-template>
+                <itmes>
+                    <item>
+                        <field name="id">10010</field>
+                        <field name="name">salesman</field>
+                    </item>
+                    <item>
+                        <field name="id">10011</field>
+                        <field name="name">manager</field>
+                    </item>
+                    <item>
+                        <field name="id">10012</field>
+                        <field name="name">supervisor</field>
+                    </item>
+                </itmes>
+            </entity>
+            <entity name="JobDefinition">
+                <fields-template>
+                    <field name="id"></field>
+                    <field name="jobName"></field>
+                    <field name="jobGroup"></field>
+                    <field name="jobClassName"></field>
+                    <field name="jobData"></field>
+                    <field name="description"></field>
+                </fields-template>
+                <itmes>
+                    <item>
+                        <field name="id">10001</field>
+                        <field name="jobName">ImporDataJob</field>
+                        <field name="jobGroup">importGroup</field>
+                        <field name="jobClassName">com.chanapp.chanjet.customer.service.importrecord.ImportRecordJob</field>
+                        <field name="jobData">{}</field>
+                        <field name="description">job for import data from excel</field>
+                    </item>
+                </itmes>
+            </entity>
+            <entity name="JobTrigger">
+                <fields-template>
+                    <field name="id"></field>
+                    <field name="triggerName"></field>
+                    <field name="triggerGroup"></field>
+                    <field name="triggerData"></field>
+                    <field name="cronExpression"></field>
+                    <field name="jobDefinition"></field>
+                    <field name="description"></field>
+                </fields-template>
+                <itmes>
+                    <item>
+                        <field name="id">100001</field>
+                        <field name="triggerName">imporDataTrigger</field>
+                        <field name="triggerGroup">importGroup</field>
+                        <field name="cronExpression">0 0/1 * * * ?</field>
+                        <field name="jobDefinition">10001</field>
+                        <field name="description">test for trigger</field>
+                    </item>
+                </itmes>
+            </entity>
+        </entities>
+    </system-seeddata>
+</csp-seeddata>

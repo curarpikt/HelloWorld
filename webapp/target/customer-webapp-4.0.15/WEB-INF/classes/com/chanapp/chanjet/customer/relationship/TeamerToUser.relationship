@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:Relationship xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/relationship" applicationId="com.chanapp.chanjet.customer" cardinality="One-to-Many" id="com.chanapp.chanjet.customer.relationship.TeamerToUser" masterdetail="false" name="TeamerToUser">
+<ns3:Specification>
+<ns3:Source entityName="User" fieldName="id"/>
+<ns3:Target entityName="Teamer" fieldName="teamer"/>
+</ns3:Specification>
+<ns3:Visibility accessorFromTarget="teamer"/>
+</ns3:Relationship>

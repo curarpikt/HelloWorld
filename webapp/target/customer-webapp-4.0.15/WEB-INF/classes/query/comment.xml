@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<query id="findByLocalId" boName="">
+	<jsonQuerySpec>
+	{
+	    "SortBy" : [{
+            "FieldName" : "lastModifiedDate",
+            "Order" : "Descending"
+        }
+    	],
+    	"FirstResult" : "0",
+		"MaxResult" : "1",
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+							"Operator" : "or",
+							"Values":
+							[
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "empty",
+									"Values" : []
+								},
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "eq",
+									"Values" : ["false"]
+								}
+							]
+						},
+				    	{
+				            "FieldName" : "localId",
+				            "Operator" : "in",
+				            "Values" : ?(localId)
+				        }
+	        ]
+		}
+	}
+	</jsonQuerySpec>
+</query>
+
+</root>

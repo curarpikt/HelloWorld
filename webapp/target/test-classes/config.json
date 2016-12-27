@@ -1,0 +1,35 @@
+{
+	"host": "localhost",
+	"port": 8080,
+	"isvcode": "chanjet",
+	"appname": "customer",
+	"enterpriseId": "90003747057",
+	"enterpriseUsername": "isvtest",
+	"enterprisePassword": "isvtest",
+	"users":[
+		{
+			"tag" : "appManager",
+			"username" : "isvtest",
+			"password" : "isvtest",
+			"isAppAdmin" : true
+		},
+		{
+			"tag" : "enterpriseManager",
+			"username" : "isvtest",
+			"password" : "isvtest",
+			"isAppAdmin" : false
+		},
+		{
+			"tag" : "regularUser",
+			"username" : "suming_mai_fc",
+			"password" : "222222",
+			"isAppAdmin" : false
+		},
+		{
+			"tag" : "regularUser2",
+			"username" : "suming_mai_DF",
+			"password" : "222222",
+			"isAppAdmin" : false
+		}
+	]
+}

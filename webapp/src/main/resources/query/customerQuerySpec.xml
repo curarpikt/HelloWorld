@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 根据筛选条件查询客户列表 -->
+	<query id="queryCustomerList" boName="">
+		<jsonQuerySpec>
+			{
+			"Criteria" : {
+			"Operator" : "and",
+			"Values" : [
+				$(userIds)
+				{
+				"FieldName" : "owner",
+				"Operator" : "in",
+				"Values" :
+				?(userIds)
+				},
+				$(userIds)
+				$(ownId)
+				{
+				"FieldName" : "owner",
+				"Operator" :
+				"eq",
+				"Values" : [?(ownId)]
+				},
+				$(ownId)
+				$(followDate)
+				{
+				"FieldName" :
+				"lastRecordCreatedDate",
+				"Operator" : "between",
+				"Values" :
+				?(followDate)
+				},
+				$(followDate)
+			$(unFollowDate)
+			{
+			"Operator" : "or",
+			"Values" : [
+			{
+			"Operator" : "and",
+			"Values" : [
+			{
+			"FieldName" :
+			"lastRecordCreatedDate",
+			"Operator" : "empty",
+			"Values" : []
+			},
+			{
+			"FieldName" : "createdDate",
+			"Operator" : "lt",
+			"Values" :
+			[?(unFollowDate)]
+			}
+			]
+			},
+			{
+			"Operator" : "and",
+			"Values" : [
+			{
+			"Operator" :
+			"not",
+			"Values" : [
+			{
+			"FieldName" : "lastRecordCreatedDate",
+			"Operator" :
+			"empty",
+			"Values" : []
+			}
+			]
+			},
+			{
+			"FieldName" : "lastRecordCreatedDate",
+			"Operator" : "lt",
+			"Values" : [?(unFollowDate)]
+			}
+			]
+			}
+			]
+			},
+			$(unFollowDate)
+			$(shareCustomerIds)
+			{
+			"FieldName" : "id",
+			"Operator" : "in",
+			"Values" :
+			?(shareCustomerIds)
+			}
+			$(shareCustomerIds)
+			]
+			},
+			"Fields" : [
+			"name",
+			"status"
+			],
+			"FirstResult" : "?(first)",
+			"MaxResult" : "?(max)"
+			}
+		</jsonQuerySpec>
+		<jsonReportSpec>
+		</jsonReportSpec>
+	</query>
+	<query id="countCustomer" boName="">
+		<jsonQuerySpec>
+			{ 
+			"Criteria" : {
+			"Operator" : "or",
+			"Values" : [{
+			"FieldName" : "isDeleted",
+			"Operator" : "eq",
+			"Values" : ["false"]
+			},
+			{
+			"FieldName" : "isDeleted",
+			"Operator" : "empty",
+			"Values" : []
+			}
+			]
+			}}
+		</jsonQuerySpec>
+		<jsonReportSpec>
+			{
+			"Fields" : ["customerCount","owner"],
+			"Dimensions" : [
+			{
+			"FieldName" : "owner"
+			}],
+			"Measures" : [
+			{
+			"FieldName" : "id",
+			"Aggregator" : "count",
+			"Alias" : "customerCount"
+			}]
+			}
+		</jsonReportSpec>
+	</query>
+	<query id="customer_getCustomerByLocalId" boName="">
+		<jsonQuerySpec>
+			{ 
+				"Criteria" : {
+						"Operator" : "and",
+						"Values" : [
+							{
+							"FieldName" : "localId",
+							"Operator" : "eq",
+							"Values" : ["?(localId)"]
+							}
+						]
+				}
+			}
+		</jsonQuerySpec>
+	</query>
+	<!-- 根据客户ID获取客户信息（未删除） -->
+	<query id="customer_getCustomerByIds" boName="">
+		<jsonQuerySpec>
+			{ 
+				"Criteria" : {
+					"Operator" : "and",
+					"Values" : [
+						{
+						"FieldName" : "id",
+						"Operator" : "in",
+						"Values" : ?(ids)
+						},
+						{
+							"Operator" : "or",
+							"Values":
+							[
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "empty",
+									"Values" : []
+								},
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "eq",
+									"Values" : ["false"]
+								}
+							]
+						}
+					]
+				}
+			}
+		</jsonQuerySpec>
+	</query>
+	
+	<query id="customer_getDeletedCustomerByIds" boName="">
+		<jsonQuerySpec>
+			{ 
+				"Criteria" : {
+					"Operator" : "and",
+					"Values" : [
+						{
+						"FieldName" : "id",
+						"Operator" : "in",
+						"Values" : ?(ids)
+						},
+						{
+							"FieldName" : "isDeleted",
+							"Operator" : "eq",
+							"Values" : ["true"]
+						}
+					]
+				}
+			}
+		</jsonQuerySpec>
+	</query>
+	
+		<!-- 客户下拉列表查询（未删除） -->
+	<query id="customer_customerCombox" boName="">
+		<jsonQuerySpec>
+			{ 
+				"Criteria" : {
+					"Operator" : "and",
+					"Values" : [
+						{
+						"FieldName" : "id",
+						"Operator" : "in",
+						"Values" : ?(ids)
+						},
+						{
+							"Operator" : "or",
+							"Values":
+							[
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "empty",
+									"Values" : []
+								},
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "eq",
+									"Values" : ["false"]
+								}
+							]
+						}
+					]
+				}
+			}
+		</jsonQuerySpec>
+	</query>
+</root>

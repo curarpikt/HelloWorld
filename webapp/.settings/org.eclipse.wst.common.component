@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="customer1-webapp">
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF" source-path="/target/csp-geronimo"/>
+        <wb-resource deploy-path="/WEB-INF" source-path="/target/zzz-geronimo"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/zzz-config"/>
+        <wb-resource deploy-path="/OSGI-INF" source-path="/target/customer-webapp-4.0.15/OSGI-INF"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/customer-webapp-4.0.15/WEB-INF/classes"/>
+        <wb-resource deploy-path="/WEB-INF/lib" source-path="/target/customer-webapp-4.0.15/WEB-INF/lib"/>
+        <property name="context-root" value="com.chanapp.chanjet.customer-4.0.15"/> <!-- actually not used right now -->
+        <property name="java-output-path" value="/customer1-webapp/target/classes"/>
+    </wb-module>
+</project-modules>

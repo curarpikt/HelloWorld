@@ -1,0 +1,56 @@
+{
+	"id" : 100001,
+	"name" : {
+		"label" : "客户名称",
+		"value" : "ABC"
+	},
+	"owner" : {
+		"label" : "业务员",
+		"value" : "newdemo"
+	},
+	"type" : {
+		"label" : "客户分类",
+		"value" : "",
+		"key" : ""
+	},
+	"level" : {
+		"label" : "客户级别",
+		"value" : "",
+		"key" : ""
+	},
+	"derive" : {
+		"label" : "客户来源",
+		"value" : "",
+		"key" : ""
+	},
+	"industry" : {
+		"label" : "行业",
+		"value" : "",
+		"key" : ""
+	},
+	"area" : {
+		"label" : "地区",
+		"value" : "",
+		"key" : ""
+	},
+	"address" : {
+		"label" : "地址",
+		"value" : ""
+	},
+	"phone" : {
+		"label" : "电话",
+		"value" : "10000123456"
+	},
+	"fax" : {
+		"label" : "传真",
+		"value" : ""
+	},
+	"url" : {
+		"label" : "网址",
+		"value" : ""
+	},
+	"remark" : {
+		"label" : "备注",
+		"value" : ""
+	}
+}

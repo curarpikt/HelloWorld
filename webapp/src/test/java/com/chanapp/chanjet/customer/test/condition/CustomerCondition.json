@@ -1,0 +1,29 @@
+{
+   "entityType": "Customer",
+   "items": [
+       {
+           "fieldName": "followed",
+           "visible": "1"
+       },
+       {
+           "fieldName": "followTime",
+           "visible": "1"
+       },
+       {
+           "fieldName": "customerType",
+           "visible": "1"
+       },
+       {
+           "fieldName": "owner",
+           "visible": "1"
+       },
+       {
+           "fieldName": "noFollowTime",
+           "visible": "1"
+       },
+       {
+           "fieldName": "type",
+           "visible": "1"
+       }
+   ]
+}

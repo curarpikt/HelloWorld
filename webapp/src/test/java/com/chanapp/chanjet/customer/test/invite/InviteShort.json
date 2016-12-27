@@ -1,0 +1,11 @@
+{
+    "userIdentifyList": "xxx_xxx@chanjet.com",
+    "newEmailUrl": "http://chanjet.cn/yH",
+    "newMobileUrl": "http://chanjet.cn/yH",
+    "existsEmailUrl": "http://www.chanapp.com/invite/login?a=exist&sc=customer",
+    "existsMobileUrl": "http://www.chanapp.com/invite/login?a=exist&sc=customer",
+    "existsEntInternalEmailUrl": "http://www.chanjet.com/login?app=customer",
+    "existsEntInternalMobileUrl": "http://www.chanjet.com/login?app=customer",
+    "needNotifyEntInternalInvite": "1",
+    "identifyNameList": {}
+}

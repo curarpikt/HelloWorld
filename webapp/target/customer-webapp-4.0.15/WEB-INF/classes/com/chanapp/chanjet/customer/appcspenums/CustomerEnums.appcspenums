@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:AppCSPEnums xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/appCSPEnums" applicationId="com.chanapp.chanjet.customer" id="com.chanapp.chanjet.customer.appcspenums.CustomerEnums" name="CustomerEnums">
+<ns3:CSPEnum custom="false" extensible="true" name="CheckinTagEnum">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="外出办公" name="EGRESS" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="下班打卡" name="OFFDUTY" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="上班打卡" name="ONDUTY" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="拜访客户" name="VISIT" ordinal="1"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="ContactGender">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="女" name="female" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="男" name="male" ordinal="0"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="ContactMaritalStatus">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="离婚" name="divorce" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="已婚" name="married" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="未婚" name="unmarried" ordinal="1"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="CustomerArea">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="东北" name="dongbei" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="港澳台" name="gangaotai" ordinal="7"/>
+<ns3:EnumValue active="true" custom="false" label="华北" name="huabei" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="华东" name="huadong" ordinal="4"/>
+<ns3:EnumValue active="true" custom="false" label="华南" name="huanan" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="华中" name="huazhong" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="西北" name="xibei" ordinal="6"/>
+<ns3:EnumValue active="true" custom="false" label="西南" name="xinan" ordinal="5"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="CustomerDerive">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="主动获取" name="activelySeek" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="客户介绍" name="clientIntroduce" ordinal="4"/>
+<ns3:EnumValue active="true" custom="false" label="展会" name="exhibition" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="网络搜索" name="InternetSearch" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="其他" name="others" ordinal="5"/>
+<ns3:EnumValue active="true" custom="false" label="报刊广告" name="PressAdvertising" ordinal="2"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="CustomerIndustry">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="通讯" name="Communication" ordinal="4"/>
+<ns3:EnumValue active="true" custom="false" label="文化娱乐" name="Entertainment" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="医疗" name="Healthcare" ordinal="5"/>
+<ns3:EnumValue active="true" custom="false" label="IT" name="IT" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="机械制造" name="Machine" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="其他" name="Other" ordinal="6"/>
+<ns3:EnumValue active="true" custom="false" label="石油石化" name="Petrochemical" ordinal="2"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="CustomerLevel">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="大客户" name="Big" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="一般客户" name="Normal" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="VIP客户" name="Vip" ordinal="2"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="false" name="CustomerTransactionStatus">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="已成交" name="deal" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="未成交" name="undeal" ordinal="0"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="CustomerType">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="潜在客户" name="customer" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="现有客户" name="partners" ordinal="1"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="EmailBoxtype">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="收件箱" name="inbox" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="发件箱" name="outbox" ordinal="0"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="EmailType">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="126" name="mail126" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="163" name="mail163" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="sina" name="sina" ordinal="2"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="followTypeEnum">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="电话" name="call" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="邮件" name="mail" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="其他" name="other" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="拜访" name="visit" ordinal="1"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="statusEnum">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="意向" name="intention" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="暂时搁置" name="pay" ordinal="4"/>
+<ns3:EnumValue active="true" custom="false" label="报价" name="quoted" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="成交" name="signed" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="初访" name="visit" ordinal="0"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="timeTypeEnum">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="自定义" name="CUSTOM" ordinal="6"/>
+<ns3:EnumValue active="true" custom="false" label="上月" name="LASTMONTH" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="上周" name="LASTWEEK" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="本月" name="MONTH" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="本季度" name="QUARTER" ordinal="4"/>
+<ns3:EnumValue active="true" custom="false" label="本周" name="WEEK" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="本年" name="YEAR" ordinal="5"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="todoStatus">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="已完成" name="DONE" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="待办" name="TODO" ordinal="0"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="userRoleEnum">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="老板" name="boss" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="管理员" name="manager" ordinal="1"/>
+<ns3:EnumValue active="true" custom="false" label="业务员" name="salesman" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="主管" name="supervisor" ordinal="2"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+<ns3:CSPEnum custom="false" extensible="true" name="workRecordType">
+<ns3:EnumValues>
+<ns3:EnumValue active="true" custom="false" label="索要回款" name="ASKPAYMENT" ordinal="3"/>
+<ns3:EnumValue active="true" custom="false" label="其他" name="OTHER" ordinal="5"/>
+<ns3:EnumValue active="true" custom="false" label="电话联系" name="PHONECONTACT" ordinal="4"/>
+<ns3:EnumValue active="true" custom="false" label="送货" name="SENDPRODUCT" ordinal="2"/>
+<ns3:EnumValue active="true" custom="false" label="送样品" name="SENDSAMPLE" ordinal="0"/>
+<ns3:EnumValue active="true" custom="false" label="培训代理商" name="VISTAGNET" ordinal="1"/>
+</ns3:EnumValues>
+</ns3:CSPEnum>
+</ns3:AppCSPEnums>

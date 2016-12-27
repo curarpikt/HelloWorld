@@ -1,0 +1,29 @@
+{
+	"host": "newdemo.chanapp.com",
+	"port": 80,
+	"isvcode": "chanjet",
+	"appname": "customer",
+	"enterpriseId": "90005957593",
+	"enterpriseUsername": "13621361439",
+	"enterprisePassword": "121212",
+	"users":[
+		{
+			"tag" : "enterpriseManager",
+			"username" : "ivstest",
+			"password" : "ivstest",
+			"isAppAdmin" : true
+		},
+		{
+			"tag" : "appManager",
+			"username" : "ivstest",
+			"password" : "ivstest",
+			"isAppAdmin" : true
+		},
+		{
+			"tag" : "regularUser",
+			"username" : "ivstest",
+			"password" : "ivstest",
+			"isAppAdmin" : false
+		}
+	]
+}

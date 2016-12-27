@@ -1,0 +1,13 @@
+{
+    "name": "客户测试6626666",
+    "phone": "13266666666",
+    "fax": "123321",
+    "url": "www.chanjet.com",
+    "address": "北京海淀",
+    "type": "customer",
+    "derive": "activelySeek",
+    "level": "Normal",
+    "area": "dongbei",
+    "industry": "IT",
+    "remark": "重要客户"
+}

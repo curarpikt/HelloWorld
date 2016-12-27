@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.chanapp.chanjet:customer-dal-codegen:event:4.0.15">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanapp/chanjet/Customer-dal-codegen/4.0.15/customer-dal-codegen-4.0.15-event.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanapp/chanjet/customer-dal-codegen/4.0.15/customer-dal-codegen-4.0.15-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanapp/chanjet/customer-dal-codegen/4.0.15/customer-dal-codegen-4.0.15-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

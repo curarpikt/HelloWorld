@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.SingletonEhCacheRegionFactory</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_structured_entries">true</property>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">chanjetdev</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/new_customer</property>
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.csp.cloudenterpriseid">90003747057</property>
+        <property name="hibernate.csp.dbpool.dbinfoprovider">com.chanjet.csp.dbpool.impl.DevDbInfoProvider</property>
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.dbcp.testOnBorrow">true</property>
+        <property name="hibernate.dbcp.validationQuery">select version()</property>
+        <property name="hibernate.dbcp.validationquerytimeout">1</property>
+        <property name="hibernate.default_schema">csp_appdata</property>
+        <property name="hibernate.generate_statistics">true</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.transaction.factory_class">org.hibernate.transaction.JDBCTransactionFactory</property>
+        <mapping resource="com/chanjet/system/systemapp/entity/EventStatus.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/DataAuthConfigEO.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/CustomerFollow.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/CspIdMoveLog.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Authorization.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/AppUser.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/SysRelUser.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/CspIdMove.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/ImportRecordRelationNew.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/WorkRecord.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/MessageItem.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Setting.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/RecycleRelation.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/DataAuthUserConfigEO.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/LocalizedResource.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Attachment.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/JobDefinition.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/UrlRule.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/SearchCondition.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/UserSetting.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/ContactRemindSet.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/UserRelation.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/AppVisibilityRuleEO.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/RecyclableRelation.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/AssignmentEO.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/ExportTask.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/DataAuthSubordinateConfigEO.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/JobTrigger.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Message.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/UserUrlRule.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/EnterpriseRuleEO.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Event.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/CspAppMigration.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Teamer.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Recycle.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/RoleUrlRule.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/WorkRecordHis.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Locale.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/UrlAccessEO.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/UserRole.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/DataAuthDelegationEO.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/VirtualSchemaConfigEO.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/User.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/OperationLog.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Affiliate.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/CspSeeddata.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Checkin.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/GrantEO.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/TodoWork.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Role.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/Department.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/ImportRecordNew.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Contact.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Client.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/RecyclableObject.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/FiredJobTrigger.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/CSPCUDLog.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Comment.hbm.xml" />
+        <mapping resource="com/chanjet/system/systemapp/entity/DUAL.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/Customer.hbm.xml" />
+        <mapping resource="com/chanapp/chanjet/customer/entity/TodoTips.hbm.xml" />
+    </session-factory>
+</hibernate-configuration>

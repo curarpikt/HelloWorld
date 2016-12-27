@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<web-app xmlns="http://geronimo.apache.org/xml/ns/j2ee/web-2.0.1"
+	xmlns:sys="http://geronimo.apache.org/xml/ns/deployment-1.2"
+    xmlns:sec="http://geronimo.apache.org/xml/ns/security-2.0">
+	<sys:environment>
+		<sys:moduleId>
+			<sys:groupId>${project.groupId}</sys:groupId>
+			<sys:artifactId>${enterpriseId}-${applicationId}</sys:artifactId>
+			<sys:version>${project.version}</sys:version>
+			<sys:type>war</sys:type>
+		</sys:moduleId>
+		<sys:dependencies>
+			<sys:dependency>
+				<sys:groupId>com.chanjet.csp</sys:groupId>
+				<sys:artifactId>ess-svc-${enterpriseId}</sys:artifactId>
+				<sys:version>${csp.version}</sys:version>
+				<sys:type>war</sys:type>
+			</sys:dependency>
+		</sys:dependencies>
+	</sys:environment>
+	<context-root>/${vendorName}/${applicationName}</context-root>
+
+
+    <!-- define auth part -->
+    <security-realm-name>CSPSecurityRealm</security-realm-name>
+
+	<sec:security>
+		<sec:role-mappings>
+			<sec:role role-name="CSPAppPlatformAccessRole">
+				<sec:principal name="CSPPlatformAccessGroup"
+							   class="org.apache.geronimo.security.realm.providers.GeronimoGroupPrincipal" />
+			</sec:role>
+		</sec:role-mappings>
+	</sec:security>
+
+
+	<sys:gbean name="CSPSecurityRealm" class="org.apache.geronimo.security.realm.GenericSecurityRealm">
+        <sys:attribute name="realmName">CSPSecurityRealm</sys:attribute>
+
+        <sys:xml-reference name="LoginModuleConfiguration">
+            <lc:login-config xmlns:lc="http://geronimo.apache.org/xml/ns/loginconfig-2.0">
+                <lc:login-module control-flag="REQUIRED" wrap-principals="false">
+                    <lc:login-domain-name>CSPProtectedServices</lc:login-domain-name>
+                    <lc:login-module-class>com.chanjet.csp.web.security.CSPLoginModule</lc:login-module-class>
+                    <lc:option name="check-appauth">true</lc:option>
+                    <lc:option name="cspDevMode">false</lc:option>
+                    <lc:option name="ignore-uri">.json,.js,.css,.png,.jpg,.htm,.html,index.jsp</lc:option>
+                    <lc:option name="welcome-page">index.jsp</lc:option>
+                </lc:login-module>
+            </lc:login-config>
+        </sys:xml-reference>
+
+    </sys:gbean>
+
+</web-app>

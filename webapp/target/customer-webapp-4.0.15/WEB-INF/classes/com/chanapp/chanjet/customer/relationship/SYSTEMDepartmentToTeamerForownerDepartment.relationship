@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns3:Relationship xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/relationship" applicationId="com.chanapp.chanjet.customer" cardinality="One-to-Many" id="com.chanapp.chanjet.customer.relationship.SYSTEMDepartmentToTeamerForownerDepartment" masterdetail="false" name="SYSTEMDepartmentToTeamerForownerDepartment">
+<ns3:Specification>
+<ns3:Source entityId="com.chanjet.system.systemapp.entity.Department" entityName="Department" fieldName="deptId"/>
+<ns3:Target entityId="com.chanapp.chanjet.customer.entity.Teamer" entityName="Teamer" fieldName="ownerDepartment"/>
+</ns3:Specification>
+<ns3:Visibility accessorFromTarget="ownerDepartment"/>
+</ns3:Relationship>

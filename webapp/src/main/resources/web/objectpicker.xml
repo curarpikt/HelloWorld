@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Pickers xmlns:tns="http://www.chanapp.com/ui/objectpicker"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.chanapp.com/ui/objectpicker http://www.chanapp.com/xsd/ui/ObjectPicker.xsd ">
+  <Picker objectName="Customer" keyField="id" mainField="name" name="Customer">
+    <field>address</field>
+  </Picker>
+  <Picker objectName="Contact" keyField="id" mainField="name" name="Contact">
+    <field>mobile</field>
+    <field>email</field>
+  </Picker>
+  <Picker objectName="User" keyField="userId" mainField="name" name="User">
+    <field>mobile</field>
+    <field>email</field>
+  </Picker>
+</tns:Pickers>

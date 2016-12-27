@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.chanjet.csp:csp-business_object-api:4.1.58">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanjet/csp/csp-business_object-api/4.1.58/csp-business_object-api-4.1.58.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanjet/csp/csp-business_object-api/4.1.58/csp-business_object-api-4.1.58-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/chanjet/csp/csp-business_object-api/4.1.58/csp-business_object-api-4.1.58-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

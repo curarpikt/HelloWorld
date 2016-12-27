@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Enterprise xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/enterprise" countryCode="CN" globalSchemaVersion="2.0.0" id="testDevEnt" languageCode="zh" name="testDevEnt" webContextRoot="webapp">
+<ns2:Properties>
+<ns2:Property name="active" value="true"/>
+</ns2:Properties>
+</Enterprise>

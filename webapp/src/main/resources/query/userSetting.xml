@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<!-- 根据用户ID查询用户信息 -->
+<query id="userSetting_getLoginGuide" boName="UserSetting">
+	<jsonQuerySpec>
+			{
+				"Criteria" : {
+					"Operator" : "and",
+					"Values" : [
+					
+							{
+							"FieldName" : "key",
+							"Operator" : "eq",
+							"Values" : ["?(key)"]
+							}
+							$(userId)
+							,{
+							"FieldName" : "userId",
+							"Operator" : "eq",
+							"Values" : [?(userId)]
+							}
+							$(userId)
+							$(deviceType)
+							,{
+							"FieldName" : "deviceType",
+							"Operator" : "eq",
+							"Values" : [?(deviceType)]
+							}
+							$(deviceType)
+						]
+					}
+			}
+	</jsonQuerySpec>
+</query>
+</root>

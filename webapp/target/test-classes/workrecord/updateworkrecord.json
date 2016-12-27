@@ -1,0 +1,17 @@
+{
+    "content":"update workrecord CCCC",
+    "status":"intention",
+    "customer":100002,
+    "attachments":[
+        {
+        	"status":"new",
+        	"id":100003,
+            "category": "image",
+            "extend": null,
+            "fileDir": "http://sto.chanapp.chanjet.com/90003746214/2016/04/29/03e04a22c85947e1a54e0075f233495b.jpg",
+            "fileName": "tmp_1461895442243.jpg",
+            "fileType": "jpg",
+            "size": 20097
+        }
+    ]	    
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<!-- 根据本地ID查询所有联系人 -->
+	<query id="contact_getContactByLocalId" boName="">
+		<jsonQuerySpec>
+			{ 
+				"Criteria" : 
+				{
+					"Operator" : "and",
+					"Values" : 
+					[
+						{
+							"FieldName" : "localId",
+							"Operator" : "eq",
+							"Values" : ["?(localId)"]
+						},
+						{
+							"Operator" : "or",
+							"Values":
+							[
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "empty",
+									"Values" : []
+								},
+								{
+									"FieldName" : "isDeleted",
+									"Operator" : "eq",
+									"Values" : ["false"]
+								}
+							]
+						}
+					]
+				}
+			}
+		</jsonQuerySpec>
+	</query>
+</root>

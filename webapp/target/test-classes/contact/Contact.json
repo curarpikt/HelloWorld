@@ -1,0 +1,16 @@
+{
+    "customer": 100001,
+    "name": "ABCD",
+    "mobile": "1212121212",
+    "email": "b@chanjet.com",
+    "department": "一本",
+    "position": "经理",
+    "appellation": "王总",
+    "gender": "male",
+    "phone": "22",
+    "fax": "222",
+    "qq": "1b",
+    "weibo": "bb",
+    "address": "天津",
+    "remark": "重要级别"
+}

@@ -1,0 +1,21 @@
+{
+	"entityType":"Checkin",
+	"operationType" : "NEW",
+	"entity": {
+		"checkinTime":1432627853251,
+		"coordinate": {"latitude":42.00,"longitude":123.00},
+		"coordinateNote":"海淀区68号",
+		"checkinTag":"ONDUTY",   
+		"customerId":100001,
+		"remark":"备注",
+		"attachments":[{
+				"fileName":"文件名",
+				"fileDir":"文件目录",
+		        "fileType":"文件后缀",
+		        "imgSize":"100,200",
+				"size":123,
+				"category":"txt"		
+			}],
+		"localId":"1432627853251"
+	}
+}

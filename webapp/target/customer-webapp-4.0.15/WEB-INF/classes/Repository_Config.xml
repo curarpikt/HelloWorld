@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmr_config:Repositories xmlns:cmr_config="http://www.chanjet.com/repository" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.chanjet.com/repository ../../../../CMR_Core/src/chanjet/com/cmr/repository/config/RepositoryConfig.xsd ">
+  <cmr_config:Repository name="WebdemoApp_Repository" main="true">
+ 	<cmr_config:Persistence_Config>
+		<cmr_config:Store-Config cmr_config:store_type="DB" cmr_config:store_name="DBStore" cmr_config:mainStore="true"/>
+		<!--<cmr_config:Store-Config cmr_config:store_type="ClassPath" cmr_config:store_name="SystemEntity" cmr_config:mainStore="false">
+			<cmr_config:catalogPath>system_entity/CMRFileRepro.catalog</cmr_config:catalogPath>
+		</cmr_config:Store-Config>-->
+	</cmr_config:Persistence_Config>
+  </cmr_config:Repository>
+</cmr_config:Repositories>

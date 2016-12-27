@@ -1,0 +1,586 @@
+{
+	"workrecord.Follows" : {
+		"newUrl" : "restlet/v2/web/workrecord/Follows",
+		"origUrl" : "business/v2/web/workrecord/follows"
+	},
+	"workrecord.Attaments" : {
+		"newUrl" : "restlet/v2/web/workrecord/Attaments",
+		"origUrl" : "business/v2/web/workrecord/attaments"
+	},
+	"workrecord.ListByCustomer" : {
+		"newUrl" : "restlet/v2/web/workrecord/ListByCustomer",
+		"origUrl" : "business/v2/web/workrecord/listByCustomer"
+	},
+	"workrecord.Download" : {
+		"newUrl" : "restlet/v2/web/workrecord/Download",
+		"origUrl" : "business/v2/web/workrecord/download"
+	},
+	"workrecord.LatestRecord" : {
+		"newUrl" : "restlet/v2/web/workrecord/LatestRecord",
+		"origUrl" : "business/v2/web/workrecord/latestrecord"
+	},
+	"workrecord.AttamentUpload" : {
+		"newUrl" : "restlet/v2/web/workrecord/AttamentUpload",
+		"origUrl" : "business/v2/web/workrecord/attamentUpload"
+	},
+	"workrecord.Condition" : {
+		"newUrl" : "restlet/v2/web/workrecord/Condition",
+		"origUrl" : "business/v2/web/workrecord/condition"
+	},
+	"workrecord.Read" : {
+		"newUrl" : "restlet/v2/web/workrecord/Read",
+		"origUrl" : "business/v2/web/workrecord/read"
+	},
+	"WorkRecord" : {
+		"newUrl" : "restlet/v2/web/WorkRecord",
+		"origUrl" : "business/v2/web/workrecord"
+	},
+	"customer.SharedList" : {
+		"newUrl" : "restlet/v2/web/customer/SharedList",
+		"origUrl" : "business/v2/web/customer/sharedList"
+	},
+	"customer.Attament" : {
+		"newUrl" : "restlet/v2/web/customer/Attament",
+		"origUrl" : "business/v2/web/customer/attament"
+	},
+	"customer.Condition" : {
+		"newUrl" : "restlet/v2/web/customer/Condition",
+		"origUrl" : "business/v2/web/customer/condition"
+	},
+	"customer.UnShareList" : {
+		"newUrl" : "restlet/v2/web/customer/UnshareList",
+		"origUrl" : "business/v2/web/customer/unshareList"
+	},
+	"Customer" : {
+		"newUrl" : "restlet/v2/web/Customer",
+		"origUrl" : "business/v2/web/customer"
+	},
+	"customer.WithContact" : {
+		"newUrl" : "restlet/v2/web/customer/WithContact",
+		"origUrl" : "business/v2/web/customer/withContact"
+	},
+	"customer.DeleteByIds" : {
+		"newUrl" : "restlet/v2/web/customer/DeleteByIds",
+		"origUrl" : "business/v2/web/customer/deleteByIds"
+	},
+	"customer.Follow" : {
+		"newUrl" : "restlet/v2/web/customer/Follow",
+		"origUrl" : "business/v2/web/customer/follow"
+	},
+	"customer.DeleteByConditon" : {
+		"newUrl" : "restlet/v2/web/customer/DeleteByConditon",
+		"origUrl" : "business/v2/web/customer/deleteByConditon"
+	},
+	"customer.Attachments" : {
+		"newUrl" : "restlet/v2/web/customer/Attachments",
+		"origUrl" : "business/v2/web/customer/attachments"
+	},
+	"customer.AttamentUploadOnly" : {
+		"newUrl" : "restlet/v2/web/customer/AttamentUploadOnly",
+		"origUrl" : "business/v2/web/customer/attamentUploadOnly"
+	},
+	"customer.sortField.Edit" : {
+		"newUrl" : "restlet/v2/web/customer/sortField/Edit",
+		"origUrl" : "business/v2/web/customer/sortField/edit"
+	},
+	"customer.Combox" : {
+		"newUrl" : "restlet/v2/web/customer/Combox",
+		"origUrl" : "business/v2/web/customer/list"
+	},
+	"customer.AttamentSave" : {
+		"newUrl" : "restlet/v2/web/customer/AttamentSave",
+		"origUrl" : "business/v2/web/customer/attamentSave"
+	},
+	"customer.UnShare" : {
+		"newUrl" : "restlet/v2/web/customer/UnShare",
+		"origUrl" : "business/v2/web/customer/unShare"
+	},
+	"customer.CheckNameRepeat" : {
+		"newUrl" : "restlet/v2/web/customer/CheckNameRepeat",
+		"origUrl" : "business/v2/web/customer/checkNameRepeat"
+	},
+	"customer.Process" : {
+		"newUrl" : "restlet/v2/web/customer/Process",
+		"origUrl" : "business/v2/web/customer/process"
+	},
+	"customer.Share" : {
+		"newUrl" : "restlet/v2/web/customer/Share",
+		"origUrl" : "business/v2/web/customer/share"
+	},
+	"customer.SharedGuide" : {
+		"newUrl" : "restlet/v2/web/customer/SharedGuide",
+		"origUrl" : "business/v2/web/customer/sharedGuide"
+	},
+	"report.Enums" : {
+		"newUrl" : "restlet/v2/web/report/Enums",
+		"origUrl" : "business/v2/web/report/enums"
+	},
+	"report.CheckinVisitDetail" : {
+		"newUrl" : "restlet/v2/web/report/CheckinVisitDetail",
+		"origUrl" : "business/v2/web/report/checkinVisitDetail"
+	},
+	"report.AddCustomersAnalysis" : {
+		"newUrl" : "restlet/v2/web/report/AddCustomersAnalysis",
+		"origUrl" : "business/v2/web/report/addCustomersAnalysis"
+	},
+	"report.AttendanceCountCsv" : {
+		"newUrl" : "restlet/v2/web/report/AttendanceCountCsv",
+		"origUrl" : "business/v2/web/report/attendanceCountCsv"
+	},
+	"report.Analysisdata" : {
+		"newUrl" : "restlet/v2/web/report/Analysisdata",
+		"origUrl" : "business/v2/web/report/analysisdata"
+	},
+	"report.CheckinVisitCount" : {
+		"newUrl" : "restlet/v2/web/report/CheckinVisitCount",
+		"origUrl" : "business/v2/web/report/checkinVisitCount"
+	},
+	"report.CustomerProgress" : {
+		"newUrl" : "restlet/v2/web/report/CustomerProgress",
+		"origUrl" : "business/v2/web/report/customerProgress"
+	},
+	"report.WorkrecordProgress" : {
+		"newUrl" : "restlet/v2/web/report/WorkrecordProgress",
+		"origUrl" : "business/v2/web/report/workrecordProgress"
+	},
+	"report.ProgressCount" : {
+		"newUrl" : "restlet/v2/web/report/ProgressCount",
+		"origUrl" : "business/v2/web/report/progressCount"
+	},
+	"invite.Records" : {
+		"newUrl" : "restlet/v2/web/invite/Records",
+		"origUrl" : "business/v2/web/invite/records"
+	},
+	"invite.UpdateOrgName" : {
+		"newUrl" : "restlet/v2/web/invite/UpdateOrgName",
+		"origUrl" : "business/v2/web/invite/updateOrgName"
+	},
+	"invite.Send" : {
+		"newUrl" : "restlet/v2/web/invite/Send",
+		"origUrl" : "business/v2/web/invite/send"
+	},
+	"invite.Organization" : {
+		"newUrl" : "restlet/v2/web/invite/Organization",
+		"origUrl" : "business/v2/web/invite/organization"
+	},
+	"importNew.Records" : {
+		"newUrl" : "restlet/v2/web/importNew/Records",
+		"origUrl" : "business/v2/web/importNew/records"
+	},
+	"importNew.record.Details" : {
+		"newUrl" : "restlet/v2/web/importNew/record/Details",
+		"origUrl" : "business/v2/web/importNew/record/details"
+	},
+	"importNew.Task" : {
+		"newUrl" : "restlet/v2/web/importNew/Task",
+		"origUrl" : "business/v2/web/importNew/task"
+	},
+	"importNew.Text" : {
+		"newUrl" : "restlet/v2/web/importNew/Text",
+		"origUrl" : "business/v2/web/importNew/text"
+	},
+	"importNew.record.detail.Remove" : {
+		"newUrl" : "restlet/v2/web/importNew/record/detail/Remove",
+		"origUrl" : "business/v2/web/importNew/record/detail/remove"
+	},
+	"importNew.record.Head" : {
+		"newUrl" : "restlet/v2/web/importNew/record/Head",
+		"origUrl" : "business/v2/web/importNew/record/head"
+	},
+	"importNew.records.Clean" : {
+		"newUrl" : "restlet/v2/web/importNew/records/Clean",
+		"origUrl" : "business/v2/web/importNew/records/clean"
+	},
+	"importNew.records.Status" : {
+		"newUrl" : "restlet/v2/web/importNew/records/Status",
+		"origUrl" : "business/v2/web/importNew/records/status"
+	},
+	"importNew.Upload" : {
+		"newUrl" : "restlet/v2/web/importNew/Upload",
+		"origUrl" : "business/v2/web/importNew/upload"
+	},
+	"importNew.excel.Template" : {
+		"newUrl" : "restlet/v2/web/importNew/excel/Template",
+		"origUrl" : "business/v2/web/importNew/excel/template"
+	},
+	"importNew.record.Remove" : {
+		"newUrl" : "restlet/v2/web/importNew/record/Remove",
+		"origUrl" : "business/v2/web/importNew/record/remove"
+	},
+	"dynattr.Metadata" : {
+		"newUrl" : "restlet/v2/web/dynattr/Metadata",
+		"origUrl" : "business/v2/web/dynattr/metadata"
+	},
+	"dynattr.Disable" : {
+		"newUrl" : "restlet/v2/web/dynattr/Disable",
+		"origUrl" : "business/v2/web/dynattr/disable"
+	},
+	"dynattr.Update" : {
+		"newUrl" : "restlet/v2/web/dynattr/Update",
+		"origUrl" : "business/v2/web/dynattr/update"
+	},
+	"dynattr.Enable" : {
+		"newUrl" : "restlet/v2/web/dynattr/Enable",
+		"origUrl" : "business/v2/web/dynattr/enable"
+	},
+	"dynattr.SetFieldPattern" : {
+		"newUrl" : "restlet/v2/web/dynattr/SetFieldPattern",
+		"origUrl" : "services/1.0/appext/VAttribute/setFieldPattern"
+	},
+	"dynattr.Save" : {
+		"newUrl" : "restlet/v2/web/dynattr/Save",
+		"origUrl" : "business/v2/web/dynattr/save"
+	},
+	"dynattr.Enums" : {
+		"newUrl" : "restlet/v2/web/dynattr/Enums",
+		"origUrl" : "business/v2/web/dynattr/enums"
+	},
+	"dynattr.metadata.Layout" : {
+		"newUrl" : "restlet/v2/web/dynattr/metadata/Layout",
+		"origUrl" : "business/v2/web/dynattr/metadata/layout"
+	},
+	"sysreluser.GetHierarchyUsers2Tree" : {
+		"newUrl" : "restlet/v2/web/sysreluser/GetHierarchyUsers2Tree",
+		"origUrl" : "business/v2/web/sysreluser/getHierarchyUsers2Tree"
+	},
+	"sysreluser.Allusers" : {
+		"newUrl" : "restlet/v2/web/sysreluser/Allusers",
+		"origUrl" : "business/v2/web/sysreluser/allusers"
+	},
+	"sysreluser.GetHierarchyUsers" : {
+		"newUrl" : "restlet/v2/web/sysreluser/GetHierarchyUsers",
+		"origUrl" : "business/v2/web/sysreluser/getHierarchyUsers"
+	},
+	"sysreluser.DisableTransData" : {
+		"newUrl" : "restlet/v2/web/sysreluser/DisableTransData",
+		"origUrl" : "business/v2/web/sysreluser/disableTransData"
+	},
+	"sysreluser.ChangeBoss" : {
+		"newUrl" : "restlet/v2/web/sysreluser/ChangeBoss",
+		"origUrl" : "business/v2/web/sysreluser/changeBoss"
+	},
+	"sysreluser.GetHierarchyUsersByUserId" : {
+		"newUrl" : "restlet/v2/web/sysreluser/GetHierarchyUsersByUserId",
+		"origUrl" : "business/v2/web/sysreluser/getHierarchyUsersByUserId"
+	},
+	"sysreluser.GetUserGroups" : {
+		"newUrl" : "restlet/v2/web/sysreluser/GetUserGroups",
+		"origUrl" : "business/v2/web/sysreluser/getUserGroups"
+	},
+	"sysreluser.Alltranusers" : {
+		"newUrl" : "restlet/v2/web/sysreluser/Alltranusers",
+		"origUrl" : "business/v2/web/sysreluser/alltranusers"
+	},
+	"sysreluser.SaveHierarchyUsers" : {
+		"newUrl" : "restlet/v2/web/sysreluser/SaveHierarchyUsers",
+		"origUrl" : "business/v2/web/sysreluser/saveHierarchyUsers"
+	},
+	"sysreluser.AllSubordinate" : {
+		"newUrl" : "restlet/v2/web/sysreluser/AllSubordinate",
+		"origUrl" : "business/v2/web/sysreluser/allSubordinate"
+	},
+	"sysreluser.Disable" : {
+		"newUrl" : "restlet/v2/web/sysreluser/Disable",
+		"origUrl" : "business/v2/web/sysreluser/disable"
+	},
+	"sysreluser.GetOrgBoss" : {
+		"newUrl" : "restlet/v2/web/sysreluser/GetOrgBoss",
+		"origUrl" : "business/v2/web/sysreluser/getOrgBoss"
+	},
+	"export.GetExportTasksToday" : {
+		"newUrl" : "restlet/v2/web/export/GetExportTasksToday",
+		"origUrl" : "business/v2/web/export/getExportTasksToday"
+	},
+	"export.SaveTask" : {
+		"newUrl" : "restlet/v2/web/export/SaveTask",
+		"origUrl" : "business/v2/web/export/saveTask"
+	},
+	"export.Download" : {
+		"newUrl" : "restlet/v2/web/export/Download",
+		"origUrl" : "business/v2/web/export/download"
+	},
+	"export.GetExportTaskById" : {
+		"newUrl" : "restlet/v2/web/export/GetExportTaskById",
+		"origUrl" : "business/v2/web/export/getExportTaskById"
+	},
+	"export.TaskList" : {
+		"newUrl" : "restlet/v2/web/export/TaskList",
+		"origUrl" : "business/v2/web/export/taskList"
+	},
+	"export.AttendanceCountExport" : {
+		"newUrl" : "restlet/v2/web/export/AttendanceCountExport",
+		"origUrl" : "business/v2/web/export/attendanceCountExport"
+	},
+	"export.VisitCountExport" : {
+		"newUrl" : "restlet/v2/web/export/VisitCountExport",
+		"origUrl" : "business/v2/web/export/visitCountExport"
+	},
+	"export.GetExportCount" : {
+		"newUrl" : "restlet/v2/web/export/GetExportCount",
+		"origUrl" : "business/v2/web/export/getExportCount"
+	},
+	"export.ExecuteTaskById" : {
+		"newUrl" : "restlet/v2/web/export/ExecuteTaskById",
+		"origUrl" : "business/v2/web/export/executeTaskById"
+	},
+	"usersetting.WorkingHours" : {
+		"newUrl" : "restlet/v2/web/usersetting/WorkingHours",
+		"origUrl" : "business/v2/web/userSetting/workingHours"
+	},
+	"usersetting.GetUserSetting" : {
+		"newUrl" : "restlet/v2/web/usersetting/GetUserSetting",
+		"origUrl" : "business/v2/web/userSetting/getUserSetting"
+	},
+	"UserSetting" : {
+		"newUrl" : "restlet/v2/web/UserSetting",
+		"origUrl" : "business/v2/web/userSetting"
+	},
+	"todotips.Sort" : {
+		"newUrl" : "restlet/v2/web/todotips/Sort",
+		"origUrl" : "business/v2/web/todoTips/sort"
+	},
+	"todotips.Update" : {
+		"newUrl" : "restlet/v2/web/todotips/Update",
+		"origUrl" : "business/v2/web/todoTips/update"
+	},
+	"todotips.Delete" : {
+		"newUrl" : "restlet/v2/web/todotips/Delete",
+		"origUrl" : "business/v2/web/todoTips/delete"
+	},
+	"todotips.Query" : {
+		"newUrl" : "restlet/v2/web/todotips/Query",
+		"origUrl" : "business/v2/web/todoTips/list"
+	},
+	"todotips.Save" : {
+		"newUrl" : "restlet/v2/web/todotips/Save",
+		"origUrl" : "business/v2/web/todoTips/save"
+	},
+	"privilege.Logout" : {
+		"newUrl" : "restlet/v2/web/privilege/Logout",
+		"origUrl" : "business/v2/web/privilege/logout"
+	},
+	"privilege.TransByConditon" : {
+		"newUrl" : "restlet/v2/web/privilege/TransByCondition",
+		"origUrl" : "business/v2/privilege/transbyconditon"
+	},
+	"privilege.TransByCustomerId" : {
+		"newUrl" : "restlet/v2/web/privilege/TransByCustomerId",
+		"origUrl" : "business/v2/web/privilege/transbycustomerid"
+	},
+	"privilege.TransByOwner" : {
+		"newUrl" : "restlet/v2/web/privilege/TransByOwner",
+		"origUrl" : "business/v2/web/privilege/transbyonwer"
+	},
+	"user.UserInfo" : {
+		"newUrl" : "restlet/v2/web/user/UserInfo",
+		"origUrl" : "business/v2/web/user/userinfo"
+	},
+	"user.BindingOrgPartner" : {
+		"newUrl" : "restlet/v2/web/user/BindingOrgPartner",
+		"origUrl" : "business/v2/web/user/bindingOrgPartner"
+	},
+	"user.SwitchOrg" : {
+		"newUrl" : "restlet/v2/web/user/SwitchOrg",
+		"origUrl" : "business/v2/web/user/switch/org"
+	},
+	"user.GetOrgBindingPartner" : {
+		"newUrl" : "restlet/v2/web/user/GetOrgBindingPartner",
+		"origUrl" : "business/v2/web/user/getOrgBindingPartner"
+	},
+	"user.AtUser" : {
+		"newUrl" : "restlet/v2/web/user/AtUser",
+		"origUrl" : "business/v2/web/user/atUser"
+	},
+	"user.GetPartnerInfoById" : {
+		"newUrl" : "restlet/v2/web/user/GetPartnerInfoById",
+		"origUrl" : "business/v2/web/user/getPartnerInfoById"
+	},
+	"user.OrgList" : {
+		"newUrl" : "restlet/v2/web/user/OrgList",
+		"origUrl" : "business/v2/web/user/orglist"
+	},
+	"recycle.GetOperUsers" : {
+		"newUrl" : "restlet/v2/web/recycle/GetOperUsers",
+		"origUrl" : "services/1.0/appext/VRecycle/getOperUsers"
+	},
+	"recycle.RecHisReocrds" : {
+		"newUrl" : "restlet/v2/web/recycle/RecHisReocrds",
+		"origUrl" : "services/1.0/appext/VRecycle/recHisReocrds"
+	},
+	"recycle.GetRecycles" : {
+		"newUrl" : "restlet/v2/web/recycle/GetRecycles",
+		"origUrl" : "services/1.0/appext/VRecycle/getRecycles"
+	},
+	"recycle.HisRecycleInfo" : {
+		"newUrl" : "restlet/v2/web/recycle/HisRecycleInfo",
+		"origUrl" : "services/1.0/appext/VRecycle/hisRecycleInfo"
+	},
+	"recycle.DelRecycles" : {
+		"newUrl" : "restlet/v2/web/recycle/DelRecycles",
+		"origUrl" : "services/1.0/appext/VRecycle/delRecycles"
+	},
+	"recycle.Restore" : {
+		"newUrl" : "restlet/v2/web/recycle/Restore",
+		"origUrl" : "services/1.0/appext/VRecycle/restore"
+	},
+	"recycle.CleanRecycle" : {
+		"newUrl" : "restlet/v2/web/recycle/CleanRecycle",
+		"origUrl" : "services/1.0/appext/VRecycle/cleanRecycle"
+	},
+	"condition.Favorite" : {
+		"newUrl" : "restlet/v2/web/condition/Favorite",
+		"origUrl" : "business/v2/web/condition/favorite"
+	},
+	"condition.FavoriteList" : {
+		"newUrl" : "restlet/v2/web/condition/FavoriteList",
+		"origUrl" : "business/v2/web/condition/favoriteList"
+	},
+	"condition.Config" : {
+		"newUrl" : "restlet/v2/web/condition/Config",
+		"origUrl" : "business/v2/web/condition/config"
+	},
+	"condition.FavoriteDelete" : {
+		"newUrl" : "restlet/v2/web/condition/FavoriteDelete",
+		"origUrl" : "business/v2/web/condition/favoriteDelete"
+	},
+	"condition.ConfigList" : {
+		"newUrl" : "restlet/v2/web/condition/ConfigList",
+		"origUrl" : "business/v2/web/condition/configList"
+	},
+	"Contact" : {
+		"newUrl" : "restlet/v2/web/Contact",
+		"origUrl" : "business/v2/web/contact"
+	},
+	"contact.ListOfCustomer" : {
+		"newUrl" : "restlet/v2/web/contact/ListOfCustomer",
+		"origUrl" : "business/v2/web/contact/listOfCustomer"
+	},
+	"contact.sortField.Edit" : {
+		"newUrl" : "restlet/v2/web/contact/sortField/Edit",
+		"origUrl" : "business/v2/web/contact/sortField"
+	},
+	"Comment" : {
+		"newUrl" : "restlet/v2/web/Comment",
+		"origUrl" : "business/v2/web/comment"
+	},
+	"comment.ListByWorkRecord" : {
+		"newUrl" : "restlet/v2/web/comment/ListByWorkRecord",
+		"origUrl" : "business/v2/web/comment/listByWorkRecord"
+	},
+	"Init" : {
+		"newUrl" : "restlet/v2/web/Init",
+		"origUrl" : "business/v2/web/init"
+	},
+	"init.mobile.Test" : {
+		"newUrl" : "restlet/v2/web/init/mobile/Test",
+		"origUrl" : "business/v2/web/init/mobile/test"
+	},
+	"TodoWork" : {
+		"newUrl" : "restlet/v2/web/TodoWork",
+		"origUrl" : "business/v2/web/todoWork"
+	},
+	"todowork.CountTodoWork" : {
+		"newUrl" : "restlet/v2/web/todowork/CountTodoWork",
+		"origUrl" : "business/v2/web/todoWork/countTodoWork"
+	},
+	"todowork.CountDoneTodoWorks" : {
+		"newUrl" : "restlet/v2/web/todowork/CountDoneTodoWorks",
+		"origUrl" : "business/v2/web/todoWork/countDoneTodoWorks"
+	},
+	"todowork.TodoList" : {
+		"newUrl" : "restlet/v2/web/todowork/TodoList",
+		"origUrl" : "business/v2/web/todoWork/todoList"
+	},
+	"todowork.DoneList" : {
+		"newUrl" : "restlet/v2/web/todowork/DoneList",
+		"origUrl" : "business/v2/web/todoWork/doneList"
+	},
+	"todowork.Handle" : {
+		"newUrl" : "restlet/v2/web/todowork/Handle",
+		"origUrl" : "business/v2/web/todoWork/handle"
+	},
+	"todowork.Query" : {
+		"newUrl" : "restlet/v2/web/todowork/Query",
+		"origUrl" : "business/v2/web/todoWork/list"
+	},
+	"todowork.GetTodoRemindType" : {
+		"newUrl" : "restlet/v2/web/todowork/GetTodoRemindType",
+		"origUrl" : "business/v2/web/todoWork/getTodoRemindType"
+	},
+	"todowork.FindByWorkRecordId" : {
+		"newUrl" : "restlet/v2/web/todowork/FindByWorkRecordId",
+		"origUrl" : "business/v2/web/todoWork/findByWorkrecordId"
+	},
+	"contactremindset.Save" : {
+		"newUrl" : "restlet/v2/web/contactremindset/Save",
+		"origUrl" : "services/1.0/appext/VContactRemindSet/save"
+	},
+	"contactremindset.Query" : {
+		"newUrl" : "restlet/v2/web/contactremindset/Query",
+		"origUrl" : "services/1.0/appext/VContactRemindSet/query"
+	},
+	"contactremindset.GetDefaultSetValue" : {
+		"newUrl" : "restlet/v2/web/contactremindset/GetDefaultSetValue",
+		"origUrl" : "services/1.0/appext/VContactRemindSet/getDefaultSetValue"
+	},
+	"newinvite.Records" : {
+		"newUrl" : "restlet/v2/web/invite/records",
+		"origUrl" : "business/v2/web/invite/records"
+	},
+	"newuser.ReturnDefault" : {
+		"newUrl" : "restlet/v2/web/user/switch/org/",
+		"origUrl" : "business/v2/web/user/switch/org/"
+	},
+	"newuser.DisableTransData" : {
+		"newUrl" : "restlet/v2/web/sysreluser/disableTransData",
+		"origUrl" : "business/v2/web/sysreluser/disableTransData"
+	},
+	"newuser.UserInfo" : {
+		"newUrl" : "restlet/v2/web/user/userinfo",
+		"origUrl" : "business/v2/web/user/userinfo"
+	},
+	"newuser.AtUser" : {
+		"newUrl" : "restlet/v2/web/user/atUser",
+		"origUrl" : "business/v2/web/user/atUser"
+	},
+	"newuser.Orglist" : {
+		"newUrl" : "restlet/v2/web/user/OrgList",
+		"origUrl" : "business/v2/web/user/orglist"
+	},
+	"newuser.GetOrgBindingPartner" : {
+		"newUrl" : "restlet/v2/web/user/GetOrgBindingPartner",
+		"origUrl" : "business/v2/web/user/getOrgBindingPartner"
+	},
+	"newuser.GetPartnerInfoById" : {
+		"newUrl" : "restlet/v2/web/user/GetPartnerInfoById",
+		"origUrl" : "business/v2/web/user/getPartnerInfoById"
+	},
+	"newuser.BindingOrgPartner" : {
+		"newUrl" : "restlet/v2/web/user/BindingOrgPartner",
+		"origUrl" : "business/v2/web/user/bindingOrgPartner"
+	},
+	"newprivilege.Logout" : {
+		"newUrl" : "restlet/v2/web/privilege/logout",
+		"origUrl" : "business/v2/web/privilege/logout"
+	},
+	"newprivilege.TransByConditon" : {
+		"newUrl" : "restlet/v2/web/privilege/TransByConditon",
+		"origUrl" : "business/v2/web/privilege/transbyconditon"
+	},
+	"newprivilege.TransByCustomerId" : {
+		"newUrl" : "restlet/v2/web/privilege/TransByCustomerId",
+		"origUrl" : "business/v2/web/privilege/transbycustomerid"
+	},
+	"newprivilege.TransByOwner" : {
+		"newUrl" : "restlet/v2/web/privilege/TransByOwner",
+		"origUrl" : "business/v2/web/privilege/transbyonwer"
+	},
+	"newinit.mobile.Test" : {
+		"newUrl" : "restlet/v2/web/init/mobile/test",
+		"origUrl" : "business/v2/web/init/mobile/test"
+	},
+	"newinvite.Send" : {
+		"newUrl" : "restlet/v2/web/invite/send",
+		"origUrl" : "business/v2/web/invite/send"
+	}
+}

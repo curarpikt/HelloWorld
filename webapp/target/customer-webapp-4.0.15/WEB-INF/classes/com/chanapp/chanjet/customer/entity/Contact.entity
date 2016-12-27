@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ns4:Entity xmlns:ns2="http://www.chanjet.com/metadata/base" xmlns:ns3="http://www.chanjet.com/metadata/field" xmlns:ns4="http://www.chanjet.com/metadata/entity" xmlns:ns5="http://www.chanjet.com/metadata/base/baseEntity" active="true" applicationId="com.chanapp.chanjet.customer" authMode="Normal" dynamicUpdate="false" id="com.chanapp.chanjet.customer.entity.Contact" label="Contact" name="Contact" searchable="true" shadowTarget="true" systemEntity="false" table="contact">
+<ns4:Fields>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="address0" deferredUniqueCheck="false" deleted="false" index="true" label="地址" name="address" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="appellation0" deferredUniqueCheck="false" deleted="false" index="false" label="称谓" name="appellation" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="createdby" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Created By" name="createdBy" relationshipName="SYSTEMUserToContactForcreatedBy" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="false" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="createdbyentityid" deferredUniqueCheck="false" deleted="false" index="true" label="CreatedByEntityId" name="createdByEntityId" searchable="true" segmentation="true" systemField="true" type="Text" unique="false" updateable="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="createdbyshadowfk0" deferredUniqueCheck="false" deleted="false" name="createdByShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Created Date" name="createdDate" searchable="true" segmentation="true" systemField="true" type="Timestamp" unique="false" updateable="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="customer0" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="所属公司" name="customer" relationshipName="ContactToCustomer" segmentation="true" systemField="false" type="ForeignKey" unique="false" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="customercopy0" deferredUniqueCheck="false" deleted="false" index="false" label="隐藏客户名称" name="customerCopy" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="customershadowfk0" deferredUniqueCheck="false" deleted="false" name="customerShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="department0" deferredUniqueCheck="false" deleted="false" index="false" label="所属部门" name="department" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="effectivemobile0" deferredUniqueCheck="false" deleted="true" label="有效手机" name="effectiveMobile" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="effectivephone0" deferredUniqueCheck="false" deleted="true" label="有效电话" name="effectivePhone" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" columns="email0" deferredUniqueCheck="false" deleted="false" index="false" label="邮箱" name="email" searchByPinYin="false" segmentation="true" type="Email" unique="false" xsi:type="ns3:EmailField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="fax0" deferredUniqueCheck="false" deleted="false" index="false" label="传真" name="fax" segmentation="true" systemField="false" type="Phone" unique="false" xsi:type="ns3:PhoneField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="fullspell0" deferredUniqueCheck="false" deleted="false" index="false" label="全拼" name="fullSpell" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="1000"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="gender0" cspEnumName="ContactGender" deferredUniqueCheck="false" deleted="false" index="false" label="性别" multiSelect="false" name="gender" segmentation="true" systemField="false" type="Enum" unique="false" xsi:type="ns3:CSPEnumField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Id" name="id" searchable="false" segmentation="true" systemField="true" type="PrimaryKey" unique="false" updateable="false" xsi:type="ns3:PrimaryKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Deleted" name="isDeleted" searchable="false" segmentation="true" systemField="true" type="Boolean" unique="false" updateable="false" xsi:type="ns3:BooleanField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="SeedData" name="isSeedData" searchable="false" segmentation="true" systemField="true" type="Boolean" unique="false" updateable="false" xsi:type="ns3:BooleanField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="lastmodifiedby" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Last Modified By" name="lastModifiedBy" relationshipName="SYSTEMUserToContactForlastModifiedBy" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="false" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="lastmodifiedbyshadowfk0" deferredUniqueCheck="false" deleted="false" name="lastModifiedByShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Last Modified Date" name="lastModifiedDate" searchable="true" segmentation="true" systemField="true" type="Timestamp" unique="false" updateable="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="lastrecordtime0" deferredUniqueCheck="false" deleted="false" index="false" label="最后工作记录时间" name="lastRecordTime" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="localid0" deferredUniqueCheck="false" deleted="false" index="false" label="移动端离线ID" name="localId" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="64"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="logo0" deferredUniqueCheck="false" deleted="false" index="false" label="头像" name="logo" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="maritalstatus0" cspEnumName="ContactMaritalStatus" deferredUniqueCheck="false" deleted="false" index="false" label="婚姻状况" multiSelect="false" name="maritalStatus" segmentation="true" systemField="false" type="Enum" unique="false" xsi:type="ns3:CSPEnumField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="mobile0" deferredUniqueCheck="false" deleted="false" index="true" label="手机" name="mobile" segmentation="true" systemField="false" type="MobilePhone" unique="false" xsi:type="ns3:MobilePhoneField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="mobilelocalid" deferredUniqueCheck="false" deleted="false" index="true" label="MobileLocalId" name="mobileLocalId" searchable="true" segmentation="true" systemField="true" type="Integer" unique="false" updateable="true" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="modifiedtime0" deferredUniqueCheck="false" deleted="false" index="false" label="修改时间" name="modifiedTime" segmentation="true" systemField="false" type="Timestamp" unique="false" xsi:type="ns3:TimeStampField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="name0" deferredUniqueCheck="false" deleted="false" index="true" label="姓名" name="name" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="owner" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Owner" name="owner" relationshipName="SYSTEMUserToContactForowner" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="true" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="ownerdepartment" deferredUniqueCheck="false" deleted="false" end="Target" index="true" label="Owner Department" name="ownerDepartment" relationshipName="SYSTEMDepartmentToContactForownerDepartment" searchable="true" segmentation="true" systemField="true" type="ForeignKey" unique="false" updateable="true" xsi:type="ns3:ForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="ownerdepartmentshadowfk0" deferredUniqueCheck="false" deleted="false" name="ownerDepartmentShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" columns="ownershadowfk0" deferredUniqueCheck="false" deleted="false" name="ownerShadowFK" searchByPinYin="false" segmentation="true" type="ShadowForeignKey" unique="false" xsi:type="ns3:ShadowForeignKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Permanent Key" name="permanentKey" searchable="false" segmentation="true" systemField="true" type="PermanentKey" unique="false" updateable="true" xsi:type="ns3:PermanentKeyField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="phone0" deferredUniqueCheck="false" deleted="false" index="true" label="电话" name="phone" segmentation="true" systemField="false" type="Phone" unique="false" xsi:type="ns3:PhoneField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="position0" deferredUniqueCheck="false" deleted="false" index="false" label="职务" name="position" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="qq0" deferredUniqueCheck="false" deleted="false" index="false" label="QQ" name="qq" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="remark0" deferredUniqueCheck="false" deleted="false" index="false" label="备注" name="remark" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="seeddatakey" deferredUniqueCheck="false" deleted="false" index="true" label="SeeddataKey" name="seeddataKey" searchable="true" segmentation="true" systemField="true" type="Text" unique="false" updateable="false" xsi:type="ns3:TextField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="simplespell0" deferredUniqueCheck="false" deleted="false" index="false" label="简拼" name="simpleSpell" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="1000"/>
+</ns2:Properties>
+</ns4:Field>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" deferredUniqueCheck="false" deleted="false" index="false" label="Version" name="version" searchable="true" segmentation="true" systemField="true" type="Integer" unique="false" updateable="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="virtualschemaid" deferredUniqueCheck="false" deleted="false" index="true" label="VirtualSchemaId" name="virtualSchemaId" searchable="true" segmentation="true" systemField="true" type="Integer" unique="false" updateable="false" xsi:type="ns3:IntegerField"/>
+<ns4:Field xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" active="true" audit="false" columns="weibo0" deferredUniqueCheck="false" deleted="false" index="false" label="微博" name="weibo" segmentation="true" systemField="false" type="Text" unique="false" xsi:type="ns3:TextField">
+<ns2:Properties>
+<ns2:Property name="length" value="255"/>
+</ns2:Properties>
+</ns4:Field>
+</ns4:Fields>
+</ns4:Entity>

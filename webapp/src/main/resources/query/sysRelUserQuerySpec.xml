@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<query id="sysRelUser_getReluserByuserId" boName="">
+	<jsonQuerySpec>
+	{
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+		            "FieldName" : "userId",
+		            "Operator" : "eq",
+		            "Values" : [?(userId)]
+		        }
+		        ]
+		}
+	}
+	</jsonQuerySpec>
+</query>
+
+
+<query id="queryCustomerUsers" boName="">
+	<jsonQuerySpec>
+	{
+	    "SortBy" : [{
+            "FieldName" : "status",
+            "Order" : "Ascending"
+        },{
+            "FieldName" : "createdDate",
+            "Order" : "Descending"
+        }
+    	],
+    	$(first)
+    	"FirstResult" : "?(first)",
+    	$(first)
+    	$(max)
+		"MaxResult" : "?(max)",
+		$(max)
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	$(searchCondition)
+		    	$
+		    	{
+		            "FieldName" : "status",
+		            "Operator" : "eq",
+		            "Values" : [?(status)]
+		        }		        
+		        $
+		        $
+		    	{
+		            "FieldName" : "userId",
+		            "Operator" : "in",
+		            "Values" : ?(userIds)
+		        }
+		        $
+		        $(searchCondition)
+		        ]
+		}
+	}
+	</jsonQuerySpec>
+</query>
+
+<query id="queryEnableSysRelUser" boName="">
+	<jsonQuerySpec>
+	{
+	    "SortBy" : [{
+            "FieldName" : "createdDate",
+            "Order" : "Descending"
+        }
+    	],
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+		            "FieldName" : "status",
+		            "Operator" : "eq",
+		            "Values" : ["enable"]
+		        }
+		        ]
+		}
+	}
+	</jsonQuerySpec>
+</query>
+<!-- 根据用户IDS查询SYSRELUSER信息（复数） -->
+<query id="sysRelUser_getSysRelUserByIds" boName="">
+	<jsonQuerySpec>
+	{
+		"Criteria" : {
+		    "Operator" : "and",
+		    "Values" : [
+		    	{
+		            "FieldName" : "userId",
+		            "Operator" : "in",
+		            "Values" : ?(userIds)
+		        }]
+		        
+		}
+	}
+	</jsonQuerySpec>
+</query>
+
+</root>
